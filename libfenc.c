@@ -948,6 +948,35 @@ libfenc_plaintext_clear(fenc_plaintext *plaintext)
  * @return				FENC_ERROR_NONE or an error code.
  */
 
+FENC_ERROR	
+libfenc_kem_encrypt_update(fenc_context *context, fenc_function_input *input, fenc_ciphertext *ciphertext, fenc_ciphertext *new_ciphertext)
+{
+	FENC_ERROR result = FENC_ERROR_NONE;
+		
+	/* Validate the context. */
+	if (context->scheme_type == FENC_SCHEME_NONE || context->gen_params == NULL) {
+		result = FENC_ERROR_INVALID_CONTEXT;
+	}
+		
+	/* Check that the functionality is implemented for this particular scheme.	*/
+	if (context->kem_encrypt == NULL) {
+		result = FENC_ERROR_NOT_IMPLEMENTED;
+	}
+		
+	/* Make sure this context contains public parameters.	*/
+	if (context->contains_public_params == FALSE) {
+		result = FENC_ERROR_NO_PUBLIC_PARAMS;
+	}
+		
+	/* Call the appropriate function pointer. */
+	if (result == FENC_ERROR_NONE) {
+		result = context->kem_encrypt_update(context, input, ciphertext, new_ciphertext);
+	}
+		
+	return result;
+}
+
+
 const char*
 libfenc_error_to_string(FENC_ERROR error)
 {

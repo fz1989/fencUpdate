@@ -177,6 +177,8 @@ typedef struct _fenc_context {
 											 fenc_ciphertext *);
 	FENC_ERROR				(*kem_encrypt)(struct _fenc_context *, fenc_function_input *, size_t, uint8 *,
 									   fenc_ciphertext *);
+    FENC_ERROR				(*kem_encrypt_update)(struct _fenc_context *, fenc_function_input *, fenc_ciphertext *, fenc_ciphertext *);
+
 	FENC_ERROR				(*decrypt)(struct _fenc_context *, fenc_ciphertext *, fenc_key *,
 											 fenc_plaintext *);
 	FENC_ERROR				(*destroy_context)(struct _fenc_context*);
@@ -329,6 +331,9 @@ FENC_ERROR	libfenc_kem_encrypt(fenc_context *context, fenc_function_input *input
  * @param plaintext		A pre-allocated buffer for the resulting plaintext.
  * @return				FENC_ERROR_NONE or an error code.
  */
+/*=====================================================*/
+FENC_ERROR	libfenc_kem_encrypt_update(fenc_context *context, fenc_function_input *input, fenc_ciphertext *ciphertext, fenc_ciphertext *new_ciphertext);
+
 
 FENC_ERROR	libfenc_decrypt(fenc_context *context, fenc_ciphertext *ciphertext, fenc_key *key,
 							fenc_plaintext *plaintext);

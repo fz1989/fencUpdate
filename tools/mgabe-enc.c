@@ -7,6 +7,7 @@
 #include "openssl/err.h"
 #include "openssl/rand.h"
 #include <math.h>
+#define debug
 
 /* include code that creates policy by hand */
 
@@ -89,6 +90,12 @@ int main (int argc, char *argv[]) {
 					public_params = PUBLIC_FILE".cp";
 					ext = "cpabe";
 				}
+                else if (strcmp(optopt, SCHEME_WSCP) == 0) {
+                    debug("Encrypting for Waters CP scheme...\n");
+                    mode = FENC_SCHEME_WATERSCP;
+                    public_params = PUBLIC_FILE".scp";
+                    ext = "cpabe";
+                }
 				break;
 			case 'x': /* output format: xml format */
 				xflag = TRUE;
@@ -184,7 +191,7 @@ void abe_encrypt(FENC_SCHEME_TYPE scheme, char *public_params, char *data, char 
 	result = libfenc_init();
 	/* Create a Sahai-Waters context. */
 	result = libfenc_create_context(&context, scheme);
-	
+
 	/* Load group parameters from a file. */
 	fp = fopen(PARAM, "r");
 	if (fp != NULL) {

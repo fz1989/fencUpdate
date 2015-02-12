@@ -1,0 +1,1778 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+abe_decrypt	tools/mgabe-dec.c	/^Bool abe_decrypt(FENC_SCHEME_TYPE scheme, char *public_params, char *inputfile, char *keyfile)$/;"	f
+abe_dec_DEPENDENCIES	tools/Makefile	/^abe_dec_DEPENDENCIES = ..\/libfenc.la$/;"	m
+abe_dec_LDADD	tools/Makefile	/^abe_dec_LDADD = $(LDADD)$/;"	m
+abe_dec_OBJECTS	tools/Makefile	/^abe_dec_OBJECTS = $(am_abe_dec_OBJECTS)$/;"	m
+abe_dec_SOURCES	tools/Makefile	/^abe_dec_SOURCES = mgabe-dec.c base64.c common.c$/;"	m
+abe_encrypt	tools/mgabe-enc.c	/^void abe_encrypt(FENC_SCHEME_TYPE scheme, char *public_params, char *data, char *enc_file, int isXML, char *ext)$/;"	f
+abe_enc_DEPENDENCIES	tools/Makefile	/^abe_enc_DEPENDENCIES = ..\/libfenc.la$/;"	m
+abe_enc_LDADD	tools/Makefile	/^abe_enc_LDADD = $(LDADD)$/;"	m
+abe_enc_OBJECTS	tools/Makefile	/^abe_enc_OBJECTS = $(am_abe_enc_OBJECTS)$/;"	m
+abe_enc_SOURCES	tools/Makefile	/^abe_enc_SOURCES = mgabe-enc.c base64.c common.c$/;"	m
+abe_keygen_DEPENDENCIES	tools/Makefile	/^abe_keygen_DEPENDENCIES = ..\/libfenc.la$/;"	m
+abe_keygen_LDADD	tools/Makefile	/^abe_keygen_LDADD = $(LDADD)$/;"	m
+abe_keygen_OBJECTS	tools/Makefile	/^abe_keygen_OBJECTS = $(am_abe_keygen_OBJECTS)$/;"	m
+abe_keygen_SOURCES	tools/Makefile	/^abe_keygen_SOURCES = mgabe-keygen.c base64.c common.c$/;"	m
+abe_setup_DEPENDENCIES	tools/Makefile	/^abe_setup_DEPENDENCIES = ..\/libfenc.la$/;"	m
+abe_setup_LDADD	tools/Makefile	/^abe_setup_LDADD = $(LDADD)$/;"	m
+abe_setup_OBJECTS	tools/Makefile	/^abe_setup_OBJECTS = $(am_abe_setup_OBJECTS)$/;"	m
+abe_setup_SOURCES	tools/Makefile	/^abe_setup_SOURCES = mgabe-setup.c base64.c base64.h \\$/;"	m
+ABE_TOKEN	benchmark/common.h	/^#define ABE_TOKEN /;"	d
+ABE_TOKEN	tools/common.h	/^#define ABE_TOKEN /;"	d
+ABE_TOKEN_END	benchmark/common.h	/^#define ABE_TOKEN_END /;"	d
+ABE_TOKEN_END	tools/common.h	/^#define ABE_TOKEN_END /;"	d
+abe_update	tools/mgabe-update.c	/^Bool abe_update(FENC_SCHEME_TYPE scheme, char *public_params, char *inputfile, char *enc_file, char *ext, char *sfile)$/;"	f
+abe_update_DEPENDENCIES	tools/Makefile	/^abe_update_DEPENDENCIES = ..\/libfenc.la$/;"	m
+abe_update_LDADD	tools/Makefile	/^abe_update_LDADD = $(LDADD)$/;"	m
+abe_update_OBJECTS	tools/Makefile	/^abe_update_OBJECTS = $(am_abe_update_OBJECTS)$/;"	m
+abe_update_SOURCES	tools/Makefile	/^abe_update_SOURCES = mgabe-update.c base64.c base64.h \\$/;"	m
+ABI	benchmark/Makefile	/^ABI = $/;"	m
+ABI	Makefile	/^ABI = $/;"	m
+ABI	tools/Makefile	/^ABI = $/;"	m
+abs_builddir	benchmark/Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/benchmark$/;"	m
+abs_builddir	Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_builddir	tools/Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/tools$/;"	m
+abs_srcdir	benchmark/Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/benchmark$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_srcdir	tools/Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/tools$/;"	m
+abs_top_builddir	benchmark/Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_top_builddir	tools/Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_top_srcdir	benchmark/Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_top_srcdir	tools/Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+ACLOCAL	benchmark/Makefile	/^ACLOCAL = aclocal-1.14$/;"	m
+ACLOCAL	Makefile	/^ACLOCAL = aclocal-1.14$/;"	m
+ACLOCAL	tools/Makefile	/^ACLOCAL = aclocal-1.14$/;"	m
+ACLOCAL_AMFLAGS	Makefile	/^ACLOCAL_AMFLAGS = -I m4$/;"	m
+ACLOCAL_M4	benchmark/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	tools/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+actual_bits	abe_policy.tab.c	/^actual_bits( uint64_t value )$/;"	f
+ac_ct_CC	benchmark/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	tools/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_DUMPBIN	benchmark/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_DUMPBIN	Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_ct_DUMPBIN	tools/Makefile	/^ac_ct_DUMPBIN = $/;"	m
+ac_fn_c_check_func	configure	/^ac_fn_c_check_func ()$/;"	f
+ac_fn_c_check_func	tools/configure	/^ac_fn_c_check_func ()$/;"	f
+ac_fn_c_check_header_compile	configure	/^ac_fn_c_check_header_compile ()$/;"	f
+ac_fn_c_check_header_compile	tools/configure	/^ac_fn_c_check_header_compile ()$/;"	f
+ac_fn_c_check_header_mongrel	configure	/^ac_fn_c_check_header_mongrel ()$/;"	f
+ac_fn_c_check_header_mongrel	tools/configure	/^ac_fn_c_check_header_mongrel ()$/;"	f
+ac_fn_c_check_type	configure	/^ac_fn_c_check_type ()$/;"	f
+ac_fn_c_check_type	tools/configure	/^ac_fn_c_check_type ()$/;"	f
+ac_fn_c_find_uintX_t	configure	/^ac_fn_c_find_uintX_t ()$/;"	f
+ac_fn_c_try_compile	configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_compile	tools/configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_cpp	configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_c_try_cpp	tools/configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_c_try_link	configure	/^ac_fn_c_try_link ()$/;"	f
+ac_fn_c_try_link	tools/configure	/^ac_fn_c_try_link ()$/;"	f
+ac_fn_c_try_run	configure	/^ac_fn_c_try_run ()$/;"	f
+ac_fn_c_try_run	tools/configure	/^ac_fn_c_try_run ()$/;"	f
+AES_TOKEN	benchmark/common.h	/^#define AES_TOKEN /;"	d
+AES_TOKEN	tools/common.h	/^#define AES_TOKEN /;"	d
+AES_TOKEN_END	benchmark/common.h	/^#define AES_TOKEN_END /;"	d
+AES_TOKEN_END	tools/common.h	/^#define AES_TOKEN_END /;"	d
+alloca	abe_policy.tab.c	/^#    define alloca /;"	d	file:
+ALLOCA	benchmark/Makefile	/^ALLOCA = $/;"	m
+ALLOCA	Makefile	/^ALLOCA = $/;"	m
+ALLOCA	tools/Makefile	/^ALLOCA = $/;"	m
+alphaprimeprimeZ	libfenc_LSW.h	/^	element_t alphaprimeprimeZ;$/;"	m	struct:_fenc_secret_params_LSW
+alphaprimeZ	libfenc_LSW.h	/^	element_t alphaprimeZ;$/;"	m	struct:_fenc_secret_params_LSW
+alphaZ	libfenc_WatersCP.h	/^	element_t alphaZ;$/;"	m	struct:_fenc_secret_params_WatersCP
+alphaZ	libfenc_WatersSimpleCP.h	/^	element_t alphaZ;$/;"	m	struct:_fenc_secret_params_WatersSimpleCP
+AMTAR	benchmark/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	tools/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+am_abe_dec_OBJECTS	tools/Makefile	/^am_abe_dec_OBJECTS = mgabe-dec.$(OBJEXT) base64.$(OBJEXT) \\$/;"	m
+am_abe_enc_OBJECTS	tools/Makefile	/^am_abe_enc_OBJECTS = mgabe-enc.$(OBJEXT) base64.$(OBJEXT) \\$/;"	m
+am_abe_keygen_OBJECTS	tools/Makefile	/^am_abe_keygen_OBJECTS = mgabe-keygen.$(OBJEXT) base64.$(OBJEXT) \\$/;"	m
+am_abe_setup_OBJECTS	tools/Makefile	/^am_abe_setup_OBJECTS = mgabe-setup.$(OBJEXT) base64.$(OBJEXT) \\$/;"	m
+am_abe_update_OBJECTS	tools/Makefile	/^am_abe_update_OBJECTS = mgabe-update.$(OBJEXT) base64.$(OBJEXT) \\$/;"	m
+am_benchmark_OBJECTS	benchmark/Makefile	/^am_benchmark_OBJECTS = benchmark.$(OBJEXT) base64.$(OBJEXT) \\$/;"	m
+AM_CPPFLAGS	benchmark/Makefile	/^AM_CPPFLAGS = -I\/usr\/local\/include -I\/usr\/include -I..\/$/;"	m
+AM_CPPFLAGS	tools/Makefile	/^AM_CPPFLAGS = -I\/usr\/local\/include -I\/usr\/include -I..\/$/;"	m
+AM_DEFAULT_VERBOSITY	benchmark/Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_DEFAULT_VERBOSITY	tools/Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_LDFLAGS	benchmark/Makefile	/^AM_LDFLAGS = -lgmp -lpbc$/;"	m
+AM_LDFLAGS	tools/Makefile	/^AM_LDFLAGS = -lgmp -lpbc -lcrypto$/;"	m
+am_libfenc_la_OBJECTS	Makefile	/^am_libfenc_la_OBJECTS = libfenc.lo libfenc_LSW.lo libfenc_WatersCP.lo \\$/;"	m
+am_policy_test_OBJECTS	tools/Makefile	/^am_policy_test_OBJECTS = policy-tool.$(OBJEXT) common.$(OBJEXT)$/;"	m
+AM_RECURSIVE_TARGETS	benchmark/Makefile	/^AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \\$/;"	m
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \\$/;"	m
+AM_RECURSIVE_TARGETS	tools/Makefile	/^AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \\$/;"	m
+AM_V_at	benchmark/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_at	tools/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_CC	benchmark/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CC	Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CC	tools/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	benchmark/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_CCLD	Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_CCLD	tools/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	benchmark/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_GEN	tools/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_lt	benchmark/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AM_V_lt	Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AM_V_lt	tools/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AM_V_P	benchmark/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_P	tools/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+am__aclocal_m4_deps	benchmark/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m
+am__aclocal_m4_deps	tools/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/m4\/libtool.m4 \\$/;"	m
+am__base_list	Makefile	/^am__base_list = \\$/;"	m
+am__can_run_installinfo	benchmark/Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__can_run_installinfo	tools/Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	benchmark/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	tools/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	benchmark/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	tools/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
+am__define_uniq_tagged_files	benchmark/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__define_uniq_tagged_files	tools/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	benchmark/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__depfiles_maybe	tools/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__distuninstallcheck_listfiles	Makefile	/^am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \\$/;"	m
+am__include	benchmark/Makefile	/^am__include = include$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__include	tools/Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(libdir)" \\$/;"	m
+am__installdirs	tools/Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__install_max	Makefile	/^am__install_max = 40$/;"	m
+am__is_gnu_make	benchmark/Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__is_gnu_make	Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__is_gnu_make	tools/Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__leading_dot	benchmark/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	tools/Makefile	/^am__leading_dot = .$/;"	m
+am__make_dryrun	benchmark/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_dryrun	tools/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	benchmark/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	tools/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	benchmark/Makefile	/^am__make_running_with_option = \\$/;"	m
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
+am__make_running_with_option	tools/Makefile	/^am__make_running_with_option = \\$/;"	m
+am__mv	benchmark/Makefile	/^am__mv = mv -f$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__mv	tools/Makefile	/^am__mv = mv -f$/;"	m
+am__nobase_list	Makefile	/^am__nobase_list = $(am__nobase_strip_setup); \\$/;"	m
+am__nobase_strip	Makefile	/^am__nobase_strip = \\$/;"	m
+am__nobase_strip_setup	Makefile	/^am__nobase_strip_setup = \\$/;"	m
+am__post_remove_distdir	Makefile	/^am__post_remove_distdir = $(am__remove_distdir)$/;"	m
+am__quote	benchmark/Makefile	/^am__quote = $/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__quote	tools/Makefile	/^am__quote = $/;"	m
+am__recursive_targets	benchmark/Makefile	/^am__recursive_targets = \\$/;"	m
+am__recursive_targets	Makefile	/^am__recursive_targets = \\$/;"	m
+am__recursive_targets	tools/Makefile	/^am__recursive_targets = \\$/;"	m
+am__relativize	benchmark/Makefile	/^am__relativize = \\$/;"	m
+am__relativize	Makefile	/^am__relativize = \\$/;"	m
+am__relativize	tools/Makefile	/^am__relativize = \\$/;"	m
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m
+am__strip_dir	Makefile	/^am__strip_dir = f=`echo $$p | sed -e 's|^.*\/||'`;$/;"	m
+am__tagged_files	benchmark/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \\$/;"	m
+am__tagged_files	tools/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tar	benchmark/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	tools/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__uninstall_files_from_dir	Makefile	/^am__uninstall_files_from_dir = { \\$/;"	m
+am__uniquify_input	benchmark/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__uniquify_input	tools/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	benchmark/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	tools/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__vpath_adj	Makefile	/^am__vpath_adj = case $$p in \\$/;"	m
+am__vpath_adj_setup	Makefile	/^am__vpath_adj_setup = srcdirstrip=`echo "$(srcdir)" | sed 's|.|.|g'`;$/;"	m
+am__v_at_	benchmark/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_	tools/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	benchmark/Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_0	tools/Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	benchmark/Makefile	/^am__v_at_1 = $/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m
+am__v_at_1	tools/Makefile	/^am__v_at_1 = $/;"	m
+am__v_CCLD_	benchmark/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_	Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_	tools/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	benchmark/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_0	Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_0	tools/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	benchmark/Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CCLD_1	Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CCLD_1	tools/Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	benchmark/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_	Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_	tools/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	benchmark/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_0	Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_0	tools/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	benchmark/Makefile	/^am__v_CC_1 = $/;"	m
+am__v_CC_1	Makefile	/^am__v_CC_1 = $/;"	m
+am__v_CC_1	tools/Makefile	/^am__v_CC_1 = $/;"	m
+am__v_GEN_	benchmark/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_	tools/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	benchmark/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_0	tools/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	benchmark/Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_GEN_1	tools/Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_lt_	benchmark/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_	Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_	tools/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	benchmark/Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_0	Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_0	tools/Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_1	benchmark/Makefile	/^am__v_lt_1 = $/;"	m
+am__v_lt_1	Makefile	/^am__v_lt_1 = $/;"	m
+am__v_lt_1	tools/Makefile	/^am__v_lt_1 = $/;"	m
+am__v_P_	benchmark/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_	tools/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	benchmark/Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_0	tools/Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	benchmark/Makefile	/^am__v_P_1 = :$/;"	m
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m
+am__v_P_1	tools/Makefile	/^am__v_P_1 = :$/;"	m
+AND	abe_policy.tab.c	/^     AND = 261,$/;"	e	enum:yytokentype	file:
+apply_scheme	benchmark/benchmark.c	/^void apply_scheme(FENC_SCHEME_TYPE scheme, char *public_params, char *data, char *outfile) $/;"	f
+AR	benchmark/Makefile	/^AR = ar$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+AR	tools/Makefile	/^AR = ar$/;"	m
+arg_list	abe_policy.y	/^arg_list: policy                     { $$ = ptr_array_new();$/;"	l
+array_size	abe_policy.tab.c	/^	uint32 array_size;$/;"	m	struct:__anon2	file:
+AS	benchmark/Makefile	/^AS = as$/;"	m
+AS	Makefile	/^AS = as$/;"	m
+AS	tools/Makefile	/^AS = as$/;"	m
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	configure	/^  as_fn_append ()$/;"	f
+as_fn_append	tools/config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	tools/configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f
+as_fn_arith	tools/config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	tools/configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	config.status	/^as_fn_error ()$/;"	f
+as_fn_error	configure	/^as_fn_error ()$/;"	f
+as_fn_error	tools/config.status	/^as_fn_error ()$/;"	f
+as_fn_error	tools/configure	/^as_fn_error ()$/;"	f
+as_fn_executable_p	config.status	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	configure	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	tools/config.status	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	tools/configure	/^as_fn_executable_p ()$/;"	f
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f
+as_fn_exit	tools/config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	tools/configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_failure	tools/configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	tools/config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	tools/configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_failure	tools/configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_ret_success	tools/configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	tools/config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	tools/configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_success	tools/configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f
+as_fn_unset	tools/config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	tools/configure	/^as_fn_unset ()$/;"	f
+attribute	libfenc_ABE_common.h	/^	fenc_attribute					attribute;$/;"	m	struct:_fenc_attribute_subtree
+attribute	libfenc_ABE_common.h	/^	struct _fenc_attribute	*attribute;		\/* Array of fenc_attribute structures.	*\/$/;"	m	struct:_fenc_attribute_list	typeref:struct:_fenc_attribute_list::_fenc_attribute
+attribute	libfenc_LSSS.h	/^	fenc_attribute	*attribute;$/;"	m	struct:_fenc_lsss_coefficient
+attribute_hash	libfenc_ABE_common.h	/^	element_t		attribute_hash;						\/* Optional: attribute hashed to an element.	*\/$/;"	m	struct:_fenc_attribute
+attribute_list	libfenc_LSW.h	/^	fenc_attribute_list		attribute_list;$/;"	m	struct:_fenc_ciphertext_LSW
+attribute_list	libfenc_LSW.h	/^	fenc_attribute_list		attribute_list;$/;"	m	struct:_fenc_key_LSW
+attribute_list	libfenc_WatersCP.h	/^	fenc_attribute_list		attribute_list;$/;"	m	struct:_fenc_ciphertext_WatersCP
+attribute_list	libfenc_WatersCP.h	/^	fenc_attribute_list		attribute_list;$/;"	m	struct:_fenc_key_WatersCP
+attribute_list	libfenc_WatersSimpleCP.h	/^	fenc_attribute_list		attribute_list;$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+attribute_list	libfenc_WatersSimpleCP.h	/^	fenc_attribute_list		attribute_list;$/;"	m	struct:_fenc_key_WatersSimpleCP
+attribute_list_compute_hashes	libfenc_LSW.c	/^attribute_list_compute_hashes(fenc_attribute_list *attribute_list, pairing_t pairing) $/;"	f
+attribute_str	libfenc_ABE_common.h	/^	uint8			attribute_str[MAX_ATTRIBUTE_STR];	\/* Attribute as string.	*\/$/;"	m	struct:_fenc_attribute
+attribute_string	tools/mgabe-enc.c	/^char *attribute_string = NULL, *policy_string = NULL;$/;"	v
+attribute_string	tools/mgabe-keygen.c	/^char *policy_string = NULL, *attribute_string = NULL;$/;"	v
+attribute_string	tools/mgabe-update.c	/^char *attribute_string = NULL, *policy_string = NULL;$/;"	v
+attribute_tree_compute_hashes	libfenc_LSW.c	/^attribute_tree_compute_hashes(fenc_attribute_subtree *subtree, pairing_t pairing) $/;"	f
+AUTOCONF	benchmark/Makefile	/^AUTOCONF = autoconf$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = autoconf$/;"	m
+AUTOCONF	tools/Makefile	/^AUTOCONF = autoconf$/;"	m
+AUTOHEADER	benchmark/Makefile	/^AUTOHEADER = autoheader$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = autoheader$/;"	m
+AUTOHEADER	tools/Makefile	/^AUTOHEADER = autoheader$/;"	m
+AUTOMAKE	benchmark/Makefile	/^AUTOMAKE = automake-1.14$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = automake-1.14$/;"	m
+AUTOMAKE	tools/Makefile	/^AUTOMAKE = automake-1.14$/;"	m
+AWK	benchmark/Makefile	/^AWK = awk$/;"	m
+AWK	Makefile	/^AWK = awk$/;"	m
+AWK	tools/Makefile	/^AWK = awk$/;"	m
+aZ	libfenc_WatersCP.h	/^	element_t aZ;$/;"	m	struct:_fenc_secret_params_WatersCP
+aZ	libfenc_WatersSimpleCP.h	/^	element_t aZ;$/;"	m	struct:_fenc_secret_params_WatersSimpleCP
+base64DecodeLookup	benchmark/base64.c	/^static unsigned char base64DecodeLookup[256] =$/;"	v	file:
+base64DecodeLookup	tools/base64.c	/^static unsigned char base64DecodeLookup[256] =$/;"	v	file:
+base64EncodeLookup	benchmark/base64.c	/^static unsigned char base64EncodeLookup[65] =$/;"	v	file:
+base64EncodeLookup	tools/base64.c	/^static unsigned char base64EncodeLookup[65] =$/;"	v	file:
+BASE64_UNIT_SIZE	benchmark/base64.c	/^#define BASE64_UNIT_SIZE /;"	d	file:
+BASE64_UNIT_SIZE	tools/base64.c	/^#define BASE64_UNIT_SIZE /;"	d	file:
+benchmark_DEPENDENCIES	benchmark/Makefile	/^benchmark_DEPENDENCIES = ..\/libfenc.la$/;"	m
+benchmark_LDADD	benchmark/Makefile	/^benchmark_LDADD = $(LDADD)$/;"	m
+benchmark_OBJECTS	benchmark/Makefile	/^benchmark_OBJECTS = $(am_benchmark_OBJECTS)$/;"	m
+benchmark_SOURCES	benchmark/Makefile	/^benchmark_SOURCES = benchmark.c base64.c base64.h \\$/;"	m
+BINARY_UNIT_SIZE	benchmark/base64.c	/^#define BINARY_UNIT_SIZE /;"	d	file:
+BINARY_UNIT_SIZE	tools/base64.c	/^#define BINARY_UNIT_SIZE /;"	d	file:
+bindir	benchmark/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	tools/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bin_PROGRAMS	tools/Makefile	/^bin_PROGRAMS = abe-setup$(EXEEXT) abe-keygen$(EXEEXT) abe-enc$(EXEEXT) \\$/;"	m
+bits	abe_policy.tab.c	/^	int bits; \/* zero if this is a flexint *\/$/;"	m	struct:__anon1	file:
+BITS	libfenc_ABE_common.h	/^#define BITS /;"	d
+bit_marker	abe_policy.tab.c	/^bit_marker( char* base, char* tplate, int bit, char val )$/;"	f
+bit_marker_list	abe_policy.tab.c	/^bit_marker_list( int gt, char* attr, char* tplate, int bits, uint64_t value )$/;"	f
+Bool	libfenc.h	/^typedef int Bool;$/;"	t
+build	benchmark/Makefile	/^build = i386-apple-darwin14.0.0$/;"	m
+build	Makefile	/^build = i386-apple-darwin14.0.0$/;"	m
+build	tools/Makefile	/^build = i386-apple-darwin14.0.0$/;"	m
+builddir	benchmark/Makefile	/^builddir = .$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+builddir	tools/Makefile	/^builddir = .$/;"	m
+build_alias	benchmark/Makefile	/^build_alias = $/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_alias	tools/Makefile	/^build_alias = $/;"	m
+build_cpu	benchmark/Makefile	/^build_cpu = i386$/;"	m
+build_cpu	Makefile	/^build_cpu = i386$/;"	m
+build_cpu	tools/Makefile	/^build_cpu = i386$/;"	m
+build_os	benchmark/Makefile	/^build_os = darwin14.0.0$/;"	m
+build_os	Makefile	/^build_os = darwin14.0.0$/;"	m
+build_os	tools/Makefile	/^build_os = darwin14.0.0$/;"	m
+build_triplet	benchmark/Makefile	/^build_triplet = i386-apple-darwin14.0.0$/;"	m
+build_triplet	Makefile	/^build_triplet = i386-apple-darwin14.0.0$/;"	m
+build_triplet	tools/Makefile	/^build_triplet = i386-apple-darwin14.0.0$/;"	m
+build_vendor	benchmark/Makefile	/^build_vendor = apple$/;"	m
+build_vendor	Makefile	/^build_vendor = apple$/;"	m
+build_vendor	tools/Makefile	/^build_vendor = apple$/;"	m
+BYTES	tools/mgabe-enc.c	/^#define BYTES /;"	d	file:
+BYTES	tools/mgabe-update.c	/^#define BYTES /;"	d	file:
+bZ	libfenc_LSW.h	/^	element_t bZ;			$/;"	m	struct:_fenc_secret_params_LSW
+CC	benchmark/Makefile	/^CC = gcc$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CC	tools/Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	benchmark/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	tools/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	benchmark/Makefile	/^CCLD = $(CC)$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CCLD	tools/Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	benchmark/Makefile	/^CFLAGS = -Wall -W -Wfloat-equal -Wpointer-arith -Wcast-align -Wredundant-decls -Wendif-labels -Wshadow -pipe -ffast-math -U__STRICT_ANSI__ -g -O2 -DDEBUG$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -W -Wfloat-equal -Wpointer-arith -Wcast-align -Wredundant-decls -Wendif-labels -Wshadow -pipe -ffast-math -U__STRICT_ANSI__ -g -O2 -DDEBUG$/;"	m
+CFLAGS	tools/Makefile	/^CFLAGS = -Wall -W -Wfloat-equal -Wpointer-arith -Wcast-align -Wredundant-decls -Wendif-labels -Wshadow -pipe -ffast-math -U__STRICT_ANSI__ -g -O2 -DDEBUG$/;"	m
+CHECK_LIBRARY_STATE	libfenc.h	/^#define CHECK_LIBRARY_STATE	/;"	d
+CLEANFILES	benchmark/Makefile	/^CLEANFILES = *~$/;"	m
+CLEANFILES	Makefile	/^CLEANFILES = *~$/;"	m
+CLEANFILES	tools/Makefile	/^CLEANFILES = *~$/;"	m
+cmp_policy	abe_policy.tab.c	/^cmp_policy( sized_integer_t* n, int gt, char* attr )$/;"	f
+coefficient	libfenc_LSSS.h	/^	element_t		coefficient;$/;"	m	struct:_fenc_lsss_coefficient
+coefficients	libfenc_LSSS.h	/^	struct _fenc_lsss_coefficient	*coefficients;$/;"	m	struct:_fenc_lsss_coefficient_list	typeref:struct:_fenc_lsss_coefficient_list::_fenc_lsss_coefficient
+COMPILE	benchmark/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMPILE	tools/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+components	abe_policy.tab.c	/^	fenc_attribute_subtree** components;$/;"	m	struct:__anon2	file:
+Computed	sha1.h	/^    int Computed;               \/* Is the digest computed?          *\/$/;"	m	struct:SHA1Context
+compute_lagrange	libfenc_LSSS.c	/^compute_lagrange(uint32 k, uint32 subnode_index, fenc_attribute_subtree *subtree, element_t *result, $/;"	f
+CONE	libfenc_WatersCP.h	/^	element_t				CONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_WatersCP
+CONE	libfenc_WatersSimpleCP.h	/^	element_t				CONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+CONFIG_CLEAN_FILES	benchmark/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	tools/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	benchmark/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	tools/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	benchmark/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h$/;"	m
+CONFIG_HEADER	tools/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+construct_test_policy	benchmark/benchmark.c	/^fenc_attribute_policy *construct_test_policy()$/;"	f
+construct_test_policy1	benchmark/benchmark.c	/^fenc_attribute_policy *construct_test_policy1()$/;"	f
+construct_test_policy2	benchmark/benchmark.c	/^fenc_attribute_policy *construct_test_policy2()$/;"	f
+contains_public_params	libfenc.h	/^	Bool					contains_public_params;$/;"	m	struct:_fenc_context
+contains_secret_params	libfenc.h	/^	Bool					contains_secret_params;$/;"	m	struct:_fenc_context
+contains_share	libfenc_ABE_common.h	/^	Bool			contains_share;$/;"	m	struct:_fenc_attribute
+Corrupted	sha1.h	/^    int Corrupted;              \/* Is the message digest corruped?  *\/$/;"	m	struct:SHA1Context
+count_leaves	tools/policy-tool.c	/^int count_leaves(fenc_attribute_subtree *subtree)$/;"	f
+CPP	benchmark/Makefile	/^CPP = gcc -E$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPP	tools/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	benchmark/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	tools/Makefile	/^CPPFLAGS = $/;"	m
+CprimeONE	libfenc_WatersCP.h	/^	element_t				CprimeONE;$/;"	m	struct:_fenc_ciphertext_WatersCP
+CprimeTWO	libfenc_WatersSimpleCP.h	/^	element_t				CprimeTWO;$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+cp_abe_priv_keyfile	benchmark/benchmark.c	/^char *cp_abe_priv_keyfile = "private-cp.key";$/;"	v
+CR_LF_SIZE	benchmark/base64.c	/^#define CR_LF_SIZE /;"	d	file:
+CR_LF_SIZE	tools/base64.c	/^#define CR_LF_SIZE /;"	d	file:
+CSCOPE	Makefile	/^CSCOPE = cscope$/;"	m
+CT	libfenc_WatersCP.h	/^	element_t				CT;$/;"	m	struct:_fenc_ciphertext_WatersCP
+CT	libfenc_WatersSimpleCP.h	/^	element_t				CT;$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+CTAGS	benchmark/Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	tools/Makefile	/^CTAGS = ctags$/;"	m
+cur_string	abe_policy.tab.c	/^char* cur_string = 0;$/;"	v
+CYGPATH_W	benchmark/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	tools/Makefile	/^CYGPATH_W = echo$/;"	m
+D1ONE	libfenc_LSW.h	/^	element_t				D1ONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_LSW
+D2TWO	libfenc_LSW.h	/^	element_t				D2TWO[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_LSW
+D3ONE	libfenc_LSW.h	/^	element_t				D3ONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_LSW
+D4TWO	libfenc_LSW.h	/^	element_t				D4TWO[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_LSW
+D5TWO	libfenc_LSW.h	/^	element_t				D5TWO[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_LSW
+data	libfenc.h	/^	uint8*					data;$/;"	m	struct:_fenc_ciphertext
+data	libfenc.h	/^	uint8*					data;$/;"	m	struct:_fenc_plaintext
+datadir	benchmark/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	tools/Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	benchmark/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	tools/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+data_len	libfenc.h	/^	size_t					data_len;$/;"	m	struct:_fenc_ciphertext
+data_len	libfenc.h	/^	unsigned int			data_len;$/;"	m	struct:_fenc_plaintext
+debug	benchmark/common.h	/^#define debug(/;"	d
+debug	tools/common.h	/^#define debug(/;"	d
+debug	tools/mgabe-enc.c	/^#define debug$/;"	d	file:
+DEBUG	tools/mgabe-update.c	/^#define DEBUG$/;"	d	file:
+debug_e	benchmark/common.h	/^#define debug_e(/;"	d
+debug_e	tools/common.h	/^#define debug_e(/;"	d
+DEBUG_ELEMENT_PRINTF	libfenc.h	/^#define DEBUG_ELEMENT_PRINTF(/;"	d
+debug_print_attribute_list	libfenc_ABE_common.c	/^void debug_print_attribute_list(fenc_attribute_list *attribute_list)$/;"	f
+debug_print_policy	libfenc_ABE_common.c	/^void debug_print_policy(fenc_attribute_policy *policy)$/;"	f
+decode_plaintext_GT	libfenc_utils.c	/^decode_plaintext_GT(fenc_plaintext* plaintext, element_t *plaintextT, pairing_t pairing)$/;"	f
+decrypt	libfenc.h	/^	FENC_ERROR				(*decrypt)(struct _fenc_context *, fenc_ciphertext *, fenc_key *,$/;"	m	struct:_fenc_context
+DEFAULT_INCLUDES	benchmark/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I.$/;"	m
+DEFAULT_INCLUDES	tools/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_KEYFILE	tools/mgabe-keygen.c	/^#define DEFAULT_KEYFILE /;"	d	file:
+DEFS	benchmark/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	tools/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+depcomp	benchmark/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depcomp	tools/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+DEPDIR	benchmark/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	tools/Makefile	/^DEPDIR = .deps$/;"	m
+derive_session_key_from_element	libfenc_utils.c	/^derive_session_key_from_element(fenc_plaintext *plaintext, element_t element, size_t key_bytes, pairing_t pairing)$/;"	f
+destroy_context	libfenc.h	/^	FENC_ERROR				(*destroy_context)(struct _fenc_context*);$/;"	m	struct:_fenc_context
+destroy_global_params	libfenc.h	/^	FENC_ERROR				(*destroy_global_params)(fenc_global_params *);$/;"	m	struct:_fenc_context
+die	abe_policy.tab.c	/^die(char *fmt, ...)$/;"	f
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
+DISTFILES	benchmark/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	tools/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz$/;"	m
+DIST_COMMON	benchmark/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/Makefile.am \\$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/param INSTALL NEWS README AUTHORS ChangeLog \\$/;"	m
+DIST_COMMON	tools/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/Makefile.am \\$/;"	m
+DIST_SOURCES	benchmark/Makefile	/^DIST_SOURCES = $(benchmark_SOURCES)$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libfenc_la_SOURCES)$/;"	m
+DIST_SOURCES	tools/Makefile	/^DIST_SOURCES = $(abe_dec_SOURCES) $(abe_enc_SOURCES) \\$/;"	m
+DIST_SUBDIRS	benchmark/Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DIST_SUBDIRS	tools/Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DIST_TARGETS	Makefile	/^DIST_TARGETS = dist-gzip$/;"	m
+DLLTOOL	benchmark/Makefile	/^DLLTOOL = dlltool$/;"	m
+DLLTOOL	Makefile	/^DLLTOOL = dlltool$/;"	m
+DLLTOOL	tools/Makefile	/^DLLTOOL = dlltool$/;"	m
+docdir	benchmark/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	tools/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+DSYMUTIL	benchmark/Makefile	/^DSYMUTIL = dsymutil$/;"	m
+DSYMUTIL	Makefile	/^DSYMUTIL = dsymutil$/;"	m
+DSYMUTIL	tools/Makefile	/^DSYMUTIL = dsymutil$/;"	m
+DTWO	libfenc_WatersCP.h	/^	element_t				DTWO[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_WatersCP
+DUMPBIN	benchmark/Makefile	/^DUMPBIN = $/;"	m
+DUMPBIN	Makefile	/^DUMPBIN = $/;"	m
+DUMPBIN	tools/Makefile	/^DUMPBIN = $/;"	m
+dvidir	benchmark/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	tools/Makefile	/^dvidir = ${docdir}$/;"	m
+E1T	libfenc_LSW.h	/^	element_t				E1T;$/;"	m	struct:_fenc_ciphertext_LSW
+E2TWO	libfenc_LSW.h	/^	element_t				E2TWO;$/;"	m	struct:_fenc_ciphertext_LSW
+E3ONE	libfenc_LSW.h	/^	element_t				E3ONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_LSW
+E4ONE	libfenc_LSW.h	/^	element_t				E4ONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_LSW
+E5ONE	libfenc_LSW.h	/^	element_t				E5ONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_LSW
+ECHO_C	benchmark/Makefile	/^ECHO_C = \\c$/;"	m
+ECHO_C	Makefile	/^ECHO_C = \\c$/;"	m
+ECHO_C	tools/Makefile	/^ECHO_C = \\c$/;"	m
+ECHO_N	benchmark/Makefile	/^ECHO_N = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = $/;"	m
+ECHO_N	tools/Makefile	/^ECHO_N = $/;"	m
+ECHO_T	benchmark/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+ECHO_T	tools/Makefile	/^ECHO_T = $/;"	m
+eggalphaT	libfenc_LSW.h	/^	element_t eggalphaT;$/;"	m	struct:_fenc_public_params_LSW
+eggalphaT	libfenc_WatersCP.h	/^	element_t eggalphaT;$/;"	m	struct:_fenc_public_params_WatersCP
+eggalphaT	libfenc_WatersSimpleCP.h	/^	element_t eggalphaT;$/;"	m	struct:_fenc_public_params_WatersSimpleCP
+EGREP	benchmark/Makefile	/^EGREP = \/usr\/bin\/grep -E$/;"	m
+EGREP	Makefile	/^EGREP = \/usr\/bin\/grep -E$/;"	m
+EGREP	tools/Makefile	/^EGREP = \/usr\/bin\/grep -E$/;"	m
+encode_plaintext_GT	libfenc_utils.c	/^encode_plaintext_GT(fenc_plaintext* plaintext, element_t *plaintextT, pairing_t pairing)$/;"	f
+encrypt	libfenc.h	/^	FENC_ERROR				(*encrypt)(struct _fenc_context *, fenc_function_input *, fenc_plaintext *,$/;"	m	struct:_fenc_context
+encrypt_LSW_internal	libfenc_LSW.c	/^encrypt_LSW_internal(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+encrypt_WatersCP_internal	libfenc_WatersCP.c	/^encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+encrypt_WatersSimpleCP_internal	libfenc_WatersSimpleCP.c	/^encrypt_WatersSimpleCP_internal(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+eq_policy	abe_policy.tab.c	/^eq_policy( sized_integer_t* n, char* attr )$/;"	f
+ETAGS	benchmark/Makefile	/^ETAGS = etags$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+ETAGS	tools/Makefile	/^ETAGS = etags$/;"	m
+exec_prefix	benchmark/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	tools/Makefile	/^exec_prefix = ${prefix}$/;"	m
+EXEEXT	benchmark/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXEEXT	tools/Makefile	/^EXEEXT = $/;"	m
+expint	abe_policy.tab.c	/^expint( uint64_t value, uint64_t bits )$/;"	f
+export_components_to_buffer	libfenc_utils.c	/^export_components_to_buffer(uint8* buffer, size_t max_len, size_t *result_len, char* fmt, ...)$/;"	f
+export_global_params	libfenc.h	/^	FENC_ERROR				(*export_global_params)(struct _fenc_context *context, uint8 *buffer, size_t buf_len, size_t *result_len);$/;"	m	struct:_fenc_context
+EXPORT_INT32	libfenc_utils.h	/^#define EXPORT_INT32(/;"	d
+export_public_params	libfenc.h	/^	FENC_ERROR				(*export_public_params)(struct _fenc_context *context, uint8 *buffer, size_t buf_len, size_t *result_len);$/;"	m	struct:_fenc_context
+export_secret_key	libfenc.h	/^	FENC_ERROR				(*export_secret_key)(struct _fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len, size_t *result_len);$/;"	m	struct:_fenc_context
+export_secret_params	libfenc.h	/^	FENC_ERROR				(*export_secret_params)(struct _fenc_context *context, uint8 *buffer, size_t buf_len, size_t *result_len);$/;"	m	struct:_fenc_context
+extract_key	libfenc.h	/^	FENC_ERROR				(*extract_key)(struct _fenc_context *, fenc_function_input *, fenc_key *);	$/;"	m	struct:_fenc_context
+FALSE	benchmark/base64.h	/^#define FALSE /;"	d
+FALSE	libfenc.h	/^#define FALSE	/;"	d
+FALSE	tools/base64.h	/^#define FALSE /;"	d
+fenc_apply_N_function_to_attributes	libfenc_ABE_common.c	/^fenc_apply_N_function_to_attributes(fenc_attribute_list *result_list, fenc_attribute_list *input_list,$/;"	f
+fenc_attribute	libfenc_ABE_common.h	/^} fenc_attribute;$/;"	t	typeref:struct:_fenc_attribute
+fenc_attribute_clear	libfenc_ABE_common.c	/^fenc_attribute_clear(fenc_attribute *attribute)$/;"	f
+fenc_attribute_copy	libfenc_ABE_common.c	/^fenc_attribute_copy(fenc_attribute *attribute_DST, fenc_attribute *attribute_SRC, pairing_t pairing)$/;"	f
+fenc_attribute_list	libfenc_ABE_common.h	/^} fenc_attribute_list;$/;"	t	typeref:struct:_fenc_attribute_list
+fenc_attribute_list_clear	libfenc_ABE_common.c	/^fenc_attribute_list_clear(fenc_attribute_list *attribute_list)$/;"	f
+fenc_attribute_list_copy	libfenc_ABE_common.c	/^fenc_attribute_list_copy(fenc_attribute_list *attribute_list_DST, fenc_attribute_list *attribute_list_SRC, pairing_t pairing)$/;"	f
+fenc_attribute_list_initialize	libfenc_ABE_common.c	/^fenc_attribute_list_initialize(fenc_attribute_list *attribute_list, uint32 num_attributes)$/;"	f
+fenc_attribute_list_to_buffer	libfenc_ABE_common.c	/^fenc_attribute_list_to_buffer(fenc_attribute_list *attribute_list, uint8 *buffer, size_t buf_len, size_t *result_len)$/;"	f
+FENC_ATTRIBUTE_NODE_TYPE	libfenc_ABE_common.h	/^} FENC_ATTRIBUTE_NODE_TYPE;$/;"	t	typeref:enum:_FENC_ATTRIBUTE_NODE_TYPE
+fenc_attribute_policy	libfenc_ABE_common.h	/^} fenc_attribute_policy;$/;"	t	typeref:struct:_fenc_attribute_policy
+FENC_ATTRIBUTE_POLICY_NODE_AND	libfenc_ABE_common.h	/^	FENC_ATTRIBUTE_POLICY_NODE_AND,$/;"	e	enum:_FENC_ATTRIBUTE_NODE_TYPE
+FENC_ATTRIBUTE_POLICY_NODE_LEAF	libfenc_ABE_common.h	/^	FENC_ATTRIBUTE_POLICY_NODE_LEAF,$/;"	e	enum:_FENC_ATTRIBUTE_NODE_TYPE
+FENC_ATTRIBUTE_POLICY_NODE_NULL	libfenc_ABE_common.h	/^	FENC_ATTRIBUTE_POLICY_NODE_NULL = 0,$/;"	e	enum:_FENC_ATTRIBUTE_NODE_TYPE
+FENC_ATTRIBUTE_POLICY_NODE_OR	libfenc_ABE_common.h	/^	FENC_ATTRIBUTE_POLICY_NODE_OR,$/;"	e	enum:_FENC_ATTRIBUTE_NODE_TYPE
+FENC_ATTRIBUTE_POLICY_NODE_THRESHOLD	libfenc_ABE_common.h	/^	FENC_ATTRIBUTE_POLICY_NODE_THRESHOLD$/;"	e	enum:_FENC_ATTRIBUTE_NODE_TYPE
+fenc_attribute_policy_to_string	libfenc_ABE_common.c	/^fenc_attribute_policy_to_string(fenc_attribute_subtree *subtree, char *output_str, size_t buf_len)$/;"	f
+fenc_attribute_subtree	libfenc_ABE_common.h	/^} fenc_attribute_subtree;$/;"	t	typeref:struct:_fenc_attribute_subtree
+fenc_attribute_subtree_clear	libfenc_ABE_common.c	/^fenc_attribute_subtree_clear(fenc_attribute_subtree *subtree)$/;"	f
+fenc_buffer_to_attribute_list	libfenc_ABE_common.c	/^fenc_buffer_to_attribute_list(char **str_list, fenc_attribute_list *attribute_list)$/;"	f
+fenc_ciphertext	libfenc.h	/^} fenc_ciphertext;$/;"	t	typeref:struct:_fenc_ciphertext
+fenc_ciphertext_LSW	libfenc_LSW.h	/^} fenc_ciphertext_LSW;$/;"	t	typeref:struct:_fenc_ciphertext_LSW
+fenc_ciphertext_LSW_clear	libfenc_LSW.c	/^fenc_ciphertext_LSW_clear(fenc_ciphertext_LSW *ciphertext)$/;"	f
+fenc_ciphertext_LSW_initialize	libfenc_LSW.c	/^fenc_ciphertext_LSW_initialize(fenc_ciphertext_LSW *ciphertext, uint32 num_attributes, FENC_CIPHERTEXT_TYPE type,$/;"	f
+FENC_CIPHERTEXT_TYPE	libfenc.h	/^} FENC_CIPHERTEXT_TYPE;$/;"	t	typeref:enum:_FENC_CIPHERTEXT_TYPE
+FENC_CIPHERTEXT_TYPE_CPA	libfenc.h	/^	FENC_CIPHERTEXT_TYPE_CPA,$/;"	e	enum:_FENC_CIPHERTEXT_TYPE
+FENC_CIPHERTEXT_TYPE_KEM_CPA	libfenc.h	/^	FENC_CIPHERTEXT_TYPE_KEM_CPA$/;"	e	enum:_FENC_CIPHERTEXT_TYPE
+FENC_CIPHERTEXT_TYPE_UNDEFINED	libfenc.h	/^	FENC_CIPHERTEXT_TYPE_UNDEFINED,$/;"	e	enum:_FENC_CIPHERTEXT_TYPE
+fenc_ciphertext_WatersCP	libfenc_WatersCP.h	/^} fenc_ciphertext_WatersCP;$/;"	t	typeref:struct:_fenc_ciphertext_WatersCP
+fenc_ciphertext_WatersCP_clear	libfenc_WatersCP.c	/^fenc_ciphertext_WatersCP_clear(fenc_ciphertext_WatersCP *ciphertext)$/;"	f
+fenc_ciphertext_WatersCP_initialize	libfenc_WatersCP.c	/^fenc_ciphertext_WatersCP_initialize(fenc_ciphertext_WatersCP *ciphertext, fenc_attribute_list *attribute_list, fenc_attribute_policy* policy, FENC_CIPHERTEXT_TYPE type,$/;"	f
+fenc_ciphertext_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^} fenc_ciphertext_WatersSimpleCP;$/;"	t	typeref:struct:_fenc_ciphertext_WatersSimpleCP
+fenc_ciphertext_WatersSimpleCP_clear	libfenc_WatersSimpleCP.c	/^fenc_ciphertext_WatersSimpleCP_clear(fenc_ciphertext_WatersSimpleCP *ciphertext)$/;"	f
+fenc_ciphertext_WatersSimpleCP_initialize	libfenc_WatersSimpleCP.c	/^fenc_ciphertext_WatersSimpleCP_initialize(fenc_ciphertext_WatersSimpleCP *ciphertext, fenc_attribute_list *attribute_list, fenc_attribute_policy* policy, FENC_CIPHERTEXT_TYPE type,$/;"	f
+fenc_context	libfenc.h	/^} fenc_context;$/;"	t	typeref:struct:_fenc_context
+fenc_count_policy_leaves	libfenc_ABE_common.c	/^fenc_count_policy_leaves(fenc_attribute_subtree *subtree)$/;"	f
+fenc_create_func_input_for_attributes	libfenc_ABE_common.c	/^fenc_create_func_input_for_attributes(char *attributes, fenc_function_input *input)$/;"	f
+fenc_create_func_input_for_policy	libfenc_ABE_common.c	/^fenc_create_func_input_for_policy(char *policy, fenc_function_input *input)$/;"	f
+FENC_DEBUG	libfenc_WatersCP.c	/^#define FENC_DEBUG$/;"	d	file:
+fenc_decrypt_with_password	libfenc_utils.c	/^fenc_decrypt_with_password(uint8 *buffer, size_t data_len, size_t *result_len, uint8 *password, $/;"	f
+fenc_derive_key_from_element	libfenc_utils.c	/^fenc_derive_key_from_element(element_t element, size_t key_bytes, uint8 *key_buf)$/;"	f
+fenc_encrypt_with_password	libfenc_utils.c	/^fenc_encrypt_with_password(uint8 *buffer, size_t buf_max, size_t *data_len, uint8 *password, $/;"	f
+FENC_ERROR	libfenc.h	/^} FENC_ERROR;$/;"	t	typeref:enum:_FENC_ERROR
+FENC_ERROR_BUFFER_TOO_SMALL	libfenc.h	/^	FENC_ERROR_BUFFER_TOO_SMALL,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_CIPHERTEXT	libfenc.h	/^	FENC_ERROR_INVALID_CIPHERTEXT,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_CONTEXT	libfenc.h	/^	FENC_ERROR_INVALID_CONTEXT,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_GLOBAL_PARAMS	libfenc.h	/^	FENC_ERROR_INVALID_GLOBAL_PARAMS,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_GROUP_PARAMS	libfenc.h	/^	FENC_ERROR_INVALID_GROUP_PARAMS,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_INPUT	libfenc.h	/^	FENC_ERROR_INVALID_INPUT,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_KEY	libfenc.h	/^	FENC_ERROR_INVALID_KEY,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_INVALID_PLAINTEXT	libfenc.h	/^	FENC_ERROR_INVALID_PLAINTEXT,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_LIBRARY_NOT_INITIALIZED	libfenc.h	/^	FENC_ERROR_LIBRARY_NOT_INITIALIZED,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_NONE	libfenc.h	/^	FENC_ERROR_NONE = 0,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_NOT_IMPLEMENTED	libfenc.h	/^	FENC_ERROR_NOT_IMPLEMENTED,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_NO_PUBLIC_PARAMS	libfenc.h	/^	FENC_ERROR_NO_PUBLIC_PARAMS,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_NO_SECRET_PARAMS	libfenc.h	/^	FENC_ERROR_NO_SECRET_PARAMS,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_OUT_OF_MEMORY	libfenc.h	/^	FENC_ERROR_OUT_OF_MEMORY,$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_UNKNOWN	libfenc.h	/^	FENC_ERROR_UNKNOWN$/;"	e	enum:_FENC_ERROR
+FENC_ERROR_UNKNOWN_SCHEME	libfenc.h	/^	FENC_ERROR_UNKNOWN_SCHEME,$/;"	e	enum:_FENC_ERROR
+fenc_function_input	libfenc.h	/^} fenc_function_input;$/;"	t	typeref:struct:_fenc_function_input
+fenc_func_input_clear	libfenc_ABE_common.c	/^fenc_func_input_clear(fenc_function_input *input)$/;"	f
+fenc_get_policy_string	libfenc_ABE_common.c	/^fenc_get_policy_string(fenc_attribute_policy *policy)$/;"	f
+fenc_global_params	libfenc.h	/^} fenc_global_params;$/;"	t	typeref:struct:_fenc_global_params
+fenc_global_params_LSW	libfenc_LSW.h	/^} fenc_global_params_LSW;$/;"	t	typeref:struct:_fenc_global_params_LSW
+fenc_global_params_WatersCP	libfenc_WatersCP.h	/^} fenc_global_params_WatersCP;$/;"	t	typeref:struct:_fenc_global_params_WatersCP
+fenc_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^} fenc_global_params_WatersSimpleCP;$/;"	t	typeref:struct:_fenc_global_params_WatersSimpleCP
+fenc_group_params	libfenc_group_params.h	/^} fenc_group_params;$/;"	t	typeref:struct:_fenc_group_params
+FENC_INPUT_ATTRIBUTE_LIST	libfenc.h	/^	FENC_INPUT_ATTRIBUTE_LIST,$/;"	e	enum:_FENC_INPUT_TYPE
+FENC_INPUT_NM_ATTRIBUTE_POLICY	libfenc.h	/^	FENC_INPUT_NM_ATTRIBUTE_POLICY$/;"	e	enum:_FENC_INPUT_TYPE
+FENC_INPUT_NONE	libfenc.h	/^	FENC_INPUT_NONE = 0,$/;"	e	enum:_FENC_INPUT_TYPE
+FENC_INPUT_TYPE	libfenc.h	/^} FENC_INPUT_TYPE;$/;"	t	typeref:enum:_FENC_INPUT_TYPE
+fenc_key	libfenc.h	/^} fenc_key;$/;"	t	typeref:struct:_fenc_key
+fenc_key_LSW	libfenc_LSW.h	/^} fenc_key_LSW;$/;"	t	typeref:struct:_fenc_key_LSW
+fenc_key_LSW_initialize	libfenc_LSW.c	/^fenc_key_LSW_initialize(fenc_attribute_list *attribute_list, fenc_attribute_policy *policy, Bool copy_attr_list, $/;"	f
+fenc_key_WatersCP	libfenc_WatersCP.h	/^} fenc_key_WatersCP;$/;"	t	typeref:struct:_fenc_key_WatersCP
+fenc_key_WatersCP_clear	libfenc_WatersCP.c	/^fenc_key_WatersCP_clear(fenc_key_WatersCP *key_WatersCP)$/;"	f
+fenc_key_WatersCP_initialize	libfenc_WatersCP.c	/^fenc_key_WatersCP_initialize(fenc_attribute_list *attribute_list, Bool copy_attr_list, $/;"	f
+fenc_key_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^} fenc_key_WatersSimpleCP;$/;"	t	typeref:struct:_fenc_key_WatersSimpleCP
+fenc_key_WatersSimpleCP_clear	libfenc_WatersSimpleCP.c	/^fenc_key_WatersSimpleCP_clear(fenc_key_WatersSimpleCP *key_WatersSimpleCP)$/;"	f
+fenc_key_WatersSimpleCP_initialize	libfenc_WatersSimpleCP.c	/^fenc_key_WatersSimpleCP_initialize(fenc_attribute_list *attribute_list, Bool copy_attr_list, $/;"	f
+FENC_LDFLAGS	benchmark/Makefile	/^FENC_LDFLAGS = $/;"	m
+FENC_LDFLAGS	Makefile	/^FENC_LDFLAGS = $/;"	m
+FENC_LDFLAGS	tools/Makefile	/^FENC_LDFLAGS = $/;"	m
+FENC_LIBRARY_STATE	libfenc.h	/^} FENC_LIBRARY_STATE;$/;"	t	typeref:enum:_FENC_LIBRARY_STATE
+fenc_LSSS_calculate_coefficients_from_policy	libfenc_LSSS.c	/^fenc_LSSS_calculate_coefficients_from_policy(fenc_attribute_policy *policy, fenc_attribute_list *ciphertext_attributes, $/;"	f
+fenc_LSSS_calculate_shares_from_policy	libfenc_LSSS.c	/^fenc_LSSS_calculate_shares_from_policy(element_t *secret, fenc_attribute_policy *policy, fenc_attribute_list *attribute_list,$/;"	f
+fenc_lsss_coefficient	libfenc_LSSS.h	/^} fenc_lsss_coefficient;$/;"	t	typeref:struct:_fenc_lsss_coefficient
+fenc_lsss_coefficient_list	libfenc_LSSS.h	/^} fenc_lsss_coefficient_list;$/;"	t	typeref:struct:_fenc_lsss_coefficient_list
+fenc_plaintext	libfenc.h	/^} fenc_plaintext;$/;"	t	typeref:struct:_fenc_plaintext
+fenc_policy_compact	libfenc_ABE_common.c	/^fenc_policy_compact(fenc_attribute_subtree* subtree)$/;"	f
+fenc_policy_create_leaf	libfenc_ABE_common.c	/^fenc_policy_create_leaf(char *attribute_str)$/;"	f
+fenc_policy_create_node	libfenc_ABE_common.c	/^fenc_policy_create_node(FENC_ATTRIBUTE_NODE_TYPE node_type, uint32 num_subnodes, uint32 threshold_k, fenc_attribute_subtree **subnodes)$/;"	f
+fenc_policy_extend_array	libfenc_ABE_common.c	/^fenc_policy_extend_array(fenc_attribute_subtree **attributes, uint32 old_nodes, uint32 new_nodes)$/;"	f
+fenc_policy_from_string	libfenc_ABE_common.c	/^fenc_policy_from_string(fenc_attribute_policy *policy, char *policy_str)$/;"	f
+fenc_policy_merge_child	libfenc_ABE_common.c	/^fenc_policy_merge_child(fenc_attribute_subtree* subtree, uint32 child_num)$/;"	f
+fenc_public_params	libfenc.h	/^} fenc_public_params;$/;"	t	typeref:struct:_fenc_public_params
+fenc_public_params_LSW	libfenc_LSW.h	/^} fenc_public_params_LSW;$/;"	t	typeref:struct:_fenc_public_params_LSW
+fenc_public_params_WatersCP	libfenc_WatersCP.h	/^} fenc_public_params_WatersCP;$/;"	t	typeref:struct:_fenc_public_params_WatersCP
+fenc_public_params_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^} fenc_public_params_WatersSimpleCP;$/;"	t	typeref:struct:_fenc_public_params_WatersSimpleCP
+fenc_scheme_context_LSW	libfenc_LSW.h	/^} fenc_scheme_context_LSW;$/;"	t	typeref:struct:_fenc_scheme_context_LSW
+fenc_scheme_context_WatersCP	libfenc_WatersCP.h	/^} fenc_scheme_context_WatersCP;$/;"	t	typeref:struct:_fenc_scheme_context_WatersCP
+fenc_scheme_context_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^} fenc_scheme_context_WatersSimpleCP;$/;"	t	typeref:struct:_fenc_scheme_context_WatersSimpleCP
+FENC_SCHEME_LSW	libfenc.h	/^	FENC_SCHEME_LSW,$/;"	e	enum:_FENC_SCHEME_TYPE
+FENC_SCHEME_NONE	libfenc.h	/^	FENC_SCHEME_NONE = 0,$/;"	e	enum:_FENC_SCHEME_TYPE
+FENC_SCHEME_TYPE	libfenc.h	/^} FENC_SCHEME_TYPE;$/;"	t	typeref:enum:_FENC_SCHEME_TYPE
+FENC_SCHEME_WATERSCP	libfenc.h	/^	FENC_SCHEME_WATERSCP,$/;"	e	enum:_FENC_SCHEME_TYPE
+FENC_SCHEME_WATERSSIMPLECP	libfenc.h	/^	FENC_SCHEME_WATERSSIMPLECP$/;"	e	enum:_FENC_SCHEME_TYPE
+fenc_secret_params	libfenc.h	/^} fenc_secret_params;$/;"	t	typeref:struct:_fenc_secret_params
+fenc_secret_params_LSW	libfenc_LSW.h	/^} fenc_secret_params_LSW;$/;"	t	typeref:struct:_fenc_secret_params_LSW
+fenc_secret_params_WatersCP	libfenc_WatersCP.h	/^} fenc_secret_params_WatersCP;$/;"	t	typeref:struct:_fenc_secret_params_WatersCP
+fenc_secret_params_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^} fenc_secret_params_WatersSimpleCP;$/;"	t	typeref:struct:_fenc_secret_params_WatersSimpleCP
+FENC_STATE_MEMORY_ERROR	libfenc.h	/^	FENC_STATE_MEMORY_ERROR,$/;"	e	enum:_FENC_LIBRARY_STATE
+FENC_STATE_NOT_INITIALIZED	libfenc.h	/^	FENC_STATE_NOT_INITIALIZED$/;"	e	enum:_FENC_LIBRARY_STATE
+FENC_STATE_READY	libfenc.h	/^	FENC_STATE_READY = 0,$/;"	e	enum:_FENC_LIBRARY_STATE
+FGREP	benchmark/Makefile	/^FGREP = \/usr\/bin\/grep -F$/;"	m
+FGREP	Makefile	/^FGREP = \/usr\/bin\/grep -F$/;"	m
+FGREP	tools/Makefile	/^FGREP = \/usr\/bin\/grep -F$/;"	m
+final_policy	abe_policy.tab.c	/^fenc_attribute_subtree* final_policy = 0;$/;"	v
+flexint	abe_policy.tab.c	/^flexint( uint64_t value )$/;"	f
+flexint_leader	abe_policy.tab.c	/^flexint_leader( int gt, char* attr, uint64_t value )$/;"	f
+format_policy_postfix	abe_policy.tab.c	/^format_policy_postfix( fenc_attribute_subtree* p )$/;"	f
+func_append	config.status	/^func_append ()$/;"	f
+func_append	configure	/^func_append ()$/;"	f
+func_append	libtool	/^func_append ()$/;"	f
+func_arith	config.status	/^func_arith ()$/;"	f
+func_arith	configure	/^func_arith ()$/;"	f
+func_arith	libtool	/^func_arith ()$/;"	f
+func_basename	config.status	/^func_basename ()$/;"	f
+func_basename	configure	/^func_basename ()$/;"	f
+func_basename	libtool	/^func_basename ()$/;"	f
+func_check_version_match	libtool	/^func_check_version_match ()$/;"	f
+func_check_version_match	ltmain.sh	/^func_check_version_match ()$/;"	f
+func_cl_dashL	compile	/^func_cl_dashL ()$/;"	f
+func_cl_wrapper	compile	/^func_cl_wrapper ()$/;"	f
+func_config	libtool	/^func_config ()$/;"	f
+func_config	ltmain.sh	/^func_config ()$/;"	f
+func_dirname	config.status	/^func_dirname ()$/;"	f
+func_dirname	configure	/^func_dirname ()$/;"	f
+func_dirname	libtool	/^func_dirname ()$/;"	f
+func_dirname_and_basename	config.status	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	configure	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	libtool	/^func_dirname_and_basename ()$/;"	f
+func_dirname_and_basename	ltmain.sh	/^func_dirname_and_basename ()$/;"	f
+func_echo	libtool	/^func_echo ()$/;"	f
+func_echo	ltmain.sh	/^func_echo ()$/;"	f
+func_emit_cwrapperexe_src	libtool	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_cwrapperexe_src	ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_wrapper	libtool	/^func_emit_wrapper ()$/;"	f
+func_emit_wrapper	ltmain.sh	/^func_emit_wrapper ()$/;"	f
+func_emit_wrapper_part1	libtool	/^func_emit_wrapper_part1 ()$/;"	f
+func_emit_wrapper_part1	ltmain.sh	/^func_emit_wrapper_part1 ()$/;"	f
+func_emit_wrapper_part2	libtool	/^func_emit_wrapper_part2 ()$/;"	f
+func_emit_wrapper_part2	ltmain.sh	/^func_emit_wrapper_part2 ()$/;"	f
+func_enable_tag	libtool	/^func_enable_tag ()$/;"	f
+func_enable_tag	ltmain.sh	/^func_enable_tag ()$/;"	f
+func_error	libtool	/^func_error ()$/;"	f
+func_error	ltmain.sh	/^func_error ()$/;"	f
+func_execute_cmds	libtool	/^func_execute_cmds ()$/;"	f
+func_execute_cmds	ltmain.sh	/^func_execute_cmds ()$/;"	f
+func_extract_an_archive	libtool	/^func_extract_an_archive ()$/;"	f
+func_extract_an_archive	ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	libtool	/^func_extract_archives ()$/;"	f
+func_extract_archives	ltmain.sh	/^func_extract_archives ()$/;"	f
+func_fatal_configuration	libtool	/^func_fatal_configuration ()$/;"	f
+func_fatal_configuration	ltmain.sh	/^func_fatal_configuration ()$/;"	f
+func_fatal_error	libtool	/^func_fatal_error ()$/;"	f
+func_fatal_error	ltmain.sh	/^func_fatal_error ()$/;"	f
+func_fatal_help	libtool	/^func_fatal_help ()$/;"	f
+func_fatal_help	ltmain.sh	/^func_fatal_help ()$/;"	f
+func_features	libtool	/^func_features ()$/;"	f
+func_features	ltmain.sh	/^func_features ()$/;"	f
+func_file_conv	compile	/^func_file_conv ()$/;"	f
+func_generate_dlsyms	libtool	/^func_generate_dlsyms ()$/;"	f
+func_generate_dlsyms	ltmain.sh	/^func_generate_dlsyms ()$/;"	f
+func_grep	libtool	/^func_grep ()$/;"	f
+func_grep	ltmain.sh	/^func_grep ()$/;"	f
+func_help	libtool	/^func_help ()$/;"	f
+func_help	ltmain.sh	/^func_help ()$/;"	f
+func_infer_tag	libtool	/^func_infer_tag ()$/;"	f
+func_infer_tag	ltmain.sh	/^func_infer_tag ()$/;"	f
+func_lalib_p	libtool	/^func_lalib_p ()$/;"	f
+func_lalib_p	ltmain.sh	/^func_lalib_p ()$/;"	f
+func_lalib_unsafe_p	libtool	/^func_lalib_unsafe_p ()$/;"	f
+func_lalib_unsafe_p	ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
+func_len	config.status	/^func_len ()$/;"	f
+func_len	configure	/^func_len ()$/;"	f
+func_len	libtool	/^func_len ()$/;"	f
+func_lo2o	config.status	/^func_lo2o ()$/;"	f
+func_lo2o	configure	/^func_lo2o ()$/;"	f
+func_lo2o	libtool	/^func_lo2o ()$/;"	f
+func_ltwrapper_executable_p	libtool	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_executable_p	ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_p	libtool	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_p	ltmain.sh	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_scriptname	libtool	/^func_ltwrapper_scriptname ()$/;"	f
+func_ltwrapper_scriptname	ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
+func_ltwrapper_script_p	libtool	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_script_p	ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
+func_missing_arg	libtool	/^func_missing_arg ()$/;"	f
+func_missing_arg	ltmain.sh	/^func_missing_arg ()$/;"	f
+func_mkdir_p	libtool	/^func_mkdir_p ()$/;"	f
+func_mkdir_p	ltmain.sh	/^func_mkdir_p ()$/;"	f
+func_mktempdir	libtool	/^func_mktempdir ()$/;"	f
+func_mktempdir	ltmain.sh	/^func_mktempdir ()$/;"	f
+func_mode_compile	libtool	/^func_mode_compile ()$/;"	f
+func_mode_compile	ltmain.sh	/^func_mode_compile ()$/;"	f
+func_mode_execute	libtool	/^func_mode_execute ()$/;"	f
+func_mode_execute	ltmain.sh	/^func_mode_execute ()$/;"	f
+func_mode_finish	libtool	/^func_mode_finish ()$/;"	f
+func_mode_finish	ltmain.sh	/^func_mode_finish ()$/;"	f
+func_mode_help	libtool	/^func_mode_help ()$/;"	f
+func_mode_help	ltmain.sh	/^func_mode_help ()$/;"	f
+func_mode_install	libtool	/^func_mode_install ()$/;"	f
+func_mode_install	ltmain.sh	/^func_mode_install ()$/;"	f
+func_mode_link	libtool	/^func_mode_link ()$/;"	f
+func_mode_link	ltmain.sh	/^func_mode_link ()$/;"	f
+func_mode_uninstall	libtool	/^func_mode_uninstall ()$/;"	f
+func_mode_uninstall	ltmain.sh	/^func_mode_uninstall ()$/;"	f
+func_opt_split	config.status	/^func_opt_split ()$/;"	f
+func_opt_split	configure	/^func_opt_split ()$/;"	f
+func_opt_split	libtool	/^func_opt_split ()$/;"	f
+func_quote_for_eval	libtool	/^func_quote_for_eval ()$/;"	f
+func_quote_for_eval	ltmain.sh	/^func_quote_for_eval ()$/;"	f
+func_quote_for_expand	libtool	/^func_quote_for_expand ()$/;"	f
+func_quote_for_expand	ltmain.sh	/^func_quote_for_expand ()$/;"	f
+func_show_eval	libtool	/^func_show_eval ()$/;"	f
+func_show_eval	ltmain.sh	/^func_show_eval ()$/;"	f
+func_show_eval_locale	libtool	/^func_show_eval_locale ()$/;"	f
+func_show_eval_locale	ltmain.sh	/^func_show_eval_locale ()$/;"	f
+func_source	libtool	/^func_source ()$/;"	f
+func_source	ltmain.sh	/^func_source ()$/;"	f
+func_stripname	config.status	/^func_stripname ()$/;"	f
+func_stripname	configure	/^func_stripname ()$/;"	f
+func_stripname	libtool	/^func_stripname ()$/;"	f
+func_to_host_path	libtool	/^func_to_host_path ()$/;"	f
+func_to_host_path	ltmain.sh	/^func_to_host_path ()$/;"	f
+func_to_host_pathlist	libtool	/^func_to_host_pathlist ()$/;"	f
+func_to_host_pathlist	ltmain.sh	/^func_to_host_pathlist ()$/;"	f
+func_usage	libtool	/^func_usage ()$/;"	f
+func_usage	ltmain.sh	/^func_usage ()$/;"	f
+func_verbose	libtool	/^func_verbose ()$/;"	f
+func_verbose	ltmain.sh	/^func_verbose ()$/;"	f
+func_version	libtool	/^func_version ()$/;"	f
+func_version	ltmain.sh	/^func_version ()$/;"	f
+func_warning	libtool	/^func_warning ()$/;"	f
+func_warning	ltmain.sh	/^func_warning ()$/;"	f
+func_win32_libid	libtool	/^func_win32_libid ()$/;"	f
+func_win32_libid	ltmain.sh	/^func_win32_libid ()$/;"	f
+func_write_libtool_object	libtool	/^func_write_libtool_object ()$/;"	f
+func_write_libtool_object	ltmain.sh	/^func_write_libtool_object ()$/;"	f
+func_xform	config.status	/^func_xform ()$/;"	f
+func_xform	configure	/^func_xform ()$/;"	f
+func_xform	libtool	/^func_xform ()$/;"	f
+gaONE	libfenc_WatersCP.h	/^	element_t gaONE;$/;"	m	struct:_fenc_public_params_WatersCP
+gaONE	libfenc_WatersSimpleCP.h	/^	element_t gaONE;$/;"	m	struct:_fenc_public_params_WatersSimpleCP
+gaTWO	libfenc_WatersCP.h	/^	element_t gaTWO;$/;"	m	struct:_fenc_public_params_WatersCP
+gaTWO	libfenc_WatersSimpleCP.h	/^	element_t gaTWO;$/;"	m	struct:_fenc_public_params_WatersSimpleCP
+gb2ONE	libfenc_LSW.h	/^	element_t gb2ONE;$/;"	m	struct:_fenc_public_params_LSW
+gbONE	libfenc_LSW.h	/^	element_t gbONE;$/;"	m	struct:_fenc_public_params_LSW
+generate_global_params	libfenc.h	/^	FENC_ERROR				(*generate_global_params)(fenc_global_params*, struct _fenc_group_params*);$/;"	m	struct:_fenc_context
+generate_keys	tools/mgabe-keygen.c	/^void generate_keys(char *outfile, FENC_SCHEME_TYPE scheme, char *secret_params, char *public_params)$/;"	f
+gen_abe_scheme_params	tools/mgabe-setup.c	/^void gen_abe_scheme_params(FENC_SCHEME_TYPE scheme, char *secret_params, char *public_params) {$/;"	f
+gen_params	libfenc.h	/^	FENC_ERROR				(*gen_params)(struct _fenc_context*, fenc_global_params*);$/;"	m	struct:_fenc_context
+GEQ	abe_policy.tab.c	/^     GEQ = 264$/;"	e	enum:yytokentype	file:
+get_key	benchmark/benchmark.c	/^int get_key(char *keyfile, fenc_context *context, fenc_key *secret_key)$/;"	f
+ge_policy	abe_policy.tab.c	/^ge_policy( sized_integer_t* n, char* attr )$/;"	f
+global_error_file	libfenc.c	/^FILE			*global_error_file = NULL;$/;"	v
+global_params	libfenc_LSW.h	/^	fenc_global_params_LSW	*global_params;$/;"	m	struct:_fenc_scheme_context_LSW
+global_params	libfenc_WatersCP.h	/^	fenc_global_params_WatersCP	*global_params;$/;"	m	struct:_fenc_scheme_context_WatersCP
+global_params	libfenc_WatersSimpleCP.h	/^	fenc_global_params_WatersSimpleCP	*global_params;$/;"	m	struct:_fenc_scheme_context_WatersSimpleCP
+gONE	libfenc_LSW.h	/^	element_t gONE;$/;"	m	struct:_fenc_public_params_LSW
+gONE	libfenc_WatersCP.h	/^	element_t gONE;$/;"	m	struct:_fenc_public_params_WatersCP
+gONE	libfenc_WatersSimpleCP.h	/^	element_t gONE;$/;"	m	struct:_fenc_public_params_WatersSimpleCP
+GREP	benchmark/Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
+GREP	Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
+GREP	tools/Makefile	/^GREP = \/usr\/bin\/grep$/;"	m
+group_params	libfenc.h	/^	struct _fenc_group_params	*group_params;$/;"	m	struct:_fenc_global_params	typeref:struct:_fenc_global_params::_fenc_group_params
+group_params	libfenc_LSW.h	/^	fenc_group_params	group_params;$/;"	m	struct:_fenc_global_params_LSW
+group_params	libfenc_WatersCP.h	/^	fenc_group_params	group_params;$/;"	m	struct:_fenc_global_params_WatersCP
+group_params	libfenc_WatersSimpleCP.h	/^	fenc_group_params	group_params;$/;"	m	struct:_fenc_global_params_WatersSimpleCP
+gTWO	libfenc_LSW.h	/^	element_t gTWO;$/;"	m	struct:_fenc_public_params_LSW
+gTWO	libfenc_WatersCP.h	/^	element_t gTWO;$/;"	m	struct:_fenc_public_params_WatersCP
+gTWO	libfenc_WatersSimpleCP.h	/^	element_t gTWO;$/;"	m	struct:_fenc_public_params_WatersSimpleCP
+gt_policy	abe_policy.tab.c	/^gt_policy( sized_integer_t* n, char* attr )$/;"	f
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m
+hash1_attribute_string_to_Zr	libfenc_LSW.c	/^hash1_attribute_string_to_Zr(uint8 *attribute_str, element_t *hashed_attr)$/;"	f
+hash2_attribute_element_to_G1	libfenc_LSW.c	/^hash2_attribute_element_to_G1(element_t *attribute_elt, element_t *hashed_attr)$/;"	f
+hash2_attribute_string_to_G1	libfenc_LSW.c	/^hash2_attribute_string_to_G1(uint8 *attribute_str, element_t *hashed_attr, element_t *temp_elt)$/;"	f
+hash_attribute	libfenc_LSW.c	/^hash_attribute(fenc_attribute *attribute, pairing_t pairing)$/;"	f
+hash_attribute_string_to_Zr	libfenc_ABE_common.c	/^hash_attribute_string_to_Zr(fenc_attribute *attribute, pairing_t pairing)$/;"	f
+hash_element_to_bytes	libfenc_utils.c	/^hash_element_to_bytes(element_t *element, int hash_size, unsigned char* output_buf, uint32 hash_num)$/;"	f
+HASH_FUNCTION_KEM_DERIVE	libfenc_utils.h	/^#define HASH_FUNCTION_KEM_DERIVE	/;"	d
+HASH_FUNCTION_STR_TO_Zr_CRH	libfenc_utils.h	/^#define HASH_FUNCTION_STR_TO_Zr_CRH	/;"	d
+HASH_FUNCTION_Zr_TO_G1_ROM	libfenc_utils.h	/^#define HASH_FUNCTION_Zr_TO_G1_ROM	/;"	d
+HASH_TARGET_LEN	libfenc_utils.h	/^#define HASH_TARGET_LEN	/;"	d
+hash_to_bytes	libfenc_utils.c	/^hash_to_bytes(uint8 *input_buf, int input_len, int hash_size, unsigned char* output_buf, uint32 hash_num)$/;"	f
+HAVE_ALLOCA	config.h	/^#define HAVE_ALLOCA /;"	d
+HAVE_ALLOCA_H	config.h	/^#define HAVE_ALLOCA_H /;"	d
+HAVE_DLFCN_H	config.h	/^#define HAVE_DLFCN_H /;"	d
+HAVE_INTTYPES_H	config.h	/^#define HAVE_INTTYPES_H /;"	d
+HAVE_INTTYPES_H	tools/config.h	/^#define HAVE_INTTYPES_H /;"	d
+HAVE_LIBCRYPTO	config.h	/^#define HAVE_LIBCRYPTO /;"	d
+HAVE_LIBCRYPTO	tools/config.h	/^#define HAVE_LIBCRYPTO /;"	d
+HAVE_LIBGMP	config.h	/^#define HAVE_LIBGMP /;"	d
+HAVE_LIBGMP	tools/config.h	/^#define HAVE_LIBGMP /;"	d
+HAVE_LIBM	config.h	/^#define HAVE_LIBM /;"	d
+HAVE_LIBPBC	config.h	/^#define HAVE_LIBPBC /;"	d
+HAVE_LIBPBC	tools/config.h	/^#define HAVE_LIBPBC /;"	d
+HAVE_MALLOC	config.h	/^#define HAVE_MALLOC /;"	d
+HAVE_MALLOC	tools/config.h	/^#define HAVE_MALLOC /;"	d
+HAVE_MEMORY_H	config.h	/^#define HAVE_MEMORY_H /;"	d
+HAVE_MEMORY_H	tools/config.h	/^#define HAVE_MEMORY_H /;"	d
+HAVE_MEMSET	config.h	/^#define HAVE_MEMSET /;"	d
+HAVE_MEMSET	tools/config.h	/^#define HAVE_MEMSET /;"	d
+HAVE_POW	tools/config.h	/^#define HAVE_POW /;"	d
+HAVE_REALLOC	config.h	/^#define HAVE_REALLOC /;"	d
+HAVE_STDDEF_H	config.h	/^#define HAVE_STDDEF_H /;"	d
+HAVE_STDINT_H	config.h	/^#define HAVE_STDINT_H /;"	d
+HAVE_STDINT_H	tools/config.h	/^#define HAVE_STDINT_H /;"	d
+HAVE_STDLIB_H	config.h	/^#define HAVE_STDLIB_H /;"	d
+HAVE_STDLIB_H	tools/config.h	/^#define HAVE_STDLIB_H /;"	d
+HAVE_STRCHR	config.h	/^#define HAVE_STRCHR /;"	d
+HAVE_STRDUP	config.h	/^#define HAVE_STRDUP /;"	d
+HAVE_STRDUP	tools/config.h	/^#define HAVE_STRDUP /;"	d
+HAVE_STRINGS_H	config.h	/^#define HAVE_STRINGS_H /;"	d
+HAVE_STRINGS_H	tools/config.h	/^#define HAVE_STRINGS_H /;"	d
+HAVE_STRING_H	config.h	/^#define HAVE_STRING_H /;"	d
+HAVE_STRING_H	tools/config.h	/^#define HAVE_STRING_H /;"	d
+HAVE_SYS_STAT_H	config.h	/^#define HAVE_SYS_STAT_H /;"	d
+HAVE_SYS_STAT_H	tools/config.h	/^#define HAVE_SYS_STAT_H /;"	d
+HAVE_SYS_TYPES_H	config.h	/^#define HAVE_SYS_TYPES_H /;"	d
+HAVE_SYS_TYPES_H	tools/config.h	/^#define HAVE_SYS_TYPES_H /;"	d
+HAVE_UNISTD_H	config.h	/^#define HAVE_UNISTD_H /;"	d
+HAVE_UNISTD_H	tools/config.h	/^#define HAVE_UNISTD_H /;"	d
+hbONE	libfenc_LSW.h	/^	element_t hbONE;$/;"	m	struct:_fenc_public_params_LSW
+HEADERS	Makefile	/^HEADERS = $(library_include_HEADERS)$/;"	m
+hONE	libfenc_LSW.h	/^	element_t hONE;$/;"	m	struct:_fenc_secret_params_LSW
+host	benchmark/Makefile	/^host = i386-apple-darwin14.0.0$/;"	m
+host	Makefile	/^host = i386-apple-darwin14.0.0$/;"	m
+host	tools/Makefile	/^host = i386-apple-darwin14.0.0$/;"	m
+host_alias	benchmark/Makefile	/^host_alias = $/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_alias	tools/Makefile	/^host_alias = $/;"	m
+host_cpu	benchmark/Makefile	/^host_cpu = i386$/;"	m
+host_cpu	Makefile	/^host_cpu = i386$/;"	m
+host_cpu	tools/Makefile	/^host_cpu = i386$/;"	m
+host_os	benchmark/Makefile	/^host_os = darwin14.0.0$/;"	m
+host_os	Makefile	/^host_os = darwin14.0.0$/;"	m
+host_os	tools/Makefile	/^host_os = darwin14.0.0$/;"	m
+host_triplet	benchmark/Makefile	/^host_triplet = i386-apple-darwin14.0.0$/;"	m
+host_triplet	Makefile	/^host_triplet = i386-apple-darwin14.0.0$/;"	m
+host_triplet	tools/Makefile	/^host_triplet = i386-apple-darwin14.0.0$/;"	m
+host_vendor	benchmark/Makefile	/^host_vendor = apple$/;"	m
+host_vendor	Makefile	/^host_vendor = apple$/;"	m
+host_vendor	tools/Makefile	/^host_vendor = apple$/;"	m
+htmldir	benchmark/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	tools/Makefile	/^htmldir = ${docdir}$/;"	m
+hTWO	libfenc_LSW.h	/^	element_t hTWO;$/;"	m	struct:_fenc_secret_params_LSW
+import_components_from_buffer	libfenc_utils.c	/^import_components_from_buffer(uint8* buffer, size_t buf_len, size_t *imported_len, char* fmt, ...)$/;"	f
+import_global_params	libfenc.h	/^	FENC_ERROR				(*import_global_params)(struct _fenc_context *context, uint8 *buffer, size_t buf_len);$/;"	m	struct:_fenc_context
+IMPORT_INT32	libfenc_utils.h	/^#define IMPORT_INT32(/;"	d
+import_public_params	libfenc.h	/^	FENC_ERROR				(*import_public_params)(struct _fenc_context *context, uint8 *buffer, size_t buf_len, struct _fenc_global_params *group_params);$/;"	m	struct:_fenc_context
+import_secret_key	libfenc.h	/^	FENC_ERROR				(*import_secret_key)(struct _fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len);$/;"	m	struct:_fenc_context
+import_secret_params	libfenc.h	/^	FENC_ERROR				(*import_secret_params)(struct _fenc_context *context, uint8 *buffer, size_t buf_len);$/;"	m	struct:_fenc_context
+includedir	benchmark/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	tools/Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	benchmark/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	tools/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+initialized	libfenc_group_params.h	/^	Bool			initialized;$/;"	m	struct:_fenc_group_params
+initialize_global_params_LSW	libfenc_LSW.c	/^initialize_global_params_LSW(fenc_group_params *group_params, fenc_global_params_LSW *global_params)$/;"	f
+initialize_global_params_WatersCP	libfenc_WatersCP.c	/^initialize_global_params_WatersCP(fenc_group_params *group_params, fenc_global_params_WatersCP *global_params)$/;"	f
+initialize_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^initialize_global_params_WatersSimpleCP(fenc_group_params *group_params, fenc_global_params_WatersSimpleCP *global_params)$/;"	f
+INPUT_LINE_LENGTH	benchmark/base64.c	/^#define INPUT_LINE_LENGTH /;"	d	file:
+INPUT_LINE_LENGTH	tools/base64.c	/^#define INPUT_LINE_LENGTH /;"	d	file:
+input_type	libfenc.h	/^	FENC_INPUT_TYPE			input_type;$/;"	m	struct:_fenc_function_input
+INSTALL	benchmark/Makefile	/^INSTALL = \/usr\/local\/bin\/ginstall -c$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/local\/bin\/ginstall -c$/;"	m
+INSTALL	tools/Makefile	/^INSTALL = \/usr\/local\/bin\/ginstall -c$/;"	m
+INSTALL_DATA	benchmark/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	tools/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	benchmark/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	tools/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	benchmark/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	tools/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	benchmark/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	tools/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+install_sh	benchmark/Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/install-sh$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/install-sh$/;"	m
+install_sh	tools/Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/install-sh$/;"	m
+install_sh_DATA	benchmark/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	tools/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	benchmark/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	tools/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	benchmark/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	tools/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+INSTALL_STRIP_PROGRAM	benchmark/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	tools/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+int16	libfenc.h	/^typedef short int16;$/;"	t
+int32	libfenc.h	/^typedef int	int32;$/;"	t
+int8	libfenc.h	/^typedef char int8;$/;"	t
+INTLIT	abe_policy.tab.c	/^     INTLIT = 259,$/;"	e	enum:yytokentype	file:
+is_hashed	libfenc_ABE_common.h	/^	Bool			is_hashed;$/;"	m	struct:_fenc_attribute
+is_negated	libfenc_ABE_common.h	/^	Bool							is_negated;$/;"	m	struct:_fenc_attribute_subtree
+is_negated	libfenc_ABE_common.h	/^	Bool			is_negated;$/;"	m	struct:_fenc_attribute
+is_set	libfenc_LSSS.h	/^	Bool			is_set;$/;"	m	struct:_fenc_lsss_coefficient
+IV_TOKEN	benchmark/common.h	/^#define IV_TOKEN /;"	d
+IV_TOKEN	tools/common.h	/^#define IV_TOKEN /;"	d
+IV_TOKEN_END	benchmark/common.h	/^#define IV_TOKEN_END /;"	d
+IV_TOKEN_END	tools/common.h	/^#define IV_TOKEN_END /;"	d
+kem_encrypt	libfenc.h	/^	FENC_ERROR				(*kem_encrypt)(struct _fenc_context *, fenc_function_input *, size_t, uint8 *,$/;"	m	struct:_fenc_context
+kem_encrypt_update	libfenc.h	/^    FENC_ERROR				(*kem_encrypt_update)(struct _fenc_context *, fenc_function_input *, size_t, uint8 *,$/;"	m	struct:_fenc_context
+kem_key_len	libfenc_LSW.h	/^	size_t					kem_key_len;$/;"	m	struct:_fenc_ciphertext_LSW
+kem_key_len	libfenc_WatersCP.h	/^	size_t					kem_key_len;$/;"	m	struct:_fenc_ciphertext_WatersCP
+kem_key_len	libfenc_WatersSimpleCP.h	/^	size_t					kem_key_len;$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+KEYSIZE_MAX	benchmark/common.h	/^#define KEYSIZE_MAX /;"	d
+KEYSIZE_MAX	tools/common.h	/^#define KEYSIZE_MAX /;"	d
+key_LSW_clear	libfenc_LSW.c	/^key_LSW_clear(fenc_key_LSW *key_LSW)$/;"	f
+kof2_policy	abe_policy.tab.c	/^kof2_policy( int k, fenc_attribute_subtree* l, fenc_attribute_subtree* r )$/;"	f
+kof_policy	abe_policy.tab.c	/^kof_policy( int m, ptr_array_t* list )$/;"	f
+KONE	libfenc_WatersSimpleCP.h	/^	element_t				KONE;$/;"	m	struct:_fenc_key_WatersSimpleCP
+kp_abe_priv_keyfile	benchmark/benchmark.c	/^char *kp_abe_priv_keyfile = "private-kp.key";$/;"	v
+KTWO	libfenc_WatersCP.h	/^	element_t				KTWO;$/;"	m	struct:_fenc_key_WatersCP
+KXONE	libfenc_WatersCP.h	/^	element_t				KXONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_WatersCP
+KXONE	libfenc_WatersSimpleCP.h	/^	element_t				KXONE[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_key_WatersSimpleCP
+LD	benchmark/Makefile	/^LD = \/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/ld$/;"	m
+LD	Makefile	/^LD = \/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/ld$/;"	m
+LD	tools/Makefile	/^LD = \/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/bin\/ld$/;"	m
+LDADD	benchmark/Makefile	/^LDADD = ..\/libfenc.la$/;"	m
+LDADD	tools/Makefile	/^LDADD = ..\/libfenc.la$/;"	m
+LDFLAGS	benchmark/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	tools/Makefile	/^LDFLAGS = $/;"	m
+leaf_policy	abe_policy.tab.c	/^leaf_policy( char* attr )$/;"	f
+Length_High	sha1.h	/^    unsigned Length_High;       \/* Message length in bits           *\/$/;"	m	struct:SHA1Context
+Length_Low	sha1.h	/^    unsigned Length_Low;        \/* Message length in bits           *\/$/;"	m	struct:SHA1Context
+LEQ	abe_policy.tab.c	/^     LEQ = 263,$/;"	e	enum:yytokentype	file:
+LEX	benchmark/Makefile	/^LEX = flex$/;"	m
+LEX	Makefile	/^LEX = flex$/;"	m
+LEX	tools/Makefile	/^LEX = flex$/;"	m
+LEXLIB	benchmark/Makefile	/^LEXLIB = -ll$/;"	m
+LEXLIB	Makefile	/^LEXLIB = -ll$/;"	m
+LEXLIB	tools/Makefile	/^LEXLIB = -ll$/;"	m
+LEX_OUTPUT_ROOT	benchmark/Makefile	/^LEX_OUTPUT_ROOT = lex.yy$/;"	m
+LEX_OUTPUT_ROOT	Makefile	/^LEX_OUTPUT_ROOT = lex.yy$/;"	m
+LEX_OUTPUT_ROOT	tools/Makefile	/^LEX_OUTPUT_ROOT = lex.yy$/;"	m
+le_policy	abe_policy.tab.c	/^le_policy( sized_integer_t* n, char* attr )$/;"	f
+libdir	benchmark/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	tools/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	benchmark/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	tools/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libfenc_ciphertext_clear	libfenc.c	/^libfenc_ciphertext_clear(fenc_ciphertext *ciphertext)$/;"	f
+libfenc_ciphertext_initialize	libfenc.c	/^libfenc_ciphertext_initialize(fenc_ciphertext *ciphertext, unsigned int data_len, FENC_SCHEME_TYPE scheme_type)$/;"	f
+libfenc_copy_group_params	libfenc_group_params.c	/^libfenc_copy_group_params(fenc_group_params *src_group_params, $/;"	f
+libfenc_create_attribute_list_from_strings	libfenc_ABE_common.c	/^libfenc_create_attribute_list_from_strings(fenc_function_input *input, char **attributes, uint32 num_attributes)$/;"	f
+libfenc_create_context	libfenc.c	/^libfenc_create_context(fenc_context *context, FENC_SCHEME_TYPE scheme_type)$/;"	f
+libfenc_create_context_LSW	libfenc_LSW.c	/^libfenc_create_context_LSW(fenc_context *context)$/;"	f
+libfenc_create_context_WatersCP	libfenc_WatersCP.c	/^libfenc_create_context_WatersCP(fenc_context *context)$/;"	f
+libfenc_create_context_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_create_context_WatersSimpleCP(fenc_context *context)$/;"	f
+libfenc_decrypt	libfenc.c	/^FENC_ERROR	libfenc_decrypt(fenc_context *context, fenc_ciphertext *ciphertext, fenc_key *key,$/;"	f
+libfenc_decrypt_LSW	libfenc_LSW.c	/^libfenc_decrypt_LSW(fenc_context *context, fenc_ciphertext *ciphertext, fenc_key *key,$/;"	f
+libfenc_decrypt_WatersCP	libfenc_WatersCP.c	/^libfenc_decrypt_WatersCP(fenc_context *context, fenc_ciphertext *ciphertext, fenc_key *key,$/;"	f
+libfenc_decrypt_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_decrypt_WatersSimpleCP(fenc_context *context, fenc_ciphertext *ciphertext, fenc_key *key,$/;"	f
+libfenc_deserialize_ciphertext_LSW	libfenc_LSW.c	/^libfenc_deserialize_ciphertext_LSW(unsigned char *buffer, size_t buf_len, fenc_ciphertext_LSW *ciphertext, fenc_scheme_context_LSW *scheme_context)$/;"	f
+libfenc_deserialize_ciphertext_WatersCP	libfenc_WatersCP.c	/^libfenc_deserialize_ciphertext_WatersCP(unsigned char *buffer, size_t buf_len, fenc_ciphertext_WatersCP *ciphertext, fenc_scheme_context_WatersCP *scheme_context)$/;"	f
+libfenc_deserialize_ciphertext_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_deserialize_ciphertext_WatersSimpleCP(unsigned char *buffer, size_t buf_len, fenc_ciphertext_WatersSimpleCP *ciphertext, fenc_scheme_context_WatersSimpleCP *scheme_context)$/;"	f
+libfenc_deserialize_key_LSW	libfenc_LSW.c	/^libfenc_deserialize_key_LSW(fenc_key_LSW *key, unsigned char *buffer, size_t buf_len)$/;"	f
+libfenc_deserialize_key_WatersCP	libfenc_WatersCP.c	/^libfenc_deserialize_key_WatersCP(fenc_key_WatersCP *key, unsigned char *buffer, size_t buf_len)$/;"	f
+libfenc_deserialize_key_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_deserialize_key_WatersSimpleCP(fenc_key_WatersSimpleCP *key, unsigned char *buffer, size_t buf_len)$/;"	f
+libfenc_destroy_context	libfenc.c	/^libfenc_destroy_context(fenc_context *context)$/;"	f
+libfenc_destroy_context_LSW	libfenc_LSW.c	/^libfenc_destroy_context_LSW(fenc_context *context)$/;"	f
+libfenc_destroy_context_WatersCP	libfenc_WatersCP.c	/^libfenc_destroy_context_WatersCP(fenc_context *context)$/;"	f
+libfenc_destroy_context_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_destroy_context_WatersSimpleCP(fenc_context *context)$/;"	f
+libfenc_destroy_global_params	libfenc.c	/^libfenc_destroy_global_params(\/*fenc_context *context*\/)$/;"	f
+libfenc_destroy_global_params_COMMON	libfenc_ABE_common.c	/^libfenc_destroy_global_params_COMMON(fenc_global_params *global_params)$/;"	f
+libfenc_destroy_global_params_LSW	libfenc_LSW.c	/^libfenc_destroy_global_params_LSW(\/*fenc_global_params *global_params*\/)$/;"	f
+libfenc_destroy_global_params_WatersCP	libfenc_WatersCP.c	/^libfenc_destroy_global_params_WatersCP(fenc_global_params *global_params)$/;"	f
+libfenc_destroy_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_destroy_global_params_WatersSimpleCP(fenc_global_params *global_params)$/;"	f
+libfenc_destroy_group_params	libfenc_group_params.c	/^libfenc_destroy_group_params(fenc_group_params *group_params)$/;"	f
+LIBFENC_DLL	benchmark/Makefile	/^LIBFENC_DLL = 0$/;"	m
+LIBFENC_DLL	Makefile	/^LIBFENC_DLL = 0$/;"	m
+LIBFENC_DLL	tools/Makefile	/^LIBFENC_DLL = 0$/;"	m
+libfenc_encrypt	libfenc.c	/^libfenc_encrypt(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+libfenc_encrypt_LSW	libfenc_LSW.c	/^libfenc_encrypt_LSW(\/*fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+libfenc_encrypt_WatersCP	libfenc_WatersCP.c	/^libfenc_encrypt_WatersCP(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+libfenc_encrypt_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_encrypt_WatersSimpleCP(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,$/;"	f
+libfenc_error_to_string	libfenc.c	/^libfenc_error_to_string(FENC_ERROR error)$/;"	f
+libfenc_export_global_params	libfenc.c	/^FENC_ERROR	libfenc_export_global_params(fenc_context *context, uint8 *buffer, size_t buf_len, size_t *result_len)$/;"	f
+libfenc_export_global_params_LSW	libfenc_LSW.c	/^libfenc_export_global_params_LSW(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_global_params_WatersCP	libfenc_WatersCP.c	/^libfenc_export_global_params_WatersCP(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_export_global_params_WatersSimpleCP(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_group_params	libfenc_group_params.c	/^libfenc_export_group_params(fenc_group_params *group_params, uint8 *buffer, size_t max_len,$/;"	f
+libfenc_export_public_params	libfenc.c	/^libfenc_export_public_params(fenc_context *context, uint8 *buffer, size_t buf_len, size_t *result_len,$/;"	f
+libfenc_export_public_params_LSW	libfenc_LSW.c	/^FENC_ERROR	libfenc_export_public_params_LSW(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_public_params_WatersCP	libfenc_WatersCP.c	/^FENC_ERROR	libfenc_export_public_params_WatersCP(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_public_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^FENC_ERROR	libfenc_export_public_params_WatersSimpleCP(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_secret_key	libfenc.c	/^libfenc_export_secret_key(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len, size_t *result_len)$/;"	f
+libfenc_export_secret_key_LSW	libfenc_LSW.c	/^libfenc_export_secret_key_LSW(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len, size_t *result_len)$/;"	f
+libfenc_export_secret_key_WatersCP	libfenc_WatersCP.c	/^libfenc_export_secret_key_WatersCP(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len, size_t *result_len)$/;"	f
+libfenc_export_secret_key_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_export_secret_key_WatersSimpleCP(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len, size_t *result_len)$/;"	f
+libfenc_export_secret_params	libfenc.c	/^libfenc_export_secret_params(fenc_context *context, uint8 *buffer, size_t buf_len, size_t *result_len,$/;"	f
+libfenc_export_secret_params_LSW	libfenc_LSW.c	/^libfenc_export_secret_params_LSW(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_secret_params_WatersCP	libfenc_WatersCP.c	/^libfenc_export_secret_params_WatersCP(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_export_secret_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_export_secret_params_WatersSimpleCP(fenc_context *context, uint8 *buffer, size_t max_len, size_t *result_len)$/;"	f
+libfenc_extract_key	libfenc.c	/^libfenc_extract_key(fenc_context *context, fenc_function_input *input, fenc_key *key)$/;"	f
+libfenc_extract_key_LSW	libfenc_LSW.c	/^libfenc_extract_key_LSW(fenc_context *context, fenc_function_input *input, fenc_key *key)$/;"	f
+libfenc_extract_key_WatersCP	libfenc_WatersCP.c	/^libfenc_extract_key_WatersCP(fenc_context *context, fenc_function_input *input, fenc_key *key)$/;"	f
+libfenc_extract_key_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_extract_key_WatersSimpleCP(fenc_context *context, fenc_function_input *input, fenc_key *key)$/;"	f
+libfenc_fprint_ciphertext_LSW	libfenc_LSW.c	/^libfenc_fprint_ciphertext_LSW(fenc_ciphertext_LSW *ciphertext, FILE* out_file)$/;"	f
+libfenc_fprint_ciphertext_WatersCP	libfenc_WatersCP.c	/^libfenc_fprint_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, FILE* out_file)$/;"	f
+libfenc_fprint_ciphertext_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_fprint_ciphertext_WatersSimpleCP(fenc_ciphertext_WatersSimpleCP *ciphertext, FILE* out_file)$/;"	f
+libfenc_generate_global_params_COMMON	libfenc_ABE_common.c	/^libfenc_generate_global_params_COMMON(fenc_global_params *global_params, fenc_group_params *group_params)$/;"	f
+libfenc_gen_params	libfenc.c	/^libfenc_gen_params(fenc_context *context, fenc_global_params *global_params)$/;"	f
+libfenc_gen_params_LSW	libfenc_LSW.c	/^libfenc_gen_params_LSW(fenc_context *context, fenc_global_params *global_params)$/;"	f
+libfenc_gen_params_WatersCP	libfenc_WatersCP.c	/^libfenc_gen_params_WatersCP(fenc_context *context, fenc_global_params *global_params)$/;"	f
+libfenc_gen_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_gen_params_WatersSimpleCP(fenc_context *context, fenc_global_params *global_params)$/;"	f
+libfenc_get_attribute_index_in_list	libfenc_ABE_common.c	/^libfenc_get_attribute_index_in_list(fenc_attribute *attribute, fenc_attribute_list *attribute_list)$/;"	f
+libfenc_get_group_params	libfenc.c	/^libfenc_get_group_params(fenc_global_params *global_params)$/;"	f
+libfenc_get_pbc_pairing	libfenc_group_params.c	/^libfenc_get_pbc_pairing(fenc_group_params *group_params, pairing_t pairing)$/;"	f
+libfenc_get_plaintext_bytes	libfenc.c	/^libfenc_get_plaintext_bytes(fenc_plaintext *plaintext, uint8** buf, size_t *buf_size)$/;"	f
+libfenc_global_state	libfenc.h	/^FENC_LIBRARY_STATE	libfenc_global_state = FENC_STATE_NOT_INITIALIZED;$/;"	v
+libfenc_import_global_params	libfenc.c	/^libfenc_import_global_params(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_global_params_LSW	libfenc_LSW.c	/^libfenc_import_global_params_LSW(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_global_params_WatersCP	libfenc_WatersCP.c	/^libfenc_import_global_params_WatersCP(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_import_global_params_WatersSimpleCP(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_public_params	libfenc.c	/^libfenc_import_public_params(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_public_params_LSW	libfenc_LSW.c	/^libfenc_import_public_params_LSW(fenc_context *context, uint8 *buffer, size_t buf_len, fenc_global_params *global_params)$/;"	f
+libfenc_import_public_params_WatersCP	libfenc_WatersCP.c	/^libfenc_import_public_params_WatersCP(fenc_context *context, uint8 *buffer, size_t buf_len, fenc_global_params *global_params)$/;"	f
+libfenc_import_public_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_import_public_params_WatersSimpleCP(fenc_context *context, uint8 *buffer, size_t buf_len, fenc_global_params *global_params)$/;"	f
+libfenc_import_secret_key	libfenc.c	/^libfenc_import_secret_key(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_secret_key_LSW	libfenc_LSW.c	/^libfenc_import_secret_key_LSW(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_secret_key_WatersCP	libfenc_WatersCP.c	/^libfenc_import_secret_key_WatersCP(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_secret_key_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_import_secret_key_WatersSimpleCP(fenc_context *context, fenc_key *key, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_secret_params	libfenc.c	/^libfenc_import_secret_params(fenc_context *context, uint8 *buffer, size_t buf_len,$/;"	f
+libfenc_import_secret_params_LSW	libfenc_LSW.c	/^libfenc_import_secret_params_LSW(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_secret_params_WatersCP	libfenc_WatersCP.c	/^libfenc_import_secret_params_WatersCP(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_import_secret_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_import_secret_params_WatersSimpleCP(fenc_context *context, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_init	libfenc.c	/^libfenc_init()$/;"	f
+libfenc_kem_encrypt	libfenc.c	/^libfenc_kem_encrypt(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_kem_encrypt_LSW	libfenc_LSW.c	/^libfenc_kem_encrypt_LSW(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_kem_encrypt_update	libfenc.c	/^libfenc_kem_encrypt_update(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_kem_encrypt_update_WatersCP	libfenc_WatersCP.c	/^libfenc_kem_encrypt_update_WatersCP(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_kem_encrypt_WatersCP	libfenc_WatersCP.c	/^libfenc_kem_encrypt_WatersCP(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_kem_encrypt_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_kem_encrypt_WatersSimpleCP(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_la_AR	Makefile	/^libfenc_la_AR = ar$/;"	m
+libfenc_la_ARARGS	Makefile	/^libfenc_la_ARARGS = rcs$/;"	m
+libfenc_la_BISON	Makefile	/^libfenc_la_BISON = bison$/;"	m
+libfenc_la_LDFLAGS	Makefile	/^libfenc_la_LDFLAGS = -lgmp -lpbc -lm -version-info $(SO_VERSION) $(FENC_LDFLAGS) $(LIBFENC_LDFLAGS)$/;"	m
+libfenc_la_LIBADD	Makefile	/^libfenc_la_LIBADD =$/;"	m
+libfenc_la_LIBS	Makefile	/^libfenc_la_LIBS = -lstdc++$/;"	m
+libfenc_la_LINK	Makefile	/^libfenc_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+libfenc_la_OBJECTS	Makefile	/^libfenc_la_OBJECTS = $(am_libfenc_la_OBJECTS)$/;"	m
+libfenc_la_SOURCES	Makefile	/^libfenc_la_SOURCES = libfenc.c libfenc_LSW.c libfenc_WatersCP.c \\$/;"	m
+LIBFENC_LDFLAGS	benchmark/Makefile	/^LIBFENC_LDFLAGS = $/;"	m
+LIBFENC_LDFLAGS	Makefile	/^LIBFENC_LDFLAGS = $/;"	m
+LIBFENC_LDFLAGS	tools/Makefile	/^LIBFENC_LDFLAGS = $/;"	m
+libfenc_load_group_params_from_buf	libfenc_group_params.c	/^libfenc_load_group_params_from_buf(fenc_group_params *group_params, uint8 *param_buf, size_t buf_len)$/;"	f
+libfenc_load_group_params_from_file	libfenc_group_params.c	/^libfenc_load_group_params_from_file(fenc_group_params *group_params, FILE *fp)$/;"	f
+libfenc_parse_input_as_attribute_list	libfenc_ABE_common.c	/^libfenc_parse_input_as_attribute_list(fenc_function_input *input, fenc_attribute_list *attribute_list, pairing_t pairing)$/;"	f
+libfenc_parse_input_as_attribute_policy	libfenc_ABE_common.c	/^libfenc_parse_input_as_attribute_policy(fenc_function_input *input, fenc_attribute_policy *policy)$/;"	f
+libfenc_plaintext_clear	libfenc.c	/^libfenc_plaintext_clear(fenc_plaintext *plaintext)$/;"	f
+libfenc_plaintext_get_buf	libfenc.c	/^uint8*	libfenc_plaintext_get_buf(fenc_plaintext *plaintext)$/;"	f
+libfenc_plaintext_initialize	libfenc.c	/^libfenc_plaintext_initialize(fenc_plaintext *plaintext, unsigned int data_len)$/;"	f
+libfenc_retrieve_attribute_policy	libfenc_WatersCP.c	/^libfenc_retrieve_attribute_policy(fenc_context *context, fenc_ciphertext *ciphertext, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_retrieve_attribute_policy_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_retrieve_attribute_policy_WatersSimpleCP(fenc_context *context, fenc_ciphertext *ciphertext, uint8 *buffer, size_t buf_len)$/;"	f
+libfenc_serialize_ciphertext_LSW	libfenc_LSW.c	/^libfenc_serialize_ciphertext_LSW(fenc_ciphertext_LSW *ciphertext, unsigned char *buffer, size_t max_len, size_t *serialized_len)$/;"	f
+libfenc_serialize_ciphertext_WatersCP	libfenc_WatersCP.c	/^libfenc_serialize_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, unsigned char *buffer, size_t max_len, size_t *serialized_len)$/;"	f
+libfenc_serialize_ciphertext_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_serialize_ciphertext_WatersSimpleCP(fenc_ciphertext_WatersSimpleCP *ciphertext, unsigned char *buffer, size_t max_len, size_t *serialized_len)$/;"	f
+libfenc_serialize_key_LSW	libfenc_LSW.c	/^libfenc_serialize_key_LSW(fenc_key_LSW *key, unsigned char *buffer, size_t max_len, size_t *serialized_len)$/;"	f
+libfenc_serialize_key_WatersCP	libfenc_WatersCP.c	/^libfenc_serialize_key_WatersCP(fenc_key_WatersCP *key, unsigned char *buffer, size_t max_len, size_t *serialized_len)$/;"	f
+libfenc_serialize_key_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_serialize_key_WatersSimpleCP(fenc_key_WatersSimpleCP *key, unsigned char *buffer, size_t max_len, size_t *serialized_len)$/;"	f
+libfenc_setup_from_pbc_params	libfenc_group_params.c	/^libfenc_setup_from_pbc_params(\/*fenc_group_params *group_params, $/;"	f
+libfenc_set_error_file	libfenc.c	/^FENC_ERROR	libfenc_set_error_file(FILE* error_file)$/;"	f
+libfenc_set_global_params	libfenc.c	/^FENC_ERROR	libfenc_set_global_params(\/*fenc_context *context, fenc_global_params *global_params*\/)$/;"	f
+libfenc_set_params	libfenc.c	/^FENC_ERROR	libfenc_set_params(\/*fenc_context *context, fenc_public_params *public_params, fenc_secret_params *secret_params*\/)$/;"	f
+libfenc_set_params_LSW	libfenc_LSW.c	/^libfenc_set_params_LSW(\/*fenc_context *context, fenc_public_params *public_params, fenc_secret_params *secret_params*\/)$/;"	f
+libfenc_set_params_WatersCP	libfenc_WatersCP.c	/^libfenc_set_params_WatersCP(fenc_context *context, fenc_public_params *public_params, fenc_secret_params *secret_params)$/;"	f
+libfenc_set_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_set_params_WatersSimpleCP(fenc_context *context, fenc_public_params *public_params, fenc_secret_params *secret_params)$/;"	f
+libfenc_set_plaintext_bytes	libfenc.c	/^libfenc_set_plaintext_bytes(fenc_plaintext *plaintext, uint8* buf, size_t buf_size)$/;"	f
+libfenc_shutdown	libfenc.c	/^libfenc_shutdown()$/;"	f
+libfenc_validate_global_params_LSW	libfenc_LSW.c	/^libfenc_validate_global_params_LSW(fenc_global_params *global_params)$/;"	f
+libfenc_validate_global_params_WatersCP	libfenc_WatersCP.c	/^libfenc_validate_global_params_WatersCP(fenc_global_params *global_params)$/;"	f
+libfenc_validate_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_validate_global_params_WatersSimpleCP(fenc_global_params *global_params)$/;"	f
+libfenc_validate_group_params	libfenc_group_params.c	/^libfenc_validate_group_params(fenc_group_params *group_params)$/;"	f
+LIBOBJS	benchmark/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	tools/Makefile	/^LIBOBJS = $/;"	m
+library_includedir	Makefile	/^library_includedir = $(includedir)\/fenc$/;"	m
+library_include_HEADERS	Makefile	/^library_include_HEADERS = libfenc_ABE_common.h \\$/;"	m
+LIBS	benchmark/Makefile	/^LIBS = -lpbc -lcrypto -lgmp -lm $/;"	m
+LIBS	Makefile	/^LIBS = -lpbc -lcrypto -lgmp -lm $/;"	m
+LIBS	tools/Makefile	/^LIBS = -lpbc -lcrypto -lgmp -lm $/;"	m
+LIBTOOL	benchmark/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBTOOL	Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+LIBTOOL	tools/Makefile	/^LIBTOOL = $(SHELL) $(top_builddir)\/libtool$/;"	m
+lib_LTLIBRARIES	Makefile	/^lib_LTLIBRARIES = libfenc.la$/;"	m
+LINK	benchmark/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LINK	Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LINK	tools/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LIPO	benchmark/Makefile	/^LIPO = lipo$/;"	m
+LIPO	Makefile	/^LIPO = lipo$/;"	m
+LIPO	tools/Makefile	/^LIPO = lipo$/;"	m
+list	abe_policy.tab.c	/^	ptr_array_t* list;$/;"	m	union:YYSTYPE	file:
+LN_S	benchmark/Makefile	/^LN_S = ln -s$/;"	m
+LN_S	Makefile	/^LN_S = ln -s$/;"	m
+LN_S	tools/Makefile	/^LN_S = ln -s$/;"	m
+localedir	benchmark/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	tools/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	benchmark/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	tools/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+LOG_ERROR	libfenc.h	/^#define LOG_ERROR(/;"	d
+LSSS_allocate_coefficient_list	libfenc_LSSS.c	/^LSSS_allocate_coefficient_list(fenc_lsss_coefficient_list *coefficient_list, uint32 num_coefficients, pairing_t pairing)$/;"	f
+LSSS_clear_coefficients_list	libfenc_LSSS.c	/^LSSS_clear_coefficients_list(fenc_lsss_coefficient_list *coefficient_list)$/;"	f
+LSSS_compute_coefficients_on_subtree	libfenc_LSSS.c	/^LSSS_compute_coefficients_on_subtree(element_t *in_coef, Bool active_subtree, fenc_attribute_subtree *subtree, fenc_lsss_coefficient_list *coefficient_list,$/;"	f
+LSSS_compute_shares_on_subtree	libfenc_LSSS.c	/^LSSS_compute_shares_on_subtree(element_t *secret, fenc_attribute_subtree *subtree, fenc_attribute_list *attribute_list,$/;"	f
+LSSS_element_in_attribute_list	libfenc_LSSS.c	/^LSSS_element_in_attribute_list(fenc_attribute_subtree *subtree, fenc_attribute_list *attribute_list)$/;"	f
+LSSS_evaluate_polynomial	libfenc_LSSS.c	/^LSSS_evaluate_polynomial(uint32 x, element_t *coefficients, uint32 num_coefs, element_t *shareZ,$/;"	f
+LSW	benchmark/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+LSW	tools/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+LTCOMPILE	benchmark/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTCOMPILE	Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTCOMPILE	tools/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	benchmark/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	tools/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	Makefile	/^LTLIBRARIES = $(lib_LTLIBRARIES)$/;"	m
+LTWO	libfenc_WatersCP.h	/^	element_t				LTWO;$/;"	m	struct:_fenc_key_WatersCP
+LTWO	libfenc_WatersSimpleCP.h	/^	element_t				LTWO;$/;"	m	struct:_fenc_key_WatersSimpleCP
+lt_ECHO	benchmark/Makefile	/^lt_ECHO = \/bin\/echo$/;"	m
+lt_ECHO	Makefile	/^lt_ECHO = \/bin\/echo$/;"	m
+lt_ECHO	tools/Makefile	/^lt_ECHO = \/bin\/echo$/;"	m
+LT_OBJDIR	config.h	/^#define LT_OBJDIR /;"	d
+lt_policy	abe_policy.tab.c	/^lt_policy( sized_integer_t* n, char* attr )$/;"	f
+MAGIC	benchmark/common.h	/^#define MAGIC /;"	d
+MAGIC	tools/common.h	/^#define MAGIC /;"	d
+main	benchmark/benchmark.c	/^int main(int argc, char *argv[])$/;"	f
+main	config.guess	/^		main()$/;"	f
+main	config.guess	/^	main ()$/;"	f
+main	config.guess	/^main ()$/;"	f
+main	tools/mgabe-dec.c	/^int main (int argc, char *argv[]) {$/;"	f
+main	tools/mgabe-enc.c	/^int main (int argc, char *argv[]) {$/;"	f
+main	tools/mgabe-keygen.c	/^int main (int argc, char* argv[]) {$/;"	f
+main	tools/mgabe-setup.c	/^int main(int argc, char * argv[]) {$/;"	f
+main	tools/mgabe-update.c	/^int main (int argc, char *argv[]) {$/;"	f
+main	tools/policy-tool.c	/^int main(int argc, char *argv[]) {$/;"	f
+MAKEINFO	benchmark/Makefile	/^MAKEINFO = makeinfo$/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = makeinfo$/;"	m
+MAKEINFO	tools/Makefile	/^MAKEINFO = makeinfo$/;"	m
+mandir	benchmark/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	tools/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+MAX_ATTRIBUTES	benchmark/common.h	/^#define MAX_ATTRIBUTES /;"	d
+MAX_ATTRIBUTES	tools/common.h	/^#define MAX_ATTRIBUTES /;"	d
+MAX_ATTRIBUTES	tools/mgabe-dec.c	/^#define MAX_ATTRIBUTES /;"	d	file:
+MAX_ATTRIBUTE_STR	libfenc_ABE_common.h	/^#define MAX_ATTRIBUTE_STR	/;"	d
+MAX_CIPHERTEXT_ATTRIBUTES	libfenc_ABE_common.h	/^#define	MAX_CIPHERTEXT_ATTRIBUTES	/;"	d
+max_len	libfenc.h	/^	size_t					max_len;$/;"	m	struct:_fenc_ciphertext
+max_len	libfenc.h	/^	unsigned int			max_len;$/;"	m	struct:_fenc_plaintext
+MAX_NUM_PADDING_CHARS	benchmark/base64.c	/^#define MAX_NUM_PADDING_CHARS /;"	d	file:
+MAX_NUM_PADDING_CHARS	tools/base64.c	/^#define MAX_NUM_PADDING_CHARS /;"	d	file:
+MAX_PBC_PARAM_STRING	libfenc_group_params.h	/^#define	MAX_PBC_PARAM_STRING	/;"	d
+MAX_POLICY_STR	libfenc_ABE_common.h	/^#define	MAX_POLICY_STR	/;"	d
+MAX_STR	tools/policy-tool.c	/^#define MAX_STR /;"	d	file:
+MAX_STR_SIZE	abe_policy.tab.c	/^#define MAX_STR_SIZE	/;"	d	file:
+MDG_WATERS_OPTIMIZATION	libfenc_WatersSimpleCP.c	/^#define MDG_WATERS_OPTIMIZATION$/;"	d	file:
+Message_Block	sha1.h	/^    unsigned char Message_Block[64]; \/* 512-bit message blocks      *\/$/;"	m	struct:SHA1Context
+Message_Block_Index	sha1.h	/^    int Message_Block_Index;    \/* Index into message block array   *\/$/;"	m	struct:SHA1Context
+Message_Digest	sha1.h	/^    unsigned Message_Digest[5]; \/* Message Digest (output)          *\/$/;"	m	struct:SHA1Context
+mkdir_p	benchmark/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+MKDIR_P	benchmark/Makefile	/^MKDIR_P = \/usr\/local\/bin\/gmkdir -p$/;"	m
+mkdir_p	Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/usr\/local\/bin\/gmkdir -p$/;"	m
+mkdir_p	tools/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+MKDIR_P	tools/Makefile	/^MKDIR_P = \/usr\/local\/bin\/gmkdir -p$/;"	m
+mkinstalldirs	benchmark/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	tools/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+nat	abe_policy.tab.c	/^	uint64_t nat;$/;"	m	union:YYSTYPE	file:
+NewBase64Decode	benchmark/base64.c	/^void *NewBase64Decode($/;"	f
+NewBase64Decode	tools/base64.c	/^void *NewBase64Decode($/;"	f
+NewBase64Encode	benchmark/base64.c	/^char *NewBase64Encode($/;"	f
+NewBase64Encode	tools/base64.c	/^char *NewBase64Encode($/;"	f
+NEXT_CHAR	abe_policy.tab.c	/^#define NEXT_CHAR /;"	d	file:
+NM	benchmark/Makefile	/^NM = \/usr\/bin\/nm$/;"	m
+NM	Makefile	/^NM = \/usr\/bin\/nm$/;"	m
+NM	tools/Makefile	/^NM = \/usr\/bin\/nm$/;"	m
+NMEDIT	benchmark/Makefile	/^NMEDIT = nmedit$/;"	m
+NMEDIT	Makefile	/^NMEDIT = nmedit$/;"	m
+NMEDIT	tools/Makefile	/^NMEDIT = nmedit$/;"	m
+node_type	libfenc_ABE_common.h	/^	FENC_ATTRIBUTE_NODE_TYPE		node_type;$/;"	m	struct:_fenc_attribute_subtree
+noinst_PROGRAMS	benchmark/Makefile	/^noinst_PROGRAMS = benchmark$(EXEEXT)$/;"	m
+NONE	benchmark/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+NONE	tools/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+NORMAL_INSTALL	benchmark/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	tools/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	benchmark/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	tools/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+number	abe_policy.y	/^number:   INTLIT '#' INTLIT          { $$ = expint($1, $3); }$/;"	l
+NUM_ARRAY_COMPONENTS	abe_policy.tab.c	/^#define NUM_ARRAY_COMPONENTS	/;"	d	file:
+num_attributes	libfenc_ABE_common.h	/^	uint32					num_attributes;$/;"	m	struct:_fenc_attribute_list
+num_bits	libfenc_ABE_common.c	/^int num_bits(int value)$/;"	f
+num_coefficients	libfenc_LSSS.h	/^	uint32							num_coefficients;$/;"	m	struct:_fenc_lsss_coefficient_list
+num_components	abe_policy.tab.c	/^	uint32 num_components;$/;"	m	struct:__anon2	file:
+num_components	libfenc_LSW.h	/^	uint32					num_components;$/;"	m	struct:_fenc_key_LSW
+num_components	libfenc_WatersCP.h	/^	uint32					num_components;$/;"	m	struct:_fenc_key_WatersCP
+num_components	libfenc_WatersSimpleCP.h	/^	uint32					num_components;$/;"	m	struct:_fenc_key_WatersSimpleCP
+num_subnodes	libfenc_ABE_common.h	/^	uint32							num_subnodes;$/;"	m	struct:_fenc_attribute_subtree
+OBJDUMP	benchmark/Makefile	/^OBJDUMP = false$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP = false$/;"	m
+OBJDUMP	tools/Makefile	/^OBJDUMP = false$/;"	m
+OBJEXT	benchmark/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	tools/Makefile	/^OBJEXT = o$/;"	m
+OF	abe_policy.tab.c	/^     OF = 262,$/;"	e	enum:yytokentype	file:
+oldincludedir	benchmark/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	tools/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+OR	abe_policy.tab.c	/^     OR = 260,$/;"	e	enum:yytokentype	file:
+OTOOL	benchmark/Makefile	/^OTOOL = otool$/;"	m
+OTOOL	Makefile	/^OTOOL = otool$/;"	m
+OTOOL	tools/Makefile	/^OTOOL = otool$/;"	m
+OTOOL64	benchmark/Makefile	/^OTOOL64 = :$/;"	m
+OTOOL64	Makefile	/^OTOOL64 = :$/;"	m
+OTOOL64	tools/Makefile	/^OTOOL64 = :$/;"	m
+OUTPUT_LINE_LENGTH	benchmark/base64.c	/^#define OUTPUT_LINE_LENGTH /;"	d	file:
+OUTPUT_LINE_LENGTH	tools/base64.c	/^#define OUTPUT_LINE_LENGTH /;"	d	file:
+PACKAGE	benchmark/Makefile	/^PACKAGE = fenc$/;"	m
+PACKAGE	config.h	/^#define PACKAGE /;"	d
+PACKAGE	Makefile	/^PACKAGE = fenc$/;"	m
+PACKAGE	tools/Makefile	/^PACKAGE = fenc$/;"	m
+PACKAGE_BUGREPORT	benchmark/Makefile	/^PACKAGE_BUGREPORT = libfenc-devel at googlegroups dot com$/;"	m
+PACKAGE_BUGREPORT	config.h	/^#define PACKAGE_BUGREPORT /;"	d
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = libfenc-devel at googlegroups dot com$/;"	m
+PACKAGE_BUGREPORT	tools/config.h	/^#define PACKAGE_BUGREPORT /;"	d
+PACKAGE_BUGREPORT	tools/Makefile	/^PACKAGE_BUGREPORT = libfenc-devel at googlegroups dot com$/;"	m
+PACKAGE_NAME	benchmark/Makefile	/^PACKAGE_NAME = fenc$/;"	m
+PACKAGE_NAME	config.h	/^#define PACKAGE_NAME /;"	d
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = fenc$/;"	m
+PACKAGE_NAME	tools/config.h	/^#define PACKAGE_NAME /;"	d
+PACKAGE_NAME	tools/Makefile	/^PACKAGE_NAME = fenc$/;"	m
+PACKAGE_STRING	benchmark/Makefile	/^PACKAGE_STRING = fenc 0.2.0$/;"	m
+PACKAGE_STRING	config.h	/^#define PACKAGE_STRING /;"	d
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = fenc 0.2.0$/;"	m
+PACKAGE_STRING	tools/config.h	/^#define PACKAGE_STRING /;"	d
+PACKAGE_STRING	tools/Makefile	/^PACKAGE_STRING = fenc 0.2.0$/;"	m
+PACKAGE_TARNAME	benchmark/Makefile	/^PACKAGE_TARNAME = fenc$/;"	m
+PACKAGE_TARNAME	config.h	/^#define PACKAGE_TARNAME /;"	d
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = fenc$/;"	m
+PACKAGE_TARNAME	tools/config.h	/^#define PACKAGE_TARNAME /;"	d
+PACKAGE_TARNAME	tools/Makefile	/^PACKAGE_TARNAME = fenc$/;"	m
+PACKAGE_URL	benchmark/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	config.h	/^#define PACKAGE_URL /;"	d
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	tools/config.h	/^#define PACKAGE_URL /;"	d
+PACKAGE_URL	tools/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	benchmark/Makefile	/^PACKAGE_VERSION = 0.2.0$/;"	m
+PACKAGE_VERSION	config.h	/^#define PACKAGE_VERSION /;"	d
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 0.2.0$/;"	m
+PACKAGE_VERSION	tools/config.h	/^#define PACKAGE_VERSION /;"	d
+PACKAGE_VERSION	tools/Makefile	/^PACKAGE_VERSION = 0.2.0$/;"	m
+pairing	libfenc_LSW.h	/^	pairing_t			pairing;$/;"	m	struct:_fenc_global_params_LSW
+pairing	libfenc_WatersCP.h	/^	pairing_t			pairing;$/;"	m	struct:_fenc_global_params_WatersCP
+pairing	libfenc_WatersSimpleCP.h	/^	pairing_t			pairing;$/;"	m	struct:_fenc_global_params_WatersSimpleCP
+PARAM	benchmark/common.h	/^#define PARAM /;"	d
+PARAM	tools/common.h	/^#define PARAM /;"	d
+params	libfenc_group_params.h	/^	pbc_param_t		params;$/;"	m	struct:_fenc_group_params
+param_buf	libfenc_group_params.h	/^	uint8*			param_buf;$/;"	m	struct:_fenc_group_params
+param_buf_len	libfenc_group_params.h	/^	size_t			param_buf_len;$/;"	m	struct:_fenc_group_params
+parse_policy_lang	abe_policy.tab.c	/^parse_policy_lang( char* s )$/;"	f
+parse_policy_lang_as_str	abe_policy.tab.c	/^parse_policy_lang_as_str( char* s )$/;"	f
+PATH_SEPARATOR	benchmark/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	tools/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PBC_DEBUG	libfenc.c	/^#define PBC_DEBUG$/;"	d	file:
+pdfdir	benchmark/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	tools/Makefile	/^pdfdir = ${docdir}$/;"	m
+PEEK_CHAR	abe_policy.tab.c	/^#define PEEK_CHAR /;"	d	file:
+pkgdatadir	benchmark/Makefile	/^pkgdatadir = $(datadir)\/fenc$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/fenc$/;"	m
+pkgdatadir	tools/Makefile	/^pkgdatadir = $(datadir)\/fenc$/;"	m
+pkgincludedir	benchmark/Makefile	/^pkgincludedir = $(includedir)\/fenc$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/fenc$/;"	m
+pkgincludedir	tools/Makefile	/^pkgincludedir = $(includedir)\/fenc$/;"	m
+pkglibdir	benchmark/Makefile	/^pkglibdir = $(libdir)\/fenc$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/fenc$/;"	m
+pkglibdir	tools/Makefile	/^pkglibdir = $(libdir)\/fenc$/;"	m
+pkglibexecdir	benchmark/Makefile	/^pkglibexecdir = $(libexecdir)\/fenc$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/fenc$/;"	m
+pkglibexecdir	tools/Makefile	/^pkglibexecdir = $(libexecdir)\/fenc$/;"	m
+policy	abe_policy.y	/^policy:   TAG                        { $$ = leaf_policy($1);        }$/;"	l
+policy	libfenc_LSW.h	/^	fenc_attribute_policy	*policy;$/;"	m	struct:_fenc_key_LSW
+policy_free	abe_policy.tab.c	/^policy_free( fenc_attribute_subtree* p )$/;"	f
+POLICY_IS_AND	abe_policy.tab.c	/^#define POLICY_IS_AND(/;"	d	file:
+POLICY_IS_OR	abe_policy.tab.c	/^#define POLICY_IS_OR(/;"	d	file:
+policy_str	libfenc_WatersCP.h	/^	char					policy_str[MAX_POLICY_STR];$/;"	m	struct:_fenc_ciphertext_WatersCP
+policy_str	libfenc_WatersSimpleCP.h	/^	char					policy_str[MAX_POLICY_STR];$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+policy_string	tools/mgabe-enc.c	/^char *attribute_string = NULL, *policy_string = NULL;$/;"	v
+policy_string	tools/mgabe-keygen.c	/^char *policy_string = NULL, *attribute_string = NULL;$/;"	v
+policy_string	tools/mgabe-update.c	/^char *attribute_string = NULL, *policy_string = NULL;$/;"	v
+policy_test_DEPENDENCIES	tools/Makefile	/^policy_test_DEPENDENCIES = ..\/libfenc.la$/;"	m
+policy_test_LDADD	tools/Makefile	/^policy_test_LDADD = $(LDADD)$/;"	m
+policy_test_OBJECTS	tools/Makefile	/^policy_test_OBJECTS = $(am_policy_test_OBJECTS)$/;"	m
+policy_test_SOURCES	tools/Makefile	/^policy_test_SOURCES = policy-tool.c common.c$/;"	m
+POST_INSTALL	benchmark/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	tools/Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	benchmark/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	tools/Makefile	/^POST_UNINSTALL = :$/;"	m
+prefix	benchmark/Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	tools/Makefile	/^prefix = \/usr\/local$/;"	m
+PRE_INSTALL	benchmark/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	tools/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	benchmark/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	tools/Makefile	/^PRE_UNINSTALL = :$/;"	m
+printf_buffer_as_hex	libfenc_utils.c	/^void printf_buffer_as_hex(uint8* data, size_t len)$/;"	f
+print_buffer_as_hex	benchmark/common.c	/^void print_buffer_as_hex(uint8* data, size_t len)$/;"	f
+print_buffer_as_hex	tools/common.c	/^void print_buffer_as_hex(uint8* data, size_t len)$/;"	f
+print_help	tools/mgabe-dec.c	/^void print_help(void)$/;"	f
+print_help	tools/mgabe-enc.c	/^void print_help(void)$/;"	f
+print_help	tools/mgabe-keygen.c	/^void print_help(void)$/;"	f
+print_help	tools/mgabe-setup.c	/^void print_help(void)$/;"	f
+print_help	tools/mgabe-update.c	/^void print_help(void)$/;"	f
+PROGRAMS	benchmark/Makefile	/^PROGRAMS = $(noinst_PROGRAMS)$/;"	m
+PROGRAMS	tools/Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+program_transform_name	benchmark/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	tools/Makefile	/^program_transform_name = s,x,x,$/;"	m
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+prototypes	tools/configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+prune_tree	libfenc_LSSS.c	/^prune_tree(fenc_attribute_subtree *subtree, fenc_attribute_list *attribute_list)$/;"	f
+psdir	benchmark/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+psdir	tools/Makefile	/^psdir = ${docdir}$/;"	m
+ptr_array_add	abe_policy.tab.c	/^void ptr_array_add(ptr_array_t *ptr, fenc_attribute_subtree* subtree)$/;"	f
+ptr_array_new	abe_policy.tab.c	/^ptr_array_t* ptr_array_new()$/;"	f
+ptr_array_t	abe_policy.tab.c	/^ptr_array_t;$/;"	t	typeref:struct:__anon2	file:
+PUBLIC_FILE	benchmark/common.h	/^#define PUBLIC_FILE /;"	d
+PUBLIC_FILE	tools/common.h	/^#define PUBLIC_FILE /;"	d
+public_params	libfenc_LSW.h	/^	fenc_public_params_LSW	public_params;$/;"	m	struct:_fenc_scheme_context_LSW
+public_params	libfenc_WatersCP.h	/^	fenc_public_params_WatersCP	public_params;$/;"	m	struct:_fenc_scheme_context_WatersCP
+public_params	libfenc_WatersSimpleCP.h	/^	fenc_public_params_WatersSimpleCP	public_params;$/;"	m	struct:_fenc_scheme_context_WatersSimpleCP
+public_params_initialize_LSW	libfenc_LSW.c	/^public_params_initialize_LSW(fenc_public_params_LSW *params, pairing_t pairing)$/;"	f
+public_params_initialize_WatersCP	libfenc_WatersCP.c	/^public_params_initialize_WatersCP(fenc_public_params_WatersCP *params, pairing_t pairing)$/;"	f
+public_params_initialize_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^public_params_initialize_WatersSimpleCP(fenc_public_params_WatersSimpleCP *params, pairing_t pairing)$/;"	f
+RANLIB	benchmark/Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+RANLIB	tools/Makefile	/^RANLIB = ranlib$/;"	m
+read_file	benchmark/common.c	/^ssize_t read_file(FILE *f, char** out) {$/;"	f
+read_file	tools/common.c	/^ssize_t read_file(FILE *f, char** out) {$/;"	f
+RECURSIVE_CLEAN_TARGETS	benchmark/Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_CLEAN_TARGETS	tools/Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	benchmark/Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \\$/;"	m
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \\$/;"	m
+RECURSIVE_TARGETS	tools/Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \\$/;"	m
+reference_count	libfenc_LSW.h	/^	uint32					reference_count;$/;"	m	struct:_fenc_key_LSW
+reference_count	libfenc_WatersCP.h	/^	uint32					reference_count;$/;"	m	struct:_fenc_key_WatersCP
+reference_count	libfenc_WatersSimpleCP.h	/^	uint32					reference_count;$/;"	m	struct:_fenc_key_WatersSimpleCP
+report_error	benchmark/common.c	/^void report_error(char* action, FENC_ERROR result)$/;"	f
+report_error	tools/common.c	/^void report_error(char* action, FENC_ERROR result)$/;"	f
+result	abe_policy.y	/^result: policy { final_policy = $1 }$/;"	l
+ret_num_bits	benchmark/common.c	/^int ret_num_bits(int value1)$/;"	f
+ret_num_bits	tools/common.c	/^int ret_num_bits(int value1)$/;"	f
+root	libfenc_ABE_common.h	/^	fenc_attribute_subtree		*root;$/;"	m	struct:_fenc_attribute_policy
+rx	libfenc_ABE_common.h	/^    element_t       rx;$/;"	m	struct:_fenc_attribute
+Rz	libfenc_ABE_common.h	/^    element_t               Rz;$/;"	m	struct:_fenc_attribute_list
+SAFE_FREE	libfenc.h	/^#define SAFE_FREE(/;"	d
+SAFE_MALLOC	libfenc.h	/^#define SAFE_MALLOC(/;"	d
+sbindir	benchmark/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	tools/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+Scheme	benchmark/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	g
+Scheme	tools/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	g
+SchemeType	benchmark/common.h	/^typedef enum Scheme SchemeType;$/;"	t	typeref:enum:Scheme
+SchemeType	tools/common.h	/^typedef enum Scheme SchemeType;$/;"	t	typeref:enum:Scheme
+scheme_context	libfenc.h	/^	void					*scheme_context;	\/*!< Scheme-specific context data structure *\/$/;"	m	struct:_fenc_context
+scheme_input	libfenc.h	/^	void*					scheme_input;$/;"	m	struct:_fenc_function_input
+scheme_key	libfenc.h	/^	void*					scheme_key;$/;"	m	struct:_fenc_key
+SCHEME_LSW	benchmark/common.h	/^#define SCHEME_LSW /;"	d
+SCHEME_LSW	tools/common.h	/^#define SCHEME_LSW /;"	d
+scheme_type	libfenc.h	/^	FENC_SCHEME_TYPE		scheme_type;$/;"	m	struct:_fenc_ciphertext
+scheme_type	libfenc.h	/^	FENC_SCHEME_TYPE		scheme_type;$/;"	m	struct:_fenc_context
+scheme_type	libfenc.h	/^	FENC_SCHEME_TYPE		scheme_type;$/;"	m	struct:_fenc_key
+scheme_type	libfenc.h	/^	FENC_SCHEME_TYPE		scheme_type;$/;"	m	struct:_fenc_public_params
+scheme_type	libfenc.h	/^	FENC_SCHEME_TYPE		scheme_type;$/;"	m	struct:_fenc_secret_params
+SCHEME_WCP	benchmark/common.h	/^#define SCHEME_WCP /;"	d
+SCHEME_WCP	tools/common.h	/^#define SCHEME_WCP /;"	d
+SCHEME_WSCP	benchmark/common.h	/^#define SCHEME_WSCP /;"	d
+SCHEME_WSCP	tools/common.h	/^#define SCHEME_WSCP /;"	d
+scp_abe_priv_keyfile	benchmark/benchmark.c	/^char *scp_abe_priv_keyfile = "private-scp.key";$/;"	v
+SECRET_FILE	benchmark/common.h	/^#define SECRET_FILE /;"	d
+SECRET_FILE	tools/common.h	/^#define SECRET_FILE /;"	d
+secret_params	libfenc_LSW.h	/^	fenc_secret_params_LSW	secret_params;$/;"	m	struct:_fenc_scheme_context_LSW
+secret_params	libfenc_WatersCP.h	/^	fenc_secret_params_WatersCP	secret_params;$/;"	m	struct:_fenc_scheme_context_WatersCP
+secret_params	libfenc_WatersSimpleCP.h	/^	fenc_secret_params_WatersSimpleCP	secret_params;$/;"	m	struct:_fenc_scheme_context_WatersSimpleCP
+secret_params_initialize_LSW	libfenc_LSW.c	/^secret_params_initialize_LSW(fenc_secret_params_LSW *params, pairing_t pairing)$/;"	f
+secret_params_initialize_WatersCP	libfenc_WatersCP.c	/^secret_params_initialize_WatersCP(fenc_secret_params_WatersCP *params, pairing_t pairing)$/;"	f
+secret_params_initialize_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^secret_params_initialize_WatersSimpleCP(fenc_secret_params_WatersSimpleCP *params, pairing_t pairing)$/;"	f
+SED	benchmark/Makefile	/^SED = \/usr\/bin\/sed$/;"	m
+SED	Makefile	/^SED = \/usr\/bin\/sed$/;"	m
+SED	tools/Makefile	/^SED = \/usr\/bin\/sed$/;"	m
+SESSION_KEY_LEN	benchmark/common.h	/^#define SESSION_KEY_LEN /;"	d
+SESSION_KEY_LEN	tools/common.h	/^#define SESSION_KEY_LEN /;"	d
+SET_MAKE	benchmark/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	tools/Makefile	/^SET_MAKE = $/;"	m
+set_params	libfenc.h	/^	FENC_ERROR				(*set_params)(struct _fenc_context *, fenc_public_params *, fenc_secret_params *);$/;"	m	struct:_fenc_context
+SHA1CircularShift	sha1.c	/^#define SHA1CircularShift(/;"	d	file:
+SHA1Context	sha1.h	/^typedef struct SHA1Context$/;"	s
+SHA1Context	sha1.h	/^} SHA1Context;$/;"	t	typeref:struct:SHA1Context
+SHA1Input	sha1.c	/^void SHA1Input(     SHA1Context         *context,$/;"	f
+SHA1PadMessage	sha1.c	/^void SHA1PadMessage(SHA1Context *context)$/;"	f
+SHA1ProcessMessageBlock	sha1.c	/^void SHA1ProcessMessageBlock(SHA1Context *context)$/;"	f
+SHA1Reset	sha1.c	/^void SHA1Reset(SHA1Context *context)$/;"	f
+SHA1Result	sha1.c	/^int SHA1Result(SHA1Context *context)$/;"	f
+share	libfenc_ABE_common.h	/^	element_t		share;								\/* Optional: secret share value.	*\/$/;"	m	struct:_fenc_attribute
+sharedstatedir	benchmark/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	tools/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+SHELL	benchmark/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	tools/Makefile	/^SHELL = \/bin\/sh$/;"	m
+short	abe_policy.tab.c	/^# undef short$/;"	d	file:
+sint	abe_policy.tab.c	/^    sized_integer_t* sint;$/;"	m	union:YYSTYPE	file:
+SIZE	benchmark/common.h	/^#define SIZE /;"	d
+SIZE	tools/common.h	/^#define SIZE /;"	d
+sized_integer_t	abe_policy.tab.c	/^sized_integer_t;$/;"	t	typeref:struct:__anon1	file:
+SIZE_MAX	benchmark/common.h	/^#define SIZE_MAX /;"	d
+SIZE_MAX	tools/common.h	/^#define SIZE_MAX /;"	d
+SOURCES	benchmark/Makefile	/^SOURCES = $(benchmark_SOURCES)$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libfenc_la_SOURCES)$/;"	m
+SOURCES	tools/Makefile	/^SOURCES = $(abe_dec_SOURCES) $(abe_enc_SOURCES) $(abe_keygen_SOURCES) \\$/;"	m
+SO_VERSION	Makefile	/^SO_VERSION = 0:2:0$/;"	m
+srcdir	benchmark/Makefile	/^srcdir = .$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+srcdir	tools/Makefile	/^srcdir = .$/;"	m
+STDC_HEADERS	config.h	/^#define STDC_HEADERS /;"	d
+STDC_HEADERS	tools/config.h	/^#define STDC_HEADERS /;"	d
+str	abe_policy.tab.c	/^	char* str;$/;"	m	union:YYSTYPE	file:
+string	libfenc_ABE_common.h	/^	char 						*string;$/;"	m	struct:_fenc_attribute_policy
+STRIP	benchmark/Makefile	/^STRIP = strip$/;"	m
+STRIP	Makefile	/^STRIP = strip$/;"	m
+STRIP	tools/Makefile	/^STRIP = strip$/;"	m
+subdir	benchmark/Makefile	/^subdir = benchmark$/;"	m
+subdir	Makefile	/^subdir = .$/;"	m
+subdir	tools/Makefile	/^subdir = tools$/;"	m
+SUBDIRS	benchmark/Makefile	/^SUBDIRS = .$/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = . tools benchmark$/;"	m
+SUBDIRS	tools/Makefile	/^SUBDIRS = .$/;"	m
+subnode	libfenc_ABE_common.h	/^	struct _fenc_attribute_subtree	**subnode;$/;"	m	struct:_fenc_attribute_subtree	typeref:struct:_fenc_attribute_subtree::_fenc_attribute_subtree
+SWCP	benchmark/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+SWCP	tools/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+sysconfdir	benchmark/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	tools/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+s_strdup_printf	abe_policy.tab.c	/^char* s_strdup_printf(char *fmt, ...)$/;"	f
+s_string_append_c	abe_policy.tab.c	/^void s_string_append_c(char *left, int max, char right)$/;"	f
+s_string_new	abe_policy.tab.c	/^char* s_string_new(int max)$/;"	f
+s_strnfill	abe_policy.tab.c	/^char* s_strnfill(size_t num, char fill)$/;"	f
+TAG	abe_policy.tab.c	/^     TAG = 258,$/;"	e	enum:yytokentype	file:
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | GZIP=$(GZIP_ENV) gzip -c >$(distdir).tar.gz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
+target_alias	benchmark/Makefile	/^target_alias = $/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+target_alias	tools/Makefile	/^target_alias = $/;"	m
+test_libfenc	benchmark/benchmark.c	/^void test_libfenc(char *policy)$/;"	f
+test_secret_sharing	benchmark/benchmark.c	/^void test_secret_sharing(fenc_attribute_policy *policy, pairing_t pairing)$/;"	f
+threshold_k	libfenc_ABE_common.h	/^	uint32							threshold_k;$/;"	m	struct:_fenc_attribute_subtree
+tokenize_inputfile	tools/mgabe-dec.c	/^void tokenize_inputfile(char* in, char** abe, char** aes, char** iv)$/;"	f
+tokenize_inputfile	tools/mgabe-update.c	/^void tokenize_inputfile(char* in, char** abe, char** aes, char** iv)$/;"	f
+top_builddir	benchmark/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	Makefile	/^top_builddir = .$/;"	m
+top_builddir	tools/Makefile	/^top_builddir = ..$/;"	m
+top_build_prefix	benchmark/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = $/;"	m
+top_build_prefix	tools/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m
+top_srcdir	benchmark/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m
+top_srcdir	tools/Makefile	/^top_srcdir = ..$/;"	m
+transform	benchmark/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	tools/Makefile	/^transform = $(program_transform_name)$/;"	m
+tree	abe_policy.tab.c	/^	fenc_attribute_subtree* tree;$/;"	m	union:YYSTYPE	file:
+TRUE	benchmark/base64.h	/^#define TRUE /;"	d
+TRUE	libfenc.h	/^#define TRUE	/;"	d
+TRUE	tools/base64.h	/^#define TRUE /;"	d
+type	libfenc_LSW.h	/^	FENC_CIPHERTEXT_TYPE	type;$/;"	m	struct:_fenc_ciphertext_LSW
+type	libfenc_WatersCP.h	/^	FENC_CIPHERTEXT_TYPE	type;$/;"	m	struct:_fenc_ciphertext_WatersCP
+type	libfenc_WatersSimpleCP.h	/^	FENC_CIPHERTEXT_TYPE	type;$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
+uint16	libfenc.h	/^typedef unsigned short uint16;$/;"	t
+uint32	libfenc.h	/^typedef unsigned int uint32;$/;"	t
+uint8	libfenc.h	/^typedef unsigned char uint8;$/;"	t
+use_subnode	libfenc_ABE_common.h	/^	Bool							use_subnode;$/;"	m	struct:_fenc_attribute_subtree
+valid	libfenc.h	/^	Bool					valid;$/;"	m	struct:_fenc_key
+valid	libfenc.h	/^	Bool					valid;$/;"	m	struct:_fenc_plaintext
+value	abe_policy.tab.c	/^	uint64_t value;$/;"	m	struct:__anon1	file:
+VERSION	benchmark/Makefile	/^VERSION = 0.2.0$/;"	m
+VERSION	config.h	/^#define VERSION /;"	d
+VERSION	Makefile	/^VERSION = 0.2.0$/;"	m
+VERSION	tools/Makefile	/^VERSION = 0.2.0$/;"	m
+WCP	benchmark/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+WCP	tools/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
+xx	benchmark/base64.c	/^#define xx /;"	d	file:
+xx	tools/base64.c	/^#define xx /;"	d	file:
+YACC	benchmark/Makefile	/^YACC = bison -y$/;"	m
+YACC	Makefile	/^YACC = bison -y$/;"	m
+YACC	tools/Makefile	/^YACC = bison -y$/;"	m
+YFLAGS	benchmark/Makefile	/^YFLAGS = $/;"	m
+YFLAGS	Makefile	/^YFLAGS = $/;"	m
+YFLAGS	tools/Makefile	/^YFLAGS = $/;"	m
+YYABORT	abe_policy.tab.c	/^#define YYABORT	/;"	d	file:
+YYACCEPT	abe_policy.tab.c	/^#define YYACCEPT	/;"	d	file:
+yyalloc	abe_policy.tab.c	/^union yyalloc$/;"	u	file:
+YYBACKUP	abe_policy.tab.c	/^#define YYBACKUP(/;"	d	file:
+YYBISON	abe_policy.tab.c	/^#define YYBISON /;"	d	file:
+YYBISON_VERSION	abe_policy.tab.c	/^#define YYBISON_VERSION /;"	d	file:
+yychar	abe_policy.tab.c	/^int yychar;$/;"	v
+yycheck	abe_policy.tab.c	/^static const yytype_int8 yycheck[] =$/;"	v	file:
+yyclearin	abe_policy.tab.c	/^#define yyclearin	/;"	d	file:
+YYCOPY	abe_policy.tab.c	/^#   define YYCOPY(/;"	d	file:
+YYDEBUG	abe_policy.tab.c	/^# define YYDEBUG /;"	d	file:
+yydebug	abe_policy.tab.c	/^int yydebug;$/;"	v
+yydefact	abe_policy.tab.c	/^static const yytype_uint8 yydefact[] =$/;"	v	file:
+yydefgoto	abe_policy.tab.c	/^static const yytype_int8 yydefgoto[] =$/;"	v	file:
+yydestruct	abe_policy.tab.c	/^yydestruct (const char *yymsg, int yytype, YYSTYPE *yyvaluep)$/;"	f	file:
+YYDPRINTF	abe_policy.tab.c	/^# define YYDPRINTF(/;"	d	file:
+YYEMPTY	abe_policy.tab.c	/^#define YYEMPTY	/;"	d	file:
+YYEOF	abe_policy.tab.c	/^#define YYEOF	/;"	d	file:
+YYERRCODE	abe_policy.tab.c	/^#define YYERRCODE	/;"	d	file:
+yyerrok	abe_policy.tab.c	/^#define yyerrok	/;"	d	file:
+YYERROR	abe_policy.tab.c	/^#define YYERROR	/;"	d	file:
+yyerror	abe_policy.tab.c	/^yyerror( const char* s )$/;"	f
+YYERROR_VERBOSE	abe_policy.tab.c	/^# define YYERROR_VERBOSE /;"	d	file:
+YYERROR_VERBOSE	abe_policy.tab.c	/^# undef YYERROR_VERBOSE$/;"	d	file:
+YYFAIL	abe_policy.tab.c	/^#define YYFAIL	/;"	d	file:
+YYFINAL	abe_policy.tab.c	/^#define YYFINAL /;"	d	file:
+YYFPRINTF	abe_policy.tab.c	/^#  define YYFPRINTF /;"	d	file:
+YYFREE	abe_policy.tab.c	/^#   define YYFREE /;"	d	file:
+YYID	abe_policy.tab.c	/^# define YYID(/;"	d	file:
+YYID	abe_policy.tab.c	/^YYID (int yyi)$/;"	f	file:
+YYINITDEPTH	abe_policy.tab.c	/^# define YYINITDEPTH /;"	d	file:
+YYLAST	abe_policy.tab.c	/^#define YYLAST /;"	d	file:
+YYLEX	abe_policy.tab.c	/^# define YYLEX /;"	d	file:
+yylex	abe_policy.tab.c	/^yylex()$/;"	f
+YYLLOC_DEFAULT	abe_policy.tab.c	/^# define YYLLOC_DEFAULT(/;"	d	file:
+YYLSP_NEEDED	abe_policy.tab.c	/^#define YYLSP_NEEDED /;"	d	file:
+yylval	abe_policy.tab.c	/^YYSTYPE yylval;$/;"	v
+YYMALLOC	abe_policy.tab.c	/^#   define YYMALLOC /;"	d	file:
+YYMAXDEPTH	abe_policy.tab.c	/^# define YYMAXDEPTH /;"	d	file:
+YYMAXUTOK	abe_policy.tab.c	/^#define YYMAXUTOK /;"	d	file:
+yynerrs	abe_policy.tab.c	/^int yynerrs;$/;"	v
+YYNNTS	abe_policy.tab.c	/^#define YYNNTS /;"	d	file:
+YYNRULES	abe_policy.tab.c	/^#define YYNRULES /;"	d	file:
+YYNSTATES	abe_policy.tab.c	/^#define YYNSTATES /;"	d	file:
+YYNTOKENS	abe_policy.tab.c	/^#define YYNTOKENS /;"	d	file:
+yypact	abe_policy.tab.c	/^static const yytype_int8 yypact[] =$/;"	v	file:
+YYPACT_NINF	abe_policy.tab.c	/^#define YYPACT_NINF /;"	d	file:
+yyparse	abe_policy.tab.c	/^yyparse (void *YYPARSE_PARAM)$/;"	f
+yypgoto	abe_policy.tab.c	/^static const yytype_int8 yypgoto[] =$/;"	v	file:
+YYPOPSTACK	abe_policy.tab.c	/^#define YYPOPSTACK(/;"	d	file:
+yyprhs	abe_policy.tab.c	/^static const yytype_uint8 yyprhs[] =$/;"	v	file:
+YYPULL	abe_policy.tab.c	/^#define YYPULL /;"	d	file:
+YYPURE	abe_policy.tab.c	/^#define YYPURE /;"	d	file:
+YYPUSH	abe_policy.tab.c	/^#define YYPUSH /;"	d	file:
+yyr1	abe_policy.tab.c	/^static const yytype_uint8 yyr1[] =$/;"	v	file:
+yyr2	abe_policy.tab.c	/^static const yytype_uint8 yyr2[] =$/;"	v	file:
+YYRECOVERING	abe_policy.tab.c	/^#define YYRECOVERING(/;"	d	file:
+yyrhs	abe_policy.tab.c	/^static const yytype_int8 yyrhs[] =$/;"	v	file:
+YYRHSLOC	abe_policy.tab.c	/^#define YYRHSLOC(/;"	d	file:
+yyrline	abe_policy.tab.c	/^static const yytype_uint8 yyrline[] =$/;"	v	file:
+YYSIZE_MAXIMUM	abe_policy.tab.c	/^#define YYSIZE_MAXIMUM /;"	d	file:
+YYSIZE_T	abe_policy.tab.c	/^#  define YYSIZE_T /;"	d	file:
+YYSKELETON_NAME	abe_policy.tab.c	/^#define YYSKELETON_NAME /;"	d	file:
+yyss_alloc	abe_policy.tab.c	/^  yytype_int16 yyss_alloc;$/;"	m	union:yyalloc	file:
+YYSTACK_ALLOC	abe_policy.tab.c	/^#    define YYSTACK_ALLOC /;"	d	file:
+YYSTACK_ALLOC	abe_policy.tab.c	/^#  define YYSTACK_ALLOC /;"	d	file:
+YYSTACK_ALLOC_MAXIMUM	abe_policy.tab.c	/^#   define YYSTACK_ALLOC_MAXIMUM /;"	d	file:
+YYSTACK_BYTES	abe_policy.tab.c	/^# define YYSTACK_BYTES(/;"	d	file:
+YYSTACK_FREE	abe_policy.tab.c	/^#  define YYSTACK_FREE /;"	d	file:
+YYSTACK_FREE	abe_policy.tab.c	/^#  define YYSTACK_FREE(/;"	d	file:
+YYSTACK_GAP_MAXIMUM	abe_policy.tab.c	/^# define YYSTACK_GAP_MAXIMUM /;"	d	file:
+YYSTACK_RELOCATE	abe_policy.tab.c	/^# define YYSTACK_RELOCATE(/;"	d	file:
+yystos	abe_policy.tab.c	/^static const yytype_uint8 yystos[] =$/;"	v	file:
+yystpcpy	abe_policy.tab.c	/^#   define yystpcpy /;"	d	file:
+yystpcpy	abe_policy.tab.c	/^yystpcpy (char *yydest, const char *yysrc)$/;"	f	file:
+yystrlen	abe_policy.tab.c	/^#   define yystrlen /;"	d	file:
+yystrlen	abe_policy.tab.c	/^yystrlen (const char *yystr)$/;"	f	file:
+yystype	abe_policy.tab.c	/^# define yystype /;"	d	file:
+YYSTYPE	abe_policy.tab.c	/^typedef union YYSTYPE$/;"	u	file:
+YYSTYPE	abe_policy.tab.c	/^} YYSTYPE;$/;"	t	typeref:union:YYSTYPE	file:
+YYSTYPE_IS_DECLARED	abe_policy.tab.c	/^# define YYSTYPE_IS_DECLARED /;"	d	file:
+YYSTYPE_IS_TRIVIAL	abe_policy.tab.c	/^# define YYSTYPE_IS_TRIVIAL /;"	d	file:
+yysyntax_error	abe_policy.tab.c	/^yysyntax_error (char *yyresult, int yystate, int yychar)$/;"	f	file:
+yytable	abe_policy.tab.c	/^static const yytype_uint8 yytable[] =$/;"	v	file:
+YYTABLE_NINF	abe_policy.tab.c	/^#define YYTABLE_NINF /;"	d	file:
+YYTERROR	abe_policy.tab.c	/^#define YYTERROR	/;"	d	file:
+YYTEXT_POINTER	config.h	/^#define YYTEXT_POINTER /;"	d
+yytname	abe_policy.tab.c	/^static const char *const yytname[] =$/;"	v	file:
+yytnamerr	abe_policy.tab.c	/^yytnamerr (char *yyres, const char *yystr)$/;"	f	file:
+yytokentype	abe_policy.tab.c	/^   enum yytokentype {$/;"	g	file:
+YYTOKENTYPE	abe_policy.tab.c	/^# define YYTOKENTYPE$/;"	d	file:
+YYTOKEN_TABLE	abe_policy.tab.c	/^# define YYTOKEN_TABLE /;"	d	file:
+yytoknum	abe_policy.tab.c	/^static const yytype_uint16 yytoknum[] =$/;"	v	file:
+YYTRANSLATE	abe_policy.tab.c	/^#define YYTRANSLATE(/;"	d	file:
+yytranslate	abe_policy.tab.c	/^static const yytype_uint8 yytranslate[] =$/;"	v	file:
+yytype_int16	abe_policy.tab.c	/^typedef short int yytype_int16;$/;"	t	file:
+yytype_int16	abe_policy.tab.c	/^typedef YYTYPE_INT16 yytype_int16;$/;"	t	file:
+yytype_int8	abe_policy.tab.c	/^typedef short int yytype_int8;$/;"	t	file:
+yytype_int8	abe_policy.tab.c	/^typedef signed char yytype_int8;$/;"	t	file:
+yytype_int8	abe_policy.tab.c	/^typedef YYTYPE_INT8 yytype_int8;$/;"	t	file:
+yytype_uint16	abe_policy.tab.c	/^typedef unsigned short int yytype_uint16;$/;"	t	file:
+yytype_uint16	abe_policy.tab.c	/^typedef YYTYPE_UINT16 yytype_uint16;$/;"	t	file:
+yytype_uint8	abe_policy.tab.c	/^typedef unsigned char yytype_uint8;$/;"	t	file:
+yytype_uint8	abe_policy.tab.c	/^typedef YYTYPE_UINT8 yytype_uint8;$/;"	t	file:
+YYUNDEFTOK	abe_policy.tab.c	/^#define YYUNDEFTOK /;"	d	file:
+YYUSE	abe_policy.tab.c	/^# define YYUSE(/;"	d	file:
+yyvs_alloc	abe_policy.tab.c	/^  YYSTYPE yyvs_alloc;$/;"	m	union:yyalloc	file:
+YY_	abe_policy.tab.c	/^#   define YY_(/;"	d	file:
+YY_	abe_policy.tab.c	/^#  define YY_(/;"	d	file:
+YY_LOCATION_PRINT	abe_policy.tab.c	/^#  define YY_LOCATION_PRINT(/;"	d	file:
+YY_REDUCE_PRINT	abe_policy.tab.c	/^# define YY_REDUCE_PRINT(/;"	d	file:
+yy_reduce_print	abe_policy.tab.c	/^yy_reduce_print (YYSTYPE *yyvsp, int yyrule)$/;"	f	file:
+YY_STACK_PRINT	abe_policy.tab.c	/^# define YY_STACK_PRINT(/;"	d	file:
+yy_stack_print	abe_policy.tab.c	/^yy_stack_print (yytype_int16 *yybottom, yytype_int16 *yytop)$/;"	f	file:
+YY_SYMBOL_PRINT	abe_policy.tab.c	/^# define YY_SYMBOL_PRINT(/;"	d	file:
+yy_symbol_print	abe_policy.tab.c	/^yy_symbol_print (FILE *yyoutput, int yytype, YYSTYPE const * const yyvaluep)$/;"	f	file:
+yy_symbol_value_print	abe_policy.tab.c	/^yy_symbol_value_print (FILE *yyoutput, int yytype, YYSTYPE const * const yyvaluep)$/;"	f	file:
+_fenc_attribute	libfenc_ABE_common.h	/^typedef struct _fenc_attribute {$/;"	s
+_fenc_attribute_list	libfenc_ABE_common.h	/^typedef struct _fenc_attribute_list {$/;"	s
+_FENC_ATTRIBUTE_NODE_TYPE	libfenc_ABE_common.h	/^typedef enum _FENC_ATTRIBUTE_NODE_TYPE {$/;"	g
+_fenc_attribute_policy	libfenc_ABE_common.h	/^typedef struct _fenc_attribute_policy {$/;"	s
+_fenc_attribute_subtree	libfenc_ABE_common.h	/^typedef struct _fenc_attribute_subtree {$/;"	s
+_fenc_ciphertext	libfenc.h	/^typedef struct _fenc_ciphertext {$/;"	s
+_fenc_ciphertext_LSW	libfenc_LSW.h	/^typedef struct _fenc_ciphertext_LSW {$/;"	s
+_FENC_CIPHERTEXT_TYPE	libfenc.h	/^typedef enum _FENC_CIPHERTEXT_TYPE	{$/;"	g
+_fenc_ciphertext_WatersCP	libfenc_WatersCP.h	/^typedef struct _fenc_ciphertext_WatersCP {$/;"	s
+_fenc_ciphertext_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^typedef struct _fenc_ciphertext_WatersSimpleCP {$/;"	s
+_fenc_context	libfenc.h	/^typedef struct _fenc_context {$/;"	s
+_FENC_ERROR	libfenc.h	/^typedef enum _FENC_ERROR {$/;"	g
+_fenc_function_input	libfenc.h	/^typedef struct _fenc_function_input {$/;"	s
+_fenc_global_params	libfenc.h	/^typedef struct _fenc_global_params {$/;"	s
+_fenc_global_params_LSW	libfenc_LSW.h	/^typedef struct _fenc_global_params_LSW {$/;"	s
+_fenc_global_params_WatersCP	libfenc_WatersCP.h	/^typedef struct _fenc_global_params_WatersCP {$/;"	s
+_fenc_global_params_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^typedef struct _fenc_global_params_WatersSimpleCP {$/;"	s
+_fenc_group_params	libfenc_group_params.h	/^typedef struct _fenc_group_params {$/;"	s
+_FENC_INPUT_TYPE	libfenc.h	/^typedef enum _FENC_INPUT_TYPE {$/;"	g
+_fenc_key	libfenc.h	/^typedef struct _fenc_key {$/;"	s
+_fenc_key_LSW	libfenc_LSW.h	/^typedef struct _fenc_key_LSW {$/;"	s
+_fenc_key_WatersCP	libfenc_WatersCP.h	/^typedef struct _fenc_key_WatersCP {$/;"	s
+_fenc_key_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^typedef struct _fenc_key_WatersSimpleCP {$/;"	s
+_FENC_LIBRARY_STATE	libfenc.h	/^typedef enum _FENC_LIBRARY_STATE {$/;"	g
+_fenc_lsss_coefficient	libfenc_LSSS.h	/^typedef struct _fenc_lsss_coefficient {$/;"	s
+_fenc_lsss_coefficient_list	libfenc_LSSS.h	/^typedef struct _fenc_lsss_coefficient_list {$/;"	s
+_fenc_plaintext	libfenc.h	/^typedef struct _fenc_plaintext {$/;"	s
+_fenc_public_params	libfenc.h	/^typedef struct _fenc_public_params {$/;"	s
+_fenc_public_params_LSW	libfenc_LSW.h	/^typedef struct _fenc_public_params_LSW {$/;"	s
+_fenc_public_params_WatersCP	libfenc_WatersCP.h	/^typedef struct _fenc_public_params_WatersCP {$/;"	s
+_fenc_public_params_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^typedef struct _fenc_public_params_WatersSimpleCP {$/;"	s
+_fenc_scheme_context_LSW	libfenc_LSW.h	/^typedef struct _fenc_scheme_context_LSW {$/;"	s
+_fenc_scheme_context_WatersCP	libfenc_WatersCP.h	/^typedef struct _fenc_scheme_context_WatersCP {$/;"	s
+_fenc_scheme_context_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^typedef struct _fenc_scheme_context_WatersSimpleCP {$/;"	s
+_FENC_SCHEME_TYPE	libfenc.h	/^typedef enum _FENC_SCHEME_TYPE {$/;"	g
+_fenc_secret_params	libfenc.h	/^typedef struct _fenc_secret_params {$/;"	s
+_fenc_secret_params_LSW	libfenc_LSW.h	/^typedef struct _fenc_secret_params_LSW {$/;"	s
+_fenc_secret_params_WatersCP	libfenc_WatersCP.h	/^typedef struct _fenc_secret_params_WatersCP {$/;"	s
+_fenc_secret_params_WatersSimpleCP	libfenc_WatersSimpleCP.h	/^typedef struct _fenc_secret_params_WatersSimpleCP {$/;"	s
+_SHA1_H_	sha1.h	/^#define _SHA1_H_$/;"	d
+_STDLIB_H	abe_policy.tab.c	/^#      define _STDLIB_H /;"	d	file:
+_STDLIB_H	abe_policy.tab.c	/^#    define _STDLIB_H /;"	d	file:
+__BASE_64_H__	benchmark/base64.h	/^#define __BASE_64_H__$/;"	d
+__BASE_64_H__	tools/base64.h	/^#define __BASE_64_H__$/;"	d
+__COMMON_H__	benchmark/common.h	/^#define __COMMON_H__$/;"	d
+__COMMON_H__	tools/common.h	/^#define __COMMON_H__$/;"	d
+__LIBFENC_ABE_COMMON_H__	libfenc_ABE_common.h	/^#define __LIBFENC_ABE_COMMON_H__$/;"	d
+__LIBFENC_C__	libfenc.c	/^#define __LIBFENC_C__$/;"	d	file:
+__LIBFENC_GROUP_PARAMS_H__	libfenc_group_params.h	/^#define __LIBFENC_GROUP_PARAMS_H__$/;"	d
+__LIBFENC_H__	libfenc.h	/^#define __LIBFENC_H__$/;"	d
+__LIBFENC_LSSS_H__	libfenc_LSSS.h	/^#define __LIBFENC_LSSS_H__$/;"	d
+__LIBFENC_LSW_H__	libfenc_LSW.h	/^#define __LIBFENC_LSW_H__$/;"	d
+__LIBFENC_UTILS_H__	libfenc_utils.h	/^#define __LIBFENC_UTILS_H__$/;"	d
+__LIBFENC_WATERSCP_H__	libfenc_WatersCP.h	/^#define __LIBFENC_WATERSCP_H__$/;"	d
+__LIBFENC_WATERSSIMPLECP_H__	libfenc_WatersSimpleCP.h	/^#define __LIBFENC_WATERSSIMPLECP_H__$/;"	d

@@ -16,6 +16,8 @@
 #include "libfenc_LSSS.h"
 #include "libfenc_LSW.h"
 #include <time.h>
+
+#define FENC_DEBUG
 /********************************************************************************
  * Waters Ciphertext-Policy Implementation
  ********************************************************************************/
@@ -59,6 +61,7 @@ libfenc_create_context_WatersCP(fenc_context *context)
 		context->extract_key			= libfenc_extract_key_WatersCP;
 		context->encrypt				= libfenc_encrypt_WatersCP;
 		context->kem_encrypt			= libfenc_kem_encrypt_WatersCP;
+        context->kem_encrypt_update     = libfenc_kem_encrypt_update_WatersCP;
 		context->decrypt				= libfenc_decrypt_WatersCP;
 		context->destroy_context		= libfenc_destroy_context_WatersCP;
 		context->generate_global_params	= libfenc_generate_global_params_COMMON;
@@ -334,7 +337,7 @@ libfenc_decrypt_WatersCP(fenc_context *context, fenc_ciphertext *ciphertext, fen
 	int32							index_ciph, index_key;
 	Bool							elements_initialized = FALSE, coefficients_initialized = FALSE;
 	Bool							attribute_list_N_initialized = FALSE;
-	// char							test_str[MAX_POLICY_STR];
+	char							test_str[MAX_POLICY_STR];
 
 	/* Get the scheme-specific context. */
 	scheme_context = (fenc_scheme_context_WatersCP*)context->scheme_context;
@@ -357,8 +360,11 @@ libfenc_decrypt_WatersCP(fenc_context *context, fenc_ciphertext *ciphertext, fen
 		goto cleanup;
 	}
 
+    printf("=======================================\n");
+
 #ifdef FENC_DEBUG	
-//	libfenc_fprint_ciphertext_WatersCP(&ciphertext_WatersCP, stdout);
+    libfenc_fprint_ciphertext_WatersCP(&ciphertext_WatersCP, stdout);
+//    printf("=======================================\n");
 #endif			
 	/* Now deserialize the policy string into a data structure and make sure all attributes are hashed.	*/
 	fenc_policy_from_string(&policy, ciphertext_WatersCP.policy_str);
@@ -548,6 +554,7 @@ libfenc_retrieve_attribute_policy(fenc_context *context, fenc_ciphertext *cipher
  * @return				FENC_ERROR_NONE or an error code.
  */
 
+
 FENC_ERROR
 encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fenc_plaintext *plaintext,
 					 Bool kem_mode, uint8* kem_key_buf, size_t kem_key_len, fenc_ciphertext *ciphertext)
@@ -556,14 +563,14 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 	fenc_attribute_policy *policy = NULL;
 	fenc_scheme_context_WatersCP* scheme_context = NULL;
 	fenc_ciphertext_WatersCP ciphertext_WatersCP;
-	element_t rZ, sZ, eggalphasT;
+	element_t rZ, sZ, eggalphasT, one;
 	element_t tempONE, temp2ONE;
 
 	uint32 i;
 	Bool elements_initialized = FALSE;
 	size_t serialized_len = 0;
 	fenc_attribute_list attribute_list;
-	// char temp_policy_str[MAX_POLICY_STR];
+//	char temp_policy_str[MAX_POLICY_STR];
 
 	/* Get the scheme-specific context. */
 	scheme_context = (fenc_scheme_context_WatersCP*)context->scheme_context;
@@ -585,6 +592,10 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 	/* Initialize temporary elements.	*/
 	element_init_Zr(rZ, scheme_context->global_params->pairing);
 	element_init_Zr(sZ, scheme_context->global_params->pairing);
+    element_init_Zr(one, scheme_context->global_params->pairing);
+    element_set1(one);
+
+	//element_fprintf(stdout, "one = %B\n", one);
 	element_init_GT(eggalphasT, scheme_context->global_params->pairing);
 	element_init_G1(tempONE, scheme_context->global_params->pairing);
 	element_init_G1(temp2ONE, scheme_context->global_params->pairing);
@@ -592,8 +603,18 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 	
 	/* Select sZ and compute eggalphaZT = eggalphaT^{sZ}.	*/
 	element_random(sZ);
+    unsigned char tmp[1024];
+    int len = element_length_in_bytes(sZ);
+    element_to_bytes(tmp, sZ);
+    //printf("sssssssssss\n");
+    
+    FILE *fp = fopen("key.s", "w");
+    element_out_str(fp, 16, sZ);
+    //fprintf(fp, "%d\n", len);
+    //for (i = 0; i < len; i++) {
+    //    fprintf(fp, "%d\n", tmp[i]);
+    //}
 	element_pow_zn(eggalphasT, scheme_context->public_params.eggalphaT, sZ);
-	
 	/* Export the policy to a string and draw it back in again.  This clears up some issues in the way		*/
 	//strcpy(temp_policy_str, "");
 	//err_code = fenc_attribute_policy_to_string(policy->root, temp_policy_str, MAX_POLICY_STR);
@@ -602,9 +623,9 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 	//	result = err_code;
 	//	goto cleanup;
 	//}
-	// fenc_policy_from_string(policy, temp_policy_str);
+    //fenc_policy_from_string(policy, temp_policy_str);
 	
-	// printf("Original policy string: '%s'\n", policy->string);
+	//printf("Original policy string: '%s'\n", policy->string);
 	//strcpy(temp_policy_str, "");
 	//err_code = fenc_attribute_policy_to_string(policy->root, temp_policy_str, MAX_POLICY_STR);
 	//printf("Revised policy string: %s\n", temp_policy_str);
@@ -621,7 +642,6 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 		result = FENC_ERROR_INVALID_INPUT;
 		goto cleanup;
 	}
-	
 	/* Initialize the WatersCP-specific ciphertext data structure and allocate some temporary variables.	*/
 	err_code = fenc_ciphertext_WatersCP_initialize(&ciphertext_WatersCP, &attribute_list, policy, FENC_CIPHERTEXT_TYPE_KEM_CPA,
 													scheme_context);
@@ -630,9 +650,9 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 		result = FENC_ERROR_UNKNOWN;
 		goto cleanup;
 	}
+
 	//strcpy(ciphertext_WatersCP.policy_str, temp_policy_str);
 	strcpy(ciphertext_WatersCP.policy_str, fenc_get_policy_string(policy));
-
 	/* If we're in KEM mode, the returned key is the hash of eggalphasT.	*/
 	if (kem_mode == TRUE) {
 		err_code = fenc_derive_key_from_element(eggalphasT, kem_key_len, kem_key_buf);
@@ -648,7 +668,7 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 		result = FENC_ERROR_UNKNOWN;
 		goto cleanup;
 	}
-	
+	printf("-------------------------------------\n");
 	/* Compute CprimeONE = gONE^{sZ}.	*/
 	element_pow_zn(ciphertext_WatersCP.CprimeONE, scheme_context->public_params.gONE, sZ);
 
@@ -659,6 +679,8 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 		
 		/* Pick a random value r_i (rZ).	*/
 		element_random(rZ);
+
+        element_init_Zr(ciphertext_WatersCP.rZ[i], scheme_context->global_params->pairing);
 		/* Set DTWO[i] = gTWO^{rZ}.	*/ // very expensive
 		element_pow_zn(ciphertext_WatersCP.DTWO[i], scheme_context->public_params.gTWO, rZ);
 				
@@ -672,14 +694,16 @@ encrypt_WatersCP_internal(fenc_context *context, fenc_function_input *input, fen
 		DEBUG_ELEMENT_PRINTF("share %d is %B\n", i, attribute_list.attribute[i].share);
 		element_pow_zn(temp2ONE, scheme_context->public_params.gaONE, attribute_list.attribute[i].share);	/* temp2ONE = gaONE^{share_i}		*/
 		element_mul(ciphertext_WatersCP.CONE[i], tempONE, temp2ONE);											/* CONE = tempONE * temp2ONE.	*/
+        element_mul(ciphertext_WatersCP.rZ[i], rZ, one);
 	}
 
 	/* DEBUG: Print out the ciphertext.	*/
-	// libfenc_fprint_ciphertext_WatersCP(&ciphertext_WatersCP, stdout);
+	libfenc_fprint_ciphertext_WatersCP(&ciphertext_WatersCP, stdout);
 	/* Serialize the WatersCP ciphertext structure into a fenc_ciphertext container 
 	 * (which is essentially just a binary buffer).  First we get the length, then we 
 	 * allocate the ciphertext buffer, then we serialize.	*/
 	libfenc_serialize_ciphertext_WatersCP(&ciphertext_WatersCP, NULL, 0, &serialized_len);	/* This gets the serialized length. */
+    printf("%d\n", serialized_len);
 	libfenc_ciphertext_initialize(ciphertext, serialized_len, FENC_SCHEME_WATERSCP);
 	if (err_code != FENC_ERROR_NONE) {	result = err_code;	goto cleanup;	}
 	err_code = libfenc_serialize_ciphertext_WatersCP(&ciphertext_WatersCP, ciphertext->data, ciphertext->max_len, &ciphertext->data_len);	/* Serialization. */
@@ -1202,6 +1226,7 @@ libfenc_deserialize_key_WatersCP(fenc_key_WatersCP *key, unsigned char *buffer, 
 FENC_ERROR
 libfenc_serialize_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, unsigned char *buffer, size_t max_len, size_t *serialized_len)
 {
+    libfenc_fprint_ciphertext_WatersCP(ciphertext, stdout);
 	unsigned int i=0;
 	unsigned char *buf_ptr = (unsigned char*)buffer;
 	uint32 type, kem_key_len;
@@ -1253,6 +1278,12 @@ libfenc_serialize_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, unsi
 		buf_ptr = buffer + *serialized_len;
 	}
 
+    //*serialized_len += element_length_in_bytes_compressed(ciphertext->sZ);	/* sZ			*/
+    //if (buffer != NULL && *serialized_len <= max_len) {
+    //    element_to_bytes_compressed(buf_ptr, ciphertext->CprimeONE);
+    //    buf_ptr = buffer + *serialized_len;
+    //}
+    //printf("here2\n");
 	/* For every attribute in the ciphertext... */
 	for (i = 0; i < ciphertext->attribute_list.num_attributes; i++) {
 		*serialized_len += element_length_in_bytes(ciphertext->attribute_list.attribute[i].attribute_hash);			/* attribute[i]		*/
@@ -1272,6 +1303,13 @@ libfenc_serialize_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, unsi
 			element_to_bytes(buf_ptr, ciphertext->DTWO[i]);
 			buf_ptr = buffer + *serialized_len;
 		}
+
+        //*serialized_len += element_length_in_bytes(ciphertext->rZ[i]);		/* DTWO[i]		*/
+		//if (buffer != NULL && *serialized_len <= max_len) {
+		//	element_to_bytes(buf_ptr, ciphertext->rZ[i]);
+		//	buf_ptr = buffer + *serialized_len;
+		//}
+
 	}
 	
 	/* If the buffer pointer is NULL, we're done --- just return the length. */
@@ -1283,7 +1321,7 @@ libfenc_serialize_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, unsi
 	if (*serialized_len > max_len) {
 		return FENC_ERROR_BUFFER_TOO_SMALL;
 	}
-	
+	printf("success\n");
 	/* Return success. */
 	return FENC_ERROR_NONE;
 }
@@ -1361,6 +1399,7 @@ libfenc_deserialize_ciphertext_WatersCP(unsigned char *buffer, size_t buf_len, f
 	if (deserialized_len <= buf_len) {
 		buf_ptr = buffer + deserialized_len;
 	}
+    //printf("ppppppLLLL: %s\n",ciphertext->policy_str);
 	
 	/* Read in the ciphertext components.								*/	
 	if (ciphertext->type == FENC_CIPHERTEXT_TYPE_CPA)	{
@@ -1371,6 +1410,8 @@ libfenc_deserialize_ciphertext_WatersCP(unsigned char *buffer, size_t buf_len, f
 		}
 		buf_ptr = buffer + deserialized_len;
 	}
+    //libfenc_fprint_ciphertext_WatersCP(ciphertext->CT, stdout);
+
 	
 	deserialized_len += element_from_bytes_compressed(ciphertext->CprimeONE, buf_ptr);	/* CprimeONE			*/
 	if (deserialized_len > buf_len) {											
@@ -1378,7 +1419,15 @@ libfenc_deserialize_ciphertext_WatersCP(unsigned char *buffer, size_t buf_len, f
 		goto cleanup;
 	}
 	buf_ptr = buffer + deserialized_len;
-	
+	//printf("sdasdassssssssssssssssssssssss\n");
+    //deserialized_len += element_from_bytes_compressed(ciphertext->sZ, buf_ptr);	/* CprimeONE			*/
+	//if (deserialized_len > buf_len) {											
+	//    result = FENC_ERROR_BUFFER_TOO_SMALL;
+    //	goto cleanup;
+	//}
+    //printf("sssssssssssssss\n");
+	buf_ptr = buffer + deserialized_len;
+
 	/* For every attribute in the ciphertext... */
 	for (i = 0; i < ciphertext->attribute_list.num_attributes; i++) {
 		memset(&(ciphertext->attribute_list.attribute[i]), 0, sizeof(fenc_attribute));
@@ -1397,12 +1446,20 @@ libfenc_deserialize_ciphertext_WatersCP(unsigned char *buffer, size_t buf_len, f
 			goto cleanup;
 		}
 		buf_ptr = buffer + deserialized_len;
+
 		deserialized_len += element_from_bytes(ciphertext->DTWO[i], buf_ptr);	/* DTWO[i]			*/
 		if (deserialized_len > buf_len) {											
 			result = FENC_ERROR_BUFFER_TOO_SMALL;
 			goto cleanup;
 		}
 		buf_ptr = buffer + deserialized_len;
+
+        //deserialized_len += element_from_bytes(ciphertext->rZ[i], buf_ptr);	/* DTWO[i]			*/
+		//if (deserialized_len > buf_len) {
+		//	result = FENC_ERROR_BUFFER_TOO_SMALL;
+		//	goto cleanup;
+		//}
+		//buf_ptr = buffer + deserialized_len;
 	}
 	
 	/* Success!	*/
@@ -1453,9 +1510,11 @@ fenc_ciphertext_WatersCP_initialize(fenc_ciphertext_WatersCP *ciphertext, fenc_a
 	element_init_GT(ciphertext->CT, scheme_context->global_params->pairing);
 	element_set1(ciphertext->CT);
 	element_init_G1(ciphertext->CprimeONE, scheme_context->global_params->pairing);
+	element_init_Zr(ciphertext->sZ, scheme_context->global_params->pairing);
 	for (i = 0; i < attribute_list->num_attributes; i++) {
 		element_init_G1(ciphertext->CONE[i], scheme_context->global_params->pairing);
 		element_init_G2(ciphertext->DTWO[i], scheme_context->global_params->pairing);
+		element_init_Zr(ciphertext->rZ[i], scheme_context->global_params->pairing);
 	}
 	ciphertext->type = type;
 	
@@ -1483,9 +1542,11 @@ fenc_ciphertext_WatersCP_clear(fenc_ciphertext_WatersCP *ciphertext)
 	/* Release all of the internal elements.  Let's hope the ciphertext was correctly inited! */
 	element_clear(ciphertext->CT);
 	element_clear(ciphertext->CprimeONE);
+    element_clear(ciphertext->sZ);
 	for (i = 0; i < ciphertext->attribute_list.num_attributes; i++) {
 		element_clear(ciphertext->CONE[i]);
 		element_clear(ciphertext->DTWO[i]);
+		element_clear(ciphertext->rZ[i]);
 	}
 	
 	/* Release the attribute list if one has been allocated. */
@@ -1668,13 +1729,15 @@ secret_params_initialize_WatersCP(fenc_secret_params_WatersCP *params, pairing_t
 FENC_ERROR
 libfenc_fprint_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, FILE* out_file)
 {
+
 	size_t i;
 	
 	fprintf(out_file, "number of attributes = %d\n", ciphertext->attribute_list.num_attributes);
 
 	fprintf(out_file, "policy = %s\n", ciphertext->policy_str);
 	element_fprintf(out_file, "CT = %B\n", ciphertext->CT);
-	element_fprintf(out_file, "CprimeONE = %B\n", ciphertext->CprimeONE);
+	element_fprintf(out_file, "SZ = %B\n", ciphertext->sZ);
+    element_fprintf(out_file, "CprimeONE = %B\n", ciphertext->CprimeONE);
 	
 	/* For every attribute in the ciphertext... */
 	for (i = 0; i < ciphertext->attribute_list.num_attributes; i++) {
@@ -1686,8 +1749,176 @@ libfenc_fprint_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, FILE* o
 		
 		element_fprintf(out_file, "\tCONE[%d] = %B\n", i, ciphertext->CONE[i]);
 		element_fprintf(out_file, "\tDTWO[%d] = %B\n", i, ciphertext->DTWO[i]);
+        element_fprintf(out_file, "\trZ[%d]=%B\n", i, ciphertext->rZ[i]);
 	}
 	
 	/* Return success. */
 	return FENC_ERROR_NONE;
 }
+
+FENC_ERROR
+libfenc_kem_encrypt_update_WatersCP(fenc_context *context, fenc_function_input *input, 
+                    fenc_ciphertext *old_ciphertext, fenc_ciphertext *new_ciphertext)
+{
+    printf("ssssssssssssssssssss\n");
+    FENC_ERROR                      result = FENC_ERROR_UNKNOWN, err_code;
+    fenc_ciphertext_WatersCP        old_ciphertext_WatersCP;
+    fenc_ciphertext_WatersCP        new_ciphertext_WatersCP;
+    fenc_scheme_context_WatersCP    *scheme_context = NULL;
+    fenc_key_WatersCP               *key_WatersCP = NULL;
+    fenc_attribute_list             old_attribute_list;
+    fenc_attribute_list             new_attribute_list;
+    fenc_attribute_policy           old_policy;
+    fenc_attribute_policy           *new_policy = NULL;
+    fenc_lsss_coefficient_list      coefficient_list;
+    element_t                       tempGT, temp2GT, tempONE, temp2ONE, temp3ONE, tempZ, temp2Z, prodONE;
+    element_t                       temp3GT, temp4GT, prodT, finalT, eggalphasT;
+    uint32                          i;
+    int32                           index_ciph, index_key;
+    Bool                            elements_initialized = FALSE, coefficients_initialized = FALSE;
+    Bool                            attribute_list_N_initialized = FALSE;
+    char                            test_str[MAX_POLICY_STR];
+    element_t                       sZ;
+    
+
+    /* Get the scheme-specific context. */
+    scheme_context = (fenc_scheme_context_WatersCP*)context->scheme_context;
+    if (scheme_context == NULL) {
+        return FENC_ERROR_INVALID_CONTEXT;
+    }
+    element_init_GT(eggalphasT, scheme_context->global_params->pairing);
+	element_init_G1(tempONE, scheme_context->global_params->pairing);
+	element_init_G1(temp2ONE, scheme_context->global_params->pairing);
+	element_init_Zr(sZ, scheme_context->global_params->pairing);
+    
+    int len = 0;
+    char tmp[1024];
+    memset(tmp, 0, sizeof(tmp));
+    FILE *fp = fopen("key.s", "r");
+    fscanf(fp, "%s", tmp);
+    printf("aaaaaaaaaaaaaaa    %s\n", tmp);
+    printf("===================\n");
+    len = element_set_str(sZ, tmp, 16);
+    element_fprintf(stdout, "sZ = %B", sZ);
+
+    element_init_GT(eggalphasT, scheme_context->global_params->pairing);
+
+    element_pow_zn(eggalphasT, scheme_context->public_params.eggalphaT, sZ);
+
+
+
+    /* Obtain the WatersCP-specific key data structure and make sure it's correct.	*/
+    //if (key->scheme_key == NULL) {
+    //    LOG_ERROR("%s: could not obtain scheme-specific decryption key", __func__);
+    //    return FENC_ERROR_INVALID_KEY;
+    //}
+    //key_WatersCP = (fenc_key_WatersCP*)key->scheme_key;
+    //err_code = attribute_list_compute_hashes(&(key_WatersCP->attribute_list), scheme_context->global_params->pairing);
+
+    /* Deserialize the ciphertext.	*/
+    err_code = libfenc_deserialize_ciphertext_WatersCP(old_ciphertext->data, old_ciphertext->data_len, &old_ciphertext_WatersCP, scheme_context);
+    if (err_code != FENC_ERROR_NONE) {
+        LOG_ERROR("%s: unable to deserialize ciphertext", __func__);
+        result = err_code;
+    }
+    new_policy = (fenc_attribute_policy*)SAFE_MALLOC(sizeof(fenc_attribute_policy));
+    err_code = libfenc_parse_input_as_attribute_policy(input, new_policy);
+    if (err_code != FENC_ERROR_NONE) {
+        LOG_ERROR("%s: could not parse function input as policy", __func__);
+        result = FENC_ERROR_INVALID_INPUT;
+    }
+
+    libfenc_fprint_ciphertext_WatersCP(&old_ciphertext_WatersCP, stdout);
+    memset(&new_attribute_list, 0, sizeof(fenc_attribute_list));
+
+
+    err_code = fenc_LSSS_calculate_shares_from_policy(&(sZ), new_policy, &new_attribute_list, scheme_context->global_params->pairing);
+    if (err_code != FENC_ERROR_NONE) {
+        LOG_ERROR("%s: could not calculate shares", __func__);
+        result = FENC_ERROR_INVALID_INPUT;
+    }
+       /* Export the policy to a string and draw it back in again.  This clears up some issues in the
+    Use the Linear Secret Sharing Scheme (LSSS) to compute an enumerated list of all
+     * attributes and corresponding secret shares of sZ.  The shares will be placed into 
+     * a fenc_attribute_list structure that we'll embed within the fenc_key_WatersCP struct.	*/
+    /* Initialize the WatersCP-specific ciphertext data structure and allocate some temporary variables.	*/
+    err_code = fenc_ciphertext_WatersCP_initialize(&new_ciphertext_WatersCP, &new_attribute_list,
+            new_policy, FENC_CIPHERTEXT_TYPE_KEM_CPA,scheme_context);
+    if (err_code != FENC_ERROR_NONE) {
+        LOG_ERROR("%s: could not initialize ciphertext structure", __func__);
+        result = FENC_ERROR_UNKNOWN;
+        goto cleanup;
+    }
+
+    //strcpy(ciphertext_WatersCP.policy_str, temp_policy_str);
+    strcpy(new_ciphertext_WatersCP.policy_str, fenc_get_policy_string(new_policy));
+    if (strcmp(fenc_get_policy_string(new_policy), old_ciphertext_WatersCP.policy_str) == 0) {
+        goto cleanup;
+    }
+    printf("%s\n", fenc_get_policy_string(new_policy));
+    printf("%s\n", new_ciphertext_WatersCP);
+    /* If we're in KEM mode, the returned key is the hash of eggalphasT.	*/
+    new_ciphertext_WatersCP.type = old_ciphertext_WatersCP.type;
+    new_ciphertext_WatersCP.kem_key_len = old_ciphertext_WatersCP.kem_key_len;
+
+    /* Compute CprimeONE = gONE^{sZ}.	*/
+    element_pow_zn(new_ciphertext_WatersCP.CprimeONE, scheme_context->public_params.gONE, sZ);
+
+    /* For every share/attribute, create one component of the secret key.	*/
+
+    element_t rZ;
+	element_init_Zr(rZ, scheme_context->global_params->pairing);
+    for (i = 0; i < new_ciphertext_WatersCP.attribute_list.num_attributes; i++) {		
+        /* Hash the attribute string to Zr, if it hasn't already been.	*/
+        hash_attribute_string_to_Zr(&(new_ciphertext_WatersCP.attribute_list.attribute[i]), scheme_context->global_params->pairing);
+
+        /* Pick a random value r_i (rZ).	*/
+        element_random(rZ);
+        /* Set DTWO[i] = gTWO^{rZ}.	*/ // very expensive
+        element_pow_zn(new_ciphertext_WatersCP.DTWO[i], scheme_context->public_params.gTWO, rZ);
+        /* Hash the attribute (already hashed to Zr) into an element of G1 (tempONE).	*/
+        err_code = hash2_attribute_element_to_G1(&(new_ciphertext_WatersCP.attribute_list.attribute[i].attribute_hash), &tempONE);	/* result in tempONE  */
+        
+        element_pow_zn(temp2ONE, tempONE, rZ);		/* temp2ONE = H(attribute)^{rZ}	*/
+        element_invert(tempONE, temp2ONE);			/* tempONE = H(attribute)^{-rZ} */
+        
+
+        /* Set CONE[i] = gaONE^{share_i} * H(attribute)^{-rZ}.	*/
+        DEBUG_ELEMENT_PRINTF("share %d is %B\n", i, new_attribute_list.attribute[i].share);
+        element_pow_zn(temp2ONE, scheme_context->public_params.gaONE, new_attribute_list.attribute[i].share);	/* temp2ONE = gaONE^{share_i}		*/
+        element_mul(new_ciphertext_WatersCP.CONE[i], tempONE, temp2ONE);											/* CONE = tempONE * temp2ONE.	*/
+    }
+
+
+    /* DEBUG: Print out the ciphertext.	*/
+    // libfenc_fprint_ciphertext_WatersCP(&ciphertext_WatersCP, stdout);
+    /* Serialize the WatersCP ciphertext structure into a fenc_ciphertext container 
+     * (which is essentially just a binary buffer).  First we get the length, then we 
+     * allocate the ciphertext buffer, then we serialize.	*/
+
+    libfenc_fprint_ciphertext_WatersCP(&new_ciphertext_WatersCP, stdout);
+    size_t serialized_len;
+    libfenc_serialize_ciphertext_WatersCP(&new_ciphertext_WatersCP, NULL, 0, &serialized_len);	/* This gets the serialized length. */
+    libfenc_ciphertext_initialize(new_ciphertext, serialized_len, FENC_SCHEME_WATERSCP);
+    if (err_code != FENC_ERROR_NONE) {	result = err_code;	goto cleanup;	}
+    err_code = libfenc_serialize_ciphertext_WatersCP(&new_ciphertext_WatersCP, new_ciphertext->data, new_ciphertext->max_len, &new_ciphertext->data_len);	/* Serialization. */
+    if (err_code != FENC_ERROR_NONE) {	result = err_code;	goto cleanup;	}
+
+    /* Success!		*/
+    result = FENC_ERROR_NONE;
+
+cleanup:
+    /* If there was an error, clean up after ourselves.	*/
+
+    /* Wipe out temporary variables.	*/
+    if (elements_initialized == TRUE) {
+        element_clear(rZ);
+        element_clear(eggalphasT);
+        element_clear(tempONE);
+        element_clear(temp2ONE);
+    }
+
+    return result;
+}
+
+

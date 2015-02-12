@@ -290,9 +290,11 @@ Bool abe_decrypt(FENC_SCHEME_TYPE scheme, char *public_params, char *inputfile, 
 	AES_set_decrypt_key((uint8 *) aes_session_key.data, 8*SESSION_KEY_LEN, &sk);
 
 	memset(aes_result, 0, aesLength+1);
+    debug("aaaaaaaaaa:%s", aes_result);
 	AES_cbc_encrypt((uint8 *) aesblob, (uint8 *) aes_result, aesLength, &sk, (uint8 *) ivec, AES_DECRYPT);
 	/* base-64 both ciphertext and write to the stdout -- in XML? */
 	
+    debug("bbbbbbbaaaaaaaaaa:%s", aes_result);
 	char magic[strlen(MAGIC)+1];
 	memset(magic, 0, strlen(MAGIC)+1);
 	strncpy(magic, aes_result, strlen(MAGIC));

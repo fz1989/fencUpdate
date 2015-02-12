@@ -62,8 +62,10 @@ typedef struct _fenc_ciphertext_WatersCP {
 
 	element_t				CT;
 	element_t				CprimeONE;
+    element_t               sZ;
 	element_t				CONE[MAX_CIPHERTEXT_ATTRIBUTES];
 	element_t				DTWO[MAX_CIPHERTEXT_ATTRIBUTES];
+    element_t               rZ[MAX_CIPHERTEXT_ATTRIBUTES];
 } fenc_ciphertext_WatersCP;
 
 /*!
@@ -469,5 +471,9 @@ FENC_ERROR	secret_params_initialize_WatersCP(fenc_secret_params_WatersCP *params
  */
 
 FENC_ERROR	libfenc_fprint_ciphertext_WatersCP(fenc_ciphertext_WatersCP *ciphertext, FILE* out_file);
+
+FENC_ERROR	libfenc_kem_encrypt_update_WatersCP(fenc_context *context, fenc_function_input *input, fenc_ciphertext *ciphertext, fenc_ciphertext *new_ciphertext);
+
+
 
 #endif /* ifndef __LIBFENC_WATERSCP_H__ */
