@@ -26,7 +26,7 @@ ABE_TOKEN	benchmark/common.h	/^#define ABE_TOKEN /;"	d
 ABE_TOKEN	tools/common.h	/^#define ABE_TOKEN /;"	d
 ABE_TOKEN_END	benchmark/common.h	/^#define ABE_TOKEN_END /;"	d
 ABE_TOKEN_END	tools/common.h	/^#define ABE_TOKEN_END /;"	d
-abe_update	tools/mgabe-update.c	/^Bool abe_update(FENC_SCHEME_TYPE scheme, char *public_params, char *inputfile, char *enc_file, char *ext, char *sfile)$/;"	f
+abe_update	tools/mgabe-update.c	/^Bool abe_update(FENC_SCHEME_TYPE scheme, char *public_params, char *inputfile, char *enc_file, char *ext)$/;"	f
 abe_update_DEPENDENCIES	tools/Makefile	/^abe_update_DEPENDENCIES = ..\/libfenc.la$/;"	m
 abe_update_LDADD	tools/Makefile	/^abe_update_LDADD = $(LDADD)$/;"	m
 abe_update_OBJECTS	tools/Makefile	/^abe_update_OBJECTS = $(am_abe_update_OBJECTS)$/;"	m
@@ -34,18 +34,18 @@ abe_update_SOURCES	tools/Makefile	/^abe_update_SOURCES = mgabe-update.c base64.c
 ABI	benchmark/Makefile	/^ABI = $/;"	m
 ABI	Makefile	/^ABI = $/;"	m
 ABI	tools/Makefile	/^ABI = $/;"	m
-abs_builddir	benchmark/Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/benchmark$/;"	m
-abs_builddir	Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_builddir	tools/Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/tools$/;"	m
-abs_srcdir	benchmark/Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/benchmark$/;"	m
-abs_srcdir	Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_srcdir	tools/Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/tools$/;"	m
-abs_top_builddir	benchmark/Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_top_builddir	Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_top_builddir	tools/Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_top_srcdir	benchmark/Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_top_srcdir	Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
-abs_top_srcdir	tools/Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fenc-0.2.0$/;"	m
+abs_builddir	benchmark/Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fencUpdate\/benchmark$/;"	m
+abs_builddir	Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_builddir	tools/Makefile	/^abs_builddir = \/Users\/fz\/Project\/cpp\/fencUpdate\/tools$/;"	m
+abs_srcdir	benchmark/Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fencUpdate\/benchmark$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_srcdir	tools/Makefile	/^abs_srcdir = \/Users\/fz\/Project\/cpp\/fencUpdate\/tools$/;"	m
+abs_top_builddir	benchmark/Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_top_builddir	tools/Makefile	/^abs_top_builddir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_top_srcdir	benchmark/Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
+abs_top_srcdir	tools/Makefile	/^abs_top_srcdir = \/Users\/fz\/Project\/cpp\/fencUpdate$/;"	m
 ACLOCAL	benchmark/Makefile	/^ACLOCAL = aclocal-1.14$/;"	m
 ACLOCAL	Makefile	/^ACLOCAL = aclocal-1.14$/;"	m
 ACLOCAL	tools/Makefile	/^ACLOCAL = aclocal-1.14$/;"	m
@@ -358,9 +358,9 @@ BITS	libfenc_ABE_common.h	/^#define BITS /;"	d
 bit_marker	abe_policy.tab.c	/^bit_marker( char* base, char* tplate, int bit, char val )$/;"	f
 bit_marker_list	abe_policy.tab.c	/^bit_marker_list( int gt, char* attr, char* tplate, int bits, uint64_t value )$/;"	f
 Bool	libfenc.h	/^typedef int Bool;$/;"	t
-build	benchmark/Makefile	/^build = i386-apple-darwin14.0.0$/;"	m
-build	Makefile	/^build = i386-apple-darwin14.0.0$/;"	m
-build	tools/Makefile	/^build = i386-apple-darwin14.0.0$/;"	m
+build	benchmark/Makefile	/^build = i386-apple-darwin14.1.0$/;"	m
+build	Makefile	/^build = i386-apple-darwin14.1.0$/;"	m
+build	tools/Makefile	/^build = i386-apple-darwin14.1.0$/;"	m
 builddir	benchmark/Makefile	/^builddir = .$/;"	m
 builddir	Makefile	/^builddir = .$/;"	m
 builddir	tools/Makefile	/^builddir = .$/;"	m
@@ -370,12 +370,12 @@ build_alias	tools/Makefile	/^build_alias = $/;"	m
 build_cpu	benchmark/Makefile	/^build_cpu = i386$/;"	m
 build_cpu	Makefile	/^build_cpu = i386$/;"	m
 build_cpu	tools/Makefile	/^build_cpu = i386$/;"	m
-build_os	benchmark/Makefile	/^build_os = darwin14.0.0$/;"	m
-build_os	Makefile	/^build_os = darwin14.0.0$/;"	m
-build_os	tools/Makefile	/^build_os = darwin14.0.0$/;"	m
-build_triplet	benchmark/Makefile	/^build_triplet = i386-apple-darwin14.0.0$/;"	m
-build_triplet	Makefile	/^build_triplet = i386-apple-darwin14.0.0$/;"	m
-build_triplet	tools/Makefile	/^build_triplet = i386-apple-darwin14.0.0$/;"	m
+build_os	benchmark/Makefile	/^build_os = darwin14.1.0$/;"	m
+build_os	Makefile	/^build_os = darwin14.1.0$/;"	m
+build_os	tools/Makefile	/^build_os = darwin14.1.0$/;"	m
+build_triplet	benchmark/Makefile	/^build_triplet = i386-apple-darwin14.1.0$/;"	m
+build_triplet	Makefile	/^build_triplet = i386-apple-darwin14.1.0$/;"	m
+build_triplet	tools/Makefile	/^build_triplet = i386-apple-darwin14.1.0$/;"	m
 build_vendor	benchmark/Makefile	/^build_vendor = apple$/;"	m
 build_vendor	Makefile	/^build_vendor = apple$/;"	m
 build_vendor	tools/Makefile	/^build_vendor = apple$/;"	m
@@ -906,21 +906,21 @@ HAVE_UNISTD_H	tools/config.h	/^#define HAVE_UNISTD_H /;"	d
 hbONE	libfenc_LSW.h	/^	element_t hbONE;$/;"	m	struct:_fenc_public_params_LSW
 HEADERS	Makefile	/^HEADERS = $(library_include_HEADERS)$/;"	m
 hONE	libfenc_LSW.h	/^	element_t hONE;$/;"	m	struct:_fenc_secret_params_LSW
-host	benchmark/Makefile	/^host = i386-apple-darwin14.0.0$/;"	m
-host	Makefile	/^host = i386-apple-darwin14.0.0$/;"	m
-host	tools/Makefile	/^host = i386-apple-darwin14.0.0$/;"	m
+host	benchmark/Makefile	/^host = i386-apple-darwin14.1.0$/;"	m
+host	Makefile	/^host = i386-apple-darwin14.1.0$/;"	m
+host	tools/Makefile	/^host = i386-apple-darwin14.1.0$/;"	m
 host_alias	benchmark/Makefile	/^host_alias = $/;"	m
 host_alias	Makefile	/^host_alias = $/;"	m
 host_alias	tools/Makefile	/^host_alias = $/;"	m
 host_cpu	benchmark/Makefile	/^host_cpu = i386$/;"	m
 host_cpu	Makefile	/^host_cpu = i386$/;"	m
 host_cpu	tools/Makefile	/^host_cpu = i386$/;"	m
-host_os	benchmark/Makefile	/^host_os = darwin14.0.0$/;"	m
-host_os	Makefile	/^host_os = darwin14.0.0$/;"	m
-host_os	tools/Makefile	/^host_os = darwin14.0.0$/;"	m
-host_triplet	benchmark/Makefile	/^host_triplet = i386-apple-darwin14.0.0$/;"	m
-host_triplet	Makefile	/^host_triplet = i386-apple-darwin14.0.0$/;"	m
-host_triplet	tools/Makefile	/^host_triplet = i386-apple-darwin14.0.0$/;"	m
+host_os	benchmark/Makefile	/^host_os = darwin14.1.0$/;"	m
+host_os	Makefile	/^host_os = darwin14.1.0$/;"	m
+host_os	tools/Makefile	/^host_os = darwin14.1.0$/;"	m
+host_triplet	benchmark/Makefile	/^host_triplet = i386-apple-darwin14.1.0$/;"	m
+host_triplet	Makefile	/^host_triplet = i386-apple-darwin14.1.0$/;"	m
+host_triplet	tools/Makefile	/^host_triplet = i386-apple-darwin14.1.0$/;"	m
 host_vendor	benchmark/Makefile	/^host_vendor = apple$/;"	m
 host_vendor	Makefile	/^host_vendor = apple$/;"	m
 host_vendor	tools/Makefile	/^host_vendor = apple$/;"	m
@@ -962,9 +962,9 @@ INSTALL_PROGRAM	tools/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	benchmark/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
 INSTALL_SCRIPT	tools/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
-install_sh	benchmark/Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/install-sh$/;"	m
-install_sh	Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/install-sh$/;"	m
-install_sh	tools/Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fenc-0.2.0\/install-sh$/;"	m
+install_sh	benchmark/Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fencUpdate\/install-sh$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fencUpdate\/install-sh$/;"	m
+install_sh	tools/Makefile	/^install_sh = ${SHELL} \/Users\/fz\/Project\/cpp\/fencUpdate\/install-sh$/;"	m
 install_sh_DATA	benchmark/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
 install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
 install_sh_DATA	tools/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
@@ -990,7 +990,7 @@ IV_TOKEN	tools/common.h	/^#define IV_TOKEN /;"	d
 IV_TOKEN_END	benchmark/common.h	/^#define IV_TOKEN_END /;"	d
 IV_TOKEN_END	tools/common.h	/^#define IV_TOKEN_END /;"	d
 kem_encrypt	libfenc.h	/^	FENC_ERROR				(*kem_encrypt)(struct _fenc_context *, fenc_function_input *, size_t, uint8 *,$/;"	m	struct:_fenc_context
-kem_encrypt_update	libfenc.h	/^    FENC_ERROR				(*kem_encrypt_update)(struct _fenc_context *, fenc_function_input *, size_t, uint8 *,$/;"	m	struct:_fenc_context
+kem_encrypt_update	libfenc.h	/^    FENC_ERROR				(*kem_encrypt_update)(struct _fenc_context *, fenc_function_input *, fenc_ciphertext *, fenc_ciphertext *);$/;"	m	struct:_fenc_context
 kem_key_len	libfenc_LSW.h	/^	size_t					kem_key_len;$/;"	m	struct:_fenc_ciphertext_LSW
 kem_key_len	libfenc_WatersCP.h	/^	size_t					kem_key_len;$/;"	m	struct:_fenc_ciphertext_WatersCP
 kem_key_len	libfenc_WatersSimpleCP.h	/^	size_t					kem_key_len;$/;"	m	struct:_fenc_ciphertext_WatersSimpleCP
@@ -1121,8 +1121,8 @@ libfenc_import_secret_params_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_i
 libfenc_init	libfenc.c	/^libfenc_init()$/;"	f
 libfenc_kem_encrypt	libfenc.c	/^libfenc_kem_encrypt(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
 libfenc_kem_encrypt_LSW	libfenc_LSW.c	/^libfenc_kem_encrypt_LSW(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
-libfenc_kem_encrypt_update	libfenc.c	/^libfenc_kem_encrypt_update(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
-libfenc_kem_encrypt_update_WatersCP	libfenc_WatersCP.c	/^libfenc_kem_encrypt_update_WatersCP(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
+libfenc_kem_encrypt_update	libfenc.c	/^libfenc_kem_encrypt_update(fenc_context *context, fenc_function_input *input, fenc_ciphertext *ciphertext, fenc_ciphertext *new_ciphertext)$/;"	f
+libfenc_kem_encrypt_update_WatersCP	libfenc_WatersCP.c	/^libfenc_kem_encrypt_update_WatersCP(fenc_context *context, fenc_function_input *input, $/;"	f
 libfenc_kem_encrypt_WatersCP	libfenc_WatersCP.c	/^libfenc_kem_encrypt_WatersCP(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
 libfenc_kem_encrypt_WatersSimpleCP	libfenc_WatersSimpleCP.c	/^libfenc_kem_encrypt_WatersSimpleCP(fenc_context *context, fenc_function_input *input, size_t key_len,$/;"	f
 libfenc_la_AR	Makefile	/^libfenc_la_AR = ar$/;"	m
@@ -1454,8 +1454,7 @@ result	abe_policy.y	/^result: policy { final_policy = $1 }$/;"	l
 ret_num_bits	benchmark/common.c	/^int ret_num_bits(int value1)$/;"	f
 ret_num_bits	tools/common.c	/^int ret_num_bits(int value1)$/;"	f
 root	libfenc_ABE_common.h	/^	fenc_attribute_subtree		*root;$/;"	m	struct:_fenc_attribute_policy
-rx	libfenc_ABE_common.h	/^    element_t       rx;$/;"	m	struct:_fenc_attribute
-Rz	libfenc_ABE_common.h	/^    element_t               Rz;$/;"	m	struct:_fenc_attribute_list
+rZ	libfenc_WatersCP.h	/^    element_t               rZ[MAX_CIPHERTEXT_ATTRIBUTES];$/;"	m	struct:_fenc_ciphertext_WatersCP
 SAFE_FREE	libfenc.h	/^#define SAFE_FREE(/;"	d
 SAFE_MALLOC	libfenc.h	/^#define SAFE_MALLOC(/;"	d
 sbindir	benchmark/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
@@ -1545,6 +1544,7 @@ SWCP	tools/common.h	/^enum Scheme {LSW, WCP, SWCP, NONE};$/;"	e	enum:Scheme
 sysconfdir	benchmark/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
 sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
 sysconfdir	tools/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sZ	libfenc_WatersCP.h	/^    element_t               sZ;$/;"	m	struct:_fenc_ciphertext_WatersCP
 s_strdup_printf	abe_policy.tab.c	/^char* s_strdup_printf(char *fmt, ...)$/;"	f
 s_string_append_c	abe_policy.tab.c	/^void s_string_append_c(char *left, int max, char right)$/;"	f
 s_string_new	abe_policy.tab.c	/^char* s_string_new(int max)$/;"	f

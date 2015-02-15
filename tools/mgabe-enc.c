@@ -36,8 +36,9 @@ int main (int argc, char *argv[]) {
 	aflag = pflag = dflag = oflag = iflag = xflag = FALSE;
 
 	
+    printf("aaaaaaaaaaaaa\n");
 	while ((c = getopt (argc, argv, "a:d:i:o:m:p:xh")) != -1) {
-		
+		printf("%c %s\n", c, strdup(optarg));
 		switch (c)
 		{
 			case 'a': // retrieve attributes from user 
@@ -51,7 +52,7 @@ int main (int argc, char *argv[]) {
 			case 'i':
 				if(dflag == TRUE) /* i or d option, but not both */
 					break;
-				
+				printf("qqq\n");
 				iflag = TRUE;
 				fp = fopen(optarg, "r");
 				if(fp != NULL) {
@@ -163,6 +164,8 @@ void print_help(void)
 
 void abe_encrypt(FENC_SCHEME_TYPE scheme, char *public_params, char *data, char *enc_file, int isXML, char *ext)
 {
+
+    printf("aaaaaaaaaaaaa\n");
 	FENC_ERROR result;
 	fenc_context context;
 	fenc_group_params group_params;
@@ -250,6 +253,7 @@ void abe_encrypt(FENC_SCHEME_TYPE scheme, char *public_params, char *data, char 
 	result = libfenc_import_public_params(&context, bin_public_buf, serialized_len);
 	// report_error("Importing public parameters", result);
 	
+    printf("aaaaaaaaaaaaa\n");
 	/* key encapsulation to obtain session key from policy */
 	result = libfenc_kem_encrypt(&context, &func_object_input, SESSION_KEY_LEN, (uint8 *)session_key, &ciphertext);	
 	
